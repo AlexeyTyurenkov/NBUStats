@@ -10,23 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NBUStat" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Currency View Controller-->
         <scene sceneID="o8T-Qy-m2o">
             <objects>
@@ -39,6 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDU-7Q-7l9">
+                                <rect key="frame" x="15.5" y="64" width="343" height="40"/>
+                                <connections>
+                                    <action selector="changeDateButtonPressed:" destination="CUy-sc-ePM" eventType="touchUpInside" id="d49-5r-bad"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEI-dy-iRj">
                                 <rect key="frame" x="16" y="64" width="343" height="40"/>
                                 <constraints>
@@ -61,12 +50,19 @@
                             <constraint firstItem="5ky-FE-BSV" firstAttribute="leading" secondItem="alf-af-zCd" secondAttribute="leading" id="DQr-66-6KB"/>
                             <constraint firstAttribute="trailing" secondItem="5ky-FE-BSV" secondAttribute="trailing" id="E8n-kZ-siK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mEI-dy-iRj" secondAttribute="trailing" id="P2o-iI-htJ"/>
+                            <constraint firstItem="yDU-7Q-7l9" firstAttribute="centerY" secondItem="mEI-dy-iRj" secondAttribute="centerY" id="Ygn-AB-ywf"/>
                             <constraint firstItem="5ky-FE-BSV" firstAttribute="top" secondItem="mEI-dy-iRj" secondAttribute="bottom" id="b2q-w5-EdQ"/>
+                            <constraint firstItem="yDU-7Q-7l9" firstAttribute="centerX" secondItem="mEI-dy-iRj" secondAttribute="centerX" id="h4I-48-5ZT"/>
                             <constraint firstItem="mEI-dy-iRj" firstAttribute="leading" secondItem="alf-af-zCd" secondAttribute="leadingMargin" id="kZS-ye-D8q"/>
                             <constraint firstItem="mEI-dy-iRj" firstAttribute="top" secondItem="epd-A7-8TI" secondAttribute="bottom" id="qch-kx-Cus"/>
+                            <constraint firstItem="yDU-7Q-7l9" firstAttribute="width" secondItem="mEI-dy-iRj" secondAttribute="width" id="tyn-jP-UD4"/>
+                            <constraint firstItem="yDU-7Q-7l9" firstAttribute="height" secondItem="mEI-dy-iRj" secondAttribute="height" id="xWJ-Ho-ZAM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MtV-hE-oPF"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="mEI-dy-iRj" id="vXR-I1-Ca2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ey-4v-lNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

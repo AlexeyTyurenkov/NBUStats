@@ -10,7 +10,6 @@
 		BA9FF7284F532890F8D491F2 /* Pods_NBUStat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8D990A1E4F5AF602B13E83 /* Pods_NBUStat.framework */; };
 		C11BC23D17E533EF10F94E27 /* Pods_NBUStatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C41F756F4EB82CDB3DB758 /* Pods_NBUStatUITests.framework */; };
 		C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F061F18B06700F0AF87 /* AppDelegate.swift */; };
-		C61F1F091F18B06700F0AF87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F081F18B06700F0AF87 /* ViewController.swift */; };
 		C61F1F0C1F18B06700F0AF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61F1F0A1F18B06700F0AF87 /* Main.storyboard */; };
 		C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F0D1F18B06700F0AF87 /* NBUStat.xcdatamodeld */; };
 		C61F1F111F18B06700F0AF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61F1F101F18B06700F0AF87 /* Assets.xcassets */; };
@@ -54,7 +53,6 @@
 		BC5E89F86AD0440CA6671393 /* Pods-NBUStatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBUStatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBUStatUITests/Pods-NBUStatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C61F1F031F18B06700F0AF87 /* NBUStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBUStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61F1F061F18B06700F0AF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C61F1F081F18B06700F0AF87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C61F1F0B1F18B06700F0AF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C61F1F0E1F18B06700F0AF87 /* NBUStat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NBUStat.xcdatamodel; sourceTree = "<group>"; };
 		C61F1F101F18B06700F0AF87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				C61F1F3C1F18B58E00F0AF87 /* ViewControllers */,
 				C61F1F371F18B1D100F0AF87 /* Models */,
 				C61F1F061F18B06700F0AF87 /* AppDelegate.swift */,
-				C61F1F081F18B06700F0AF87 /* ViewController.swift */,
 				C61F1F0A1F18B06700F0AF87 /* Main.storyboard */,
 				C61F1F101F18B06700F0AF87 /* Assets.xcassets */,
 				C61F1F121F18B06700F0AF87 /* LaunchScreen.storyboard */,
@@ -501,7 +498,6 @@
 			files = (
 				C61F1F3E1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift in Sources */,
 				C61F1F391F18B1EF00F0AF87 /* CurrencyRate.swift in Sources */,
-				C61F1F091F18B06700F0AF87 /* ViewController.swift in Sources */,
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
 				C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */,
 				C61F1F3B1F18B20100F0AF87 /* CurrencyRates.swift in Sources */,

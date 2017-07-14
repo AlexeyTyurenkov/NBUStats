@@ -53,7 +53,7 @@ class CurrencyRateTableViewController: UITableViewController {
     
     public func setDate(date: Date)
     {
-        manager.loadList(date: Date()) {
+        manager.loadList(date: date) {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

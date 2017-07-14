@@ -12,6 +12,9 @@ class CurrencyViewController: UIViewController {
 
     weak var presenter: CurrencyRateTableViewController?
     var date = Date()
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,10 @@ class CurrencyViewController: UIViewController {
     }
     
 
+    @IBAction func changeDateButtonPressed(_ sender: Any) {
+        date = date.addingTimeInterval(-1*24*60*60)
+        presenter?.setDate(date: date)
+    }
     
     // MARK: - Navigation
 
