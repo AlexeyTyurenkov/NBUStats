@@ -14,11 +14,15 @@ class CurrencyViewController: UIViewController {
     var date = Date()
     @IBOutlet weak var dateLabel: UILabel!
     
+    @IBOutlet weak var tomorrowButton: UIButton!
+    @IBOutlet weak var yesterdayButton: UIButton!
+    @IBOutlet weak var yesterdayLabel: UILabel!
+    @IBOutlet weak var tomorrowLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateDate(label: dateLabel, date: date)
         // Do any additional setup after loading the view.
     }
 
@@ -29,9 +33,22 @@ class CurrencyViewController: UIViewController {
     
 
     @IBAction func changeDateButtonPressed(_ sender: Any) {
+        presenter?.setDate(date: date)
+        updateDate(label: dateLabel, date: date)
+    }
+    
+    @IBAction func previousButtonPressed(_ sender: Any) {
         date = date.addingTimeInterval(-1*24*60*60)
         presenter?.setDate(date: date)
+        updateDate(label: dateLabel, date: date)
     }
+    
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        date = date.addingTimeInterval(1*24*60*60)
+        presenter?.setDate(date: date)
+        updateDate(label: dateLabel, date: date)
+    }
+    
     
     // MARK: - Navigation
 
@@ -44,5 +61,16 @@ class CurrencyViewController: UIViewController {
         
     }
  
+    
+    func updateDate(label: UILabel, date: Date)
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd.MM.yyyy"
+        
+        label.text = dateFormatter.string(from: date)
+        yesterdayLabel.text = dateFormatter.string(from: date.addingTimeInterval(-1*24*60*60))
+        tomorrowLabel.text = dateFormatter.string(from: date.addingTimeInterval(1*24*60*60))
+        
+    }
 
 }

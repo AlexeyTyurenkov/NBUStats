@@ -23,6 +23,7 @@ class CurrencyRateTableViewController: UITableViewController {
         manager.loadList(date: Date()) {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.refreshControl?.endRefreshing()
             }
         }
         // Uncomment the following line to preserve selection between presentations
@@ -56,6 +57,7 @@ class CurrencyRateTableViewController: UITableViewController {
         manager.loadList(date: date) {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.refreshControl?.endRefreshing()
             }
         }
     }

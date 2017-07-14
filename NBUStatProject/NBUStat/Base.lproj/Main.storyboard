@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,11 +24,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDU-7Q-7l9">
-                                <rect key="frame" x="15.5" y="64" width="343" height="40"/>
+                                <rect key="frame" x="101.5" y="64" width="171.5" height="40"/>
                                 <connections>
                                     <action selector="changeDateButtonPressed:" destination="CUy-sc-ePM" eventType="touchUpInside" id="d49-5r-bad"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljp-ow-WFR" userLabel="PreviousButton">
+                                <rect key="frame" x="16" y="64" width="85.5" height="40"/>
+                                <accessibility key="accessibilityConfiguration" label="PreviousButton"/>
+                                <connections>
+                                    <action selector="previousButtonPressed:" destination="CUy-sc-ePM" eventType="touchUpInside" id="zcq-sy-mgD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWL-dm-yiP">
+                                <rect key="frame" x="16" y="64" width="85.5" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEI-dy-iRj">
                                 <rect key="frame" x="16" y="64" width="343" height="40"/>
                                 <constraints>
@@ -43,25 +57,58 @@
                                     <segue destination="um8-nT-vni" kind="embed" identifier="CurrencyByDate" id="sho-3p-PFx"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuK-FU-Jsw" userLabel="NextButton">
+                                <rect key="frame" x="273" y="64" width="86" height="40"/>
+                                <accessibility key="accessibilityConfiguration" label="NextButton"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="CUy-sc-ePM" eventType="touchUpInside" id="OlC-eL-JKG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ck-db-cXG">
+                                <rect key="frame" x="273" y="64" width="86" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dg9-6Y-owa" firstAttribute="top" secondItem="5ky-FE-BSV" secondAttribute="bottom" id="0pS-od-rmA"/>
                             <constraint firstItem="5ky-FE-BSV" firstAttribute="leading" secondItem="alf-af-zCd" secondAttribute="leading" id="DQr-66-6KB"/>
                             <constraint firstAttribute="trailing" secondItem="5ky-FE-BSV" secondAttribute="trailing" id="E8n-kZ-siK"/>
+                            <constraint firstItem="6Ck-db-cXG" firstAttribute="centerX" secondItem="wuK-FU-Jsw" secondAttribute="centerX" id="EPx-sQ-ptH"/>
+                            <constraint firstItem="PWL-dm-yiP" firstAttribute="height" secondItem="Ljp-ow-WFR" secondAttribute="height" id="EvM-8y-nMh"/>
+                            <constraint firstItem="Ljp-ow-WFR" firstAttribute="centerY" secondItem="yDU-7Q-7l9" secondAttribute="centerY" id="HKL-Vf-l32"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mEI-dy-iRj" secondAttribute="trailing" id="P2o-iI-htJ"/>
                             <constraint firstItem="yDU-7Q-7l9" firstAttribute="centerY" secondItem="mEI-dy-iRj" secondAttribute="centerY" id="Ygn-AB-ywf"/>
+                            <constraint firstItem="yDU-7Q-7l9" firstAttribute="leading" secondItem="Ljp-ow-WFR" secondAttribute="trailing" id="ZRq-tJ-jPj"/>
                             <constraint firstItem="5ky-FE-BSV" firstAttribute="top" secondItem="mEI-dy-iRj" secondAttribute="bottom" id="b2q-w5-EdQ"/>
+                            <constraint firstItem="PWL-dm-yiP" firstAttribute="centerY" secondItem="Ljp-ow-WFR" secondAttribute="centerY" id="bOj-k6-Y1m"/>
+                            <constraint firstItem="wuK-FU-Jsw" firstAttribute="centerY" secondItem="Ljp-ow-WFR" secondAttribute="centerY" id="cNL-fK-cFD"/>
+                            <constraint firstItem="6Ck-db-cXG" firstAttribute="width" secondItem="wuK-FU-Jsw" secondAttribute="width" id="g9d-iq-RYo"/>
                             <constraint firstItem="yDU-7Q-7l9" firstAttribute="centerX" secondItem="mEI-dy-iRj" secondAttribute="centerX" id="h4I-48-5ZT"/>
                             <constraint firstItem="mEI-dy-iRj" firstAttribute="leading" secondItem="alf-af-zCd" secondAttribute="leadingMargin" id="kZS-ye-D8q"/>
+                            <constraint firstItem="Ljp-ow-WFR" firstAttribute="height" secondItem="yDU-7Q-7l9" secondAttribute="height" id="kmh-JT-ZCE"/>
+                            <constraint firstItem="wuK-FU-Jsw" firstAttribute="leading" secondItem="yDU-7Q-7l9" secondAttribute="trailing" id="mee-c9-gmC"/>
                             <constraint firstItem="mEI-dy-iRj" firstAttribute="top" secondItem="epd-A7-8TI" secondAttribute="bottom" id="qch-kx-Cus"/>
-                            <constraint firstItem="yDU-7Q-7l9" firstAttribute="width" secondItem="mEI-dy-iRj" secondAttribute="width" id="tyn-jP-UD4"/>
+                            <constraint firstItem="Ljp-ow-WFR" firstAttribute="leading" secondItem="alf-af-zCd" secondAttribute="leadingMargin" id="rJw-QU-dFr"/>
+                            <constraint firstItem="6Ck-db-cXG" firstAttribute="height" secondItem="wuK-FU-Jsw" secondAttribute="height" id="rq0-5h-Gms"/>
+                            <constraint firstItem="6Ck-db-cXG" firstAttribute="centerY" secondItem="wuK-FU-Jsw" secondAttribute="centerY" id="sSM-Dq-x8x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wuK-FU-Jsw" secondAttribute="trailing" id="sxt-VO-8Rb"/>
+                            <constraint firstItem="wuK-FU-Jsw" firstAttribute="height" secondItem="Ljp-ow-WFR" secondAttribute="height" id="t6M-S7-mEr"/>
+                            <constraint firstItem="yDU-7Q-7l9" firstAttribute="width" secondItem="mEI-dy-iRj" secondAttribute="width" multiplier="1:2" id="tyn-jP-UD4"/>
+                            <constraint firstItem="PWL-dm-yiP" firstAttribute="centerX" secondItem="Ljp-ow-WFR" secondAttribute="centerX" id="vlp-UP-RWG"/>
                             <constraint firstItem="yDU-7Q-7l9" firstAttribute="height" secondItem="mEI-dy-iRj" secondAttribute="height" id="xWJ-Ho-ZAM"/>
+                            <constraint firstItem="PWL-dm-yiP" firstAttribute="width" secondItem="Ljp-ow-WFR" secondAttribute="width" id="zeF-Gh-FmQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MtV-hE-oPF"/>
                     <connections>
                         <outlet property="dateLabel" destination="mEI-dy-iRj" id="vXR-I1-Ca2"/>
+                        <outlet property="tomorrowButton" destination="wuK-FU-Jsw" id="xQw-Wp-LxX"/>
+                        <outlet property="tomorrowLabel" destination="6Ck-db-cXG" id="0qi-rG-iRp"/>
+                        <outlet property="yesterdayButton" destination="Ljp-ow-WFR" id="Idd-u5-wNA"/>
+                        <outlet property="yesterdayLabel" destination="PWL-dm-yiP" id="75f-Fn-0Lg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ey-4v-lNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
