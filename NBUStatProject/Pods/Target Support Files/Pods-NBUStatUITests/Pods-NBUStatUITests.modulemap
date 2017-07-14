@@ -1,0 +1,6 @@
+framework module Pods_NBUStatUITests {
+  umbrella header "Pods-NBUStatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
