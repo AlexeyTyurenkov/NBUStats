@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -52,7 +51,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ky-FE-BSV">
-                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="148" width="375" height="519"/>
                                 <connections>
                                     <segue destination="um8-nT-vni" kind="embed" identifier="CurrencyByDate" id="sho-3p-PFx"/>
                                 </connections>
@@ -70,6 +69,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Wev-XH-OSV">
+                                <rect key="frame" x="0.0" y="104" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -79,14 +82,17 @@
                             <constraint firstItem="6Ck-db-cXG" firstAttribute="centerX" secondItem="wuK-FU-Jsw" secondAttribute="centerX" id="EPx-sQ-ptH"/>
                             <constraint firstItem="PWL-dm-yiP" firstAttribute="height" secondItem="Ljp-ow-WFR" secondAttribute="height" id="EvM-8y-nMh"/>
                             <constraint firstItem="Ljp-ow-WFR" firstAttribute="centerY" secondItem="yDU-7Q-7l9" secondAttribute="centerY" id="HKL-Vf-l32"/>
+                            <constraint firstItem="5ky-FE-BSV" firstAttribute="top" secondItem="Wev-XH-OSV" secondAttribute="bottom" id="N2s-Qr-lu3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mEI-dy-iRj" secondAttribute="trailing" id="P2o-iI-htJ"/>
+                            <constraint firstItem="Wev-XH-OSV" firstAttribute="top" secondItem="mEI-dy-iRj" secondAttribute="bottom" id="TwM-oO-mfC"/>
                             <constraint firstItem="yDU-7Q-7l9" firstAttribute="centerY" secondItem="mEI-dy-iRj" secondAttribute="centerY" id="Ygn-AB-ywf"/>
                             <constraint firstItem="yDU-7Q-7l9" firstAttribute="leading" secondItem="Ljp-ow-WFR" secondAttribute="trailing" id="ZRq-tJ-jPj"/>
-                            <constraint firstItem="5ky-FE-BSV" firstAttribute="top" secondItem="mEI-dy-iRj" secondAttribute="bottom" id="b2q-w5-EdQ"/>
                             <constraint firstItem="PWL-dm-yiP" firstAttribute="centerY" secondItem="Ljp-ow-WFR" secondAttribute="centerY" id="bOj-k6-Y1m"/>
                             <constraint firstItem="wuK-FU-Jsw" firstAttribute="centerY" secondItem="Ljp-ow-WFR" secondAttribute="centerY" id="cNL-fK-cFD"/>
+                            <constraint firstItem="Wev-XH-OSV" firstAttribute="leading" secondItem="alf-af-zCd" secondAttribute="leading" id="du1-E5-cDH"/>
                             <constraint firstItem="6Ck-db-cXG" firstAttribute="width" secondItem="wuK-FU-Jsw" secondAttribute="width" id="g9d-iq-RYo"/>
                             <constraint firstItem="yDU-7Q-7l9" firstAttribute="centerX" secondItem="mEI-dy-iRj" secondAttribute="centerX" id="h4I-48-5ZT"/>
+                            <constraint firstAttribute="trailing" secondItem="Wev-XH-OSV" secondAttribute="trailing" id="hs8-ap-ndq"/>
                             <constraint firstItem="mEI-dy-iRj" firstAttribute="leading" secondItem="alf-af-zCd" secondAttribute="leadingMargin" id="kZS-ye-D8q"/>
                             <constraint firstItem="Ljp-ow-WFR" firstAttribute="height" secondItem="yDU-7Q-7l9" secondAttribute="height" id="kmh-JT-ZCE"/>
                             <constraint firstItem="wuK-FU-Jsw" firstAttribute="leading" secondItem="yDU-7Q-7l9" secondAttribute="trailing" id="mee-c9-gmC"/>
@@ -120,7 +126,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="CurrencyRateTableViewController" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="um8-nT-vni" customClass="CurrencyRateTableViewController" customModule="NBUStat" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" id="YRW-A1-a2E">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>

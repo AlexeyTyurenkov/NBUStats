@@ -62,6 +62,18 @@ class CurrencyRateTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
+    {
+        let more = UITableViewRowAction(style: .normal, title: "Favorite") {
+            action, index in
+            print("More")
+        }
+        
+        return [more]
+        
+    }
+    
+    
 //    // MARK: - Table view data source
 //
 //    override func numberOfSections(in tableView: UITableView) -> Int {

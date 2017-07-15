@@ -292,6 +292,7 @@
 				TargetAttributes = {
 					C61F1F021F18B06700F0AF87 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 334767C6XM;
 						ProvisioningStyle = Automatic;
 					};
 					C61F1F191F18B06700F0AF87 = {
@@ -670,7 +671,10 @@
 			baseConfigurationReference = 74770927A5A92E4B1862A239 /* Pods-NBUStat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 334767C6XM;
 				INFOPLIST_FILE = NBUStat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.NBUStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -683,7 +687,10 @@
 			baseConfigurationReference = AC1CD9401E878043DEA54D65 /* Pods-NBUStat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 334767C6XM;
 				INFOPLIST_FILE = NBUStat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.NBUStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
