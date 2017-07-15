@@ -24,7 +24,12 @@ class CurrencyRate
     init(dictionary: [String:AnyObject]) {
         r030 = String(format: "%i", (dictionary["r030"] as? Int) ?? 0)
         name = (dictionary["txt"] as? String) ?? ""
-        rate = String(format: "%@", (dictionary["rate"] as? NSNumber) ?? 0)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = NumberFormatter.Style.decimal
+        formatter.roundingMode = NumberFormatter.RoundingMode.halfUp
+        formatter.maximumFractionDigits = 8
+        let rate = NSNumber(value: (dictionary["rate"] as? Double ?? 0.0))
+        self.rate = formatter.string(from: rate) ?? ""
         cc = (dictionary["cc"] as? String) ?? ""
         exchangedate = (dictionary["exchangedate"] as? String) ?? ""
     }

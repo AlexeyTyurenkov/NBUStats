@@ -33,6 +33,6 @@ extension CurrencyRateTableViewCell
     {
         currencyName.text = currencyRate.cc
         currencyFullName.text = currencyRate.name
-        currenceRateLabel.text = currencyRate.rate
+        currenceRateLabel.text = currencyRate.rate.description
     }
 }
