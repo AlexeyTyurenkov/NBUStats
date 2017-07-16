@@ -64,9 +64,10 @@ class CurrencyRateTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
     {
-        let more = UITableViewRowAction(style: .normal, title: "Favorite") {
+        let more = UITableViewRowAction(style: .normal, title: manager.isFavorite(atSection: indexPath.section, andIndex: indexPath.row) ? "UnMark" : "Mark") {
             action, index in
-            print("More")
+            self.manager.toggleMark(section: index.section, index: index.row)
+            self.tableView.reloadData()
         }
         
         return [more]
