@@ -29,21 +29,22 @@ class CurrencyRateTableViewController: UITableViewController {
         }
         manager.loadList(date: Date())
         self.searchViewController = UISearchController(searchResultsController: nil)
-        tableView.tableHeaderView = searchViewController!.searchBar
         definesPresentationContext = true
         self.searchViewController?.hidesNavigationBarDuringPresentation = false
 
         self.searchViewController?.dimsBackgroundDuringPresentation = false
         self.searchViewController?.searchResultsUpdater = manager
         self.searchViewController?.searchBar.delegate = manager
-//        self.definesPresentationContext = true
+        self.searchViewController?.searchBar.placeholder = "Шукати за кодом або назвою"
+        self.searchViewController?.searchBar.sizeToFit()
+        tableView.tableHeaderView = searchViewController!.searchBar
+
         manager.cancelSearch = { [weak self] in
             DispatchQueue.main.async {
                 self?.searchViewController?.isActive = false
                 self?.searchViewController?.searchBar.text = ""
                 self?.searchViewController?.searchBar.resignFirstResponder()
-//                self?.tableView.tableHeaderView = self?.searchViewController!.searchBar
-                self?.searchViewController?.dismiss(animated: true, completion: { 
+                self?.searchViewController?.dismiss(animated: true, completion: {
                     self?.tableView.reloadData()
                     self?.refreshControl?.endRefreshing()
     
