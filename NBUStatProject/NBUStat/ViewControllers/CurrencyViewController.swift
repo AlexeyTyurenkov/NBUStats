@@ -58,7 +58,6 @@ class CurrencyViewController: UIViewController {
         // Pass the selected object to the new view controller.
         presenter = segue.destination as? CurrencyRateTableViewController
         presenter?.setDate(date: date)
-        
     }
  
     

@@ -34,4 +34,10 @@ class CurrencyRate
         exchangedate = (dictionary["exchangedate"] as? String) ?? ""
     }
     
+    func contains(_ searchTerm: String) -> Bool
+    {
+        let localizedTerm = searchTerm.localizedLowercase
+        return (searchTerm == "" || cc.lowercased().contains(localizedTerm) || name.lowercased().contains(localizedTerm) || r030.lowercased().contains(localizedTerm))
+    }
+    
 }

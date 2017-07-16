@@ -11,10 +11,14 @@ import UIKit
 import Alamofire
 
 class CurrencyRateManager: NSObject {
-    private(set) var rates: [CurrencyRate] = []
+    private(set) var commonRates: [CurrencyRate] = []
     private(set) var favorites: [CurrencyRate] = []
+    private(set) var rates: [CurrencyRate] = []
     private(set) var favoriteCodes:Set<String> = Set(UserDefaults.standard.stringArray(forKey: "favorite-rates") ?? [])
-    func loadList(date: Date, completion: @escaping ()->())
+    
+    var updateCallBack:()->() = {}
+    
+    func loadList(date: Date)
     {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
@@ -27,17 +31,8 @@ class CurrencyRateManager: NSObject {
                                 
                                     if let result = result as? [[String:AnyObject]]
                                     {
-                                        let rates = result.map{ CurrencyRate.init(dictionary: $0) }
-                                        if self.favoriteCodes.count > 0
-                                        {
-                                            self.favorites = rates.filter({ self.favoriteCodes.contains($0.r030)})
-                                            self.rates     = rates.filter({ !self.favoriteCodes.contains($0.r030)})
-                                        }
-                                        else
-                                        {
-                                            self.rates = rates
-                                        }
-                                        completion()
+                                        self.rates = result.map{ CurrencyRate.init(dictionary: $0) }
+                                        self.set(rates: self.rates, searchTerm: "")
                                     }
                                 
                                 default: break;
@@ -65,7 +60,7 @@ class CurrencyRateManager: NSObject {
             if let index = favorites.index(where: { $0.r030 == removed.r030})
             {
                 favorites.remove(at: index)
-                rates.insert(removed, at: 0)
+                commonRates.insert(removed, at: 0)
                 favoriteCodes.remove(removed.r030)
                 UserDefaults.standard.set(Array(favoriteCodes), forKey: "favorite-rates")
                 UserDefaults.standard.synchronize()
@@ -73,16 +68,31 @@ class CurrencyRateManager: NSObject {
         }
         else
         {
-            let inserted = rates[index]
-            if let index = rates.index(where: { $0.r030 == inserted.r030})
+            let inserted = commonRates[index]
+            if let index = commonRates.index(where: { $0.r030 == inserted.r030})
             {
                 favorites.append(inserted)
-                rates.remove(at: index)
+                commonRates.remove(at: index)
                 favoriteCodes.insert(inserted.r030)
                 UserDefaults.standard.set(Array(favoriteCodes), forKey: "favorite-rates")
                 UserDefaults.standard.synchronize()
             }
         }
+    }
+    
+    func set(rates: [CurrencyRate], searchTerm: String)
+    {
+        if self.favoriteCodes.count > 0
+        {
+            self.favorites = rates.filter({ self.favoriteCodes.contains($0.r030) && (searchTerm == "" || $0.cc.contains(searchTerm) || $0.name.contains(searchTerm) || $0.r030.contains(searchTerm)) })
+            self.commonRates     = rates.filter({ !self.favoriteCodes.contains($0.r030) && $0.contains(searchTerm) })
+        }
+        else
+        {
+            self.favorites   = []
+            self.commonRates = rates.filter( { searchTerm == "" || $0.cc.contains(searchTerm) || $0.name.contains(searchTerm) || $0.r030.contains(searchTerm) })
+        }
+        self.updateCallBack()
     }
     
 }
@@ -102,12 +112,12 @@ extension CurrencyRateManager: UITableViewDataSource
             }
             else
             {
-                return rates.count
+                return commonRates.count
             }
         }
         else
         {
-            return rates.count
+            return commonRates.count
         }
     }
     
@@ -120,7 +130,7 @@ extension CurrencyRateManager: UITableViewDataSource
         }
         else
         {
-            cell?.configure(currencyRate: rates[indexPath.row])
+            cell?.configure(currencyRate: commonRates[indexPath.row])
         }
         return cell ?? UITableViewCell()
     }
@@ -142,5 +152,12 @@ extension CurrencyRateManager: UITableViewDataSource
                 return "Курси Валют"
             }
         }
+    }
+}
+
+extension CurrencyRateManager: UISearchResultsUpdating
+{
+    func updateSearchResults(for searchController: UISearchController) {
+        self.set(rates: rates, searchTerm: searchController.searchBar.text ?? "")
     }
 }

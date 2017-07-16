@@ -14,18 +14,27 @@ class CurrencyRateTableViewController: UITableViewController {
     
     @IBOutlet var manager: CurrencyRateManager!
     
-    
+    var searchViewController: UISearchController?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = 88
         tableView.tableFooterView = UIView()
         self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: UIControlEvents.valueChanged)
-        manager.loadList(date: Date()) {
+        manager.updateCallBack = { [weak self] in
             DispatchQueue.main.async {
-                self.tableView.reloadData()
-                self.refreshControl?.endRefreshing()
+                self?.tableView.reloadData()
+                self?.refreshControl?.endRefreshing()
             }
         }
+
+        manager.loadList(date: Date())
+        self.searchViewController = UISearchController(searchResultsController: nil)
+        tableView.tableHeaderView = searchViewController!.searchBar
+        definesPresentationContext = true
+        self.searchViewController?.dimsBackgroundDuringPresentation = false
+        self.searchViewController?.searchResultsUpdater = manager
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -35,12 +44,7 @@ class CurrencyRateTableViewController: UITableViewController {
     }
 
     func handleRefresh(_ refreshControl: UIRefreshControl) {
-        manager.loadList(date: Date()) {
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-                refreshControl.endRefreshing()
-            }
-        }
+        manager.loadList(date: Date())
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,12 +58,7 @@ class CurrencyRateTableViewController: UITableViewController {
     
     public func setDate(date: Date)
     {
-        manager.loadList(date: date) {
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-                self.refreshControl?.endRefreshing()
-            }
-        }
+        manager.loadList(date: date)
     }
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
