@@ -13,6 +13,8 @@ class CurrencyRateTableViewCell: UITableViewCell {
     @IBOutlet weak var currencyFullName: UILabel!
     @IBOutlet weak var currencyName: UILabel!
     @IBOutlet weak var currenceRateLabel: UILabel!
+    @IBOutlet weak var oldRate: UILabel!
+    @IBOutlet weak var differenceLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -33,6 +35,8 @@ extension CurrencyRateTableViewCell
     {
         currencyName.text = currencyRate.cc
         currencyFullName.text = currencyRate.name
-        currenceRateLabel.text = currencyRate.rate.description
+        currenceRateLabel.text = currencyRate.todayRate
+        oldRate.text = currencyRate.yesterdayRate
+        differenceLabel.text = currencyRate.difference
     }
 }

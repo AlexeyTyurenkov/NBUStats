@@ -27,14 +27,30 @@ class CurrencyRateTableViewController: UITableViewController {
                 self?.refreshControl?.endRefreshing()
             }
         }
-
         manager.loadList(date: Date())
         self.searchViewController = UISearchController(searchResultsController: nil)
         tableView.tableHeaderView = searchViewController!.searchBar
         definesPresentationContext = true
+        self.searchViewController?.hidesNavigationBarDuringPresentation = false
+
         self.searchViewController?.dimsBackgroundDuringPresentation = false
         self.searchViewController?.searchResultsUpdater = manager
-        
+        self.searchViewController?.searchBar.delegate = manager
+//        self.definesPresentationContext = true
+        manager.cancelSearch = { [weak self] in
+            DispatchQueue.main.async {
+                self?.searchViewController?.isActive = false
+                self?.searchViewController?.searchBar.text = ""
+                self?.searchViewController?.searchBar.resignFirstResponder()
+//                self?.tableView.tableHeaderView = self?.searchViewController!.searchBar
+                self?.searchViewController?.dismiss(animated: true, completion: { 
+                    self?.tableView.reloadData()
+                    self?.refreshControl?.endRefreshing()
+    
+                })
+                
+            }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

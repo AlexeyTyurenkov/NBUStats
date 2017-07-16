@@ -17,19 +17,21 @@ class CurrencyRate
 {
     var r030: String = ""
     var name: String = ""
-    var rate: String = ""
+    var newRate: NSNumber = 0.0
     var cc: String = ""
     var exchangedate: String = ""
+    var oldRate: NSNumber?
+
+    private var formatter: NumberFormatter
     
     init(dictionary: [String:AnyObject]) {
         r030 = String(format: "%i", (dictionary["r030"] as? Int) ?? 0)
         name = (dictionary["txt"] as? String) ?? ""
-        let formatter = NumberFormatter()
+        formatter = NumberFormatter()
         formatter.numberStyle = NumberFormatter.Style.decimal
         formatter.roundingMode = NumberFormatter.RoundingMode.halfUp
         formatter.maximumFractionDigits = 8
-        let rate = NSNumber(value: (dictionary["rate"] as? Double ?? 0.0))
-        self.rate = formatter.string(from: rate) ?? ""
+        self.newRate = NSNumber(value: (dictionary["rate"] as? Double ?? 0.0)) //
         cc = (dictionary["cc"] as? String) ?? ""
         exchangedate = (dictionary["exchangedate"] as? String) ?? ""
     }
@@ -40,4 +42,26 @@ class CurrencyRate
         return (searchTerm == "" || cc.lowercased().contains(localizedTerm) || name.lowercased().contains(localizedTerm) || r030.lowercased().contains(localizedTerm))
     }
     
+    var todayRate: String
+    {
+        return formatted(number: newRate)
+    }
+    
+    var yesterdayRate: String
+    {
+        return formatted(number: oldRate)
+    }
+    
+    var difference: String
+    {
+        guard let oldRate = oldRate else { return ""}
+        let diff = newRate.decimalValue - oldRate.decimalValue
+        return formatted(number: diff as NSNumber)
+    }
+    
+    private func formatted(number: NSNumber?) -> String
+    {
+        guard let number = number else { return "" }
+        return formatter.string(from: number) ?? ""
+    }
 }

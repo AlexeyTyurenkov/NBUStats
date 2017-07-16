@@ -117,7 +117,7 @@
         <!--Currency Rate Table View Controller-->
         <scene sceneID="Bvc-Ze-6rN">
             <objects>
-                <tableViewController storyboardIdentifier="CurrencyRateTableViewController" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="um8-nT-vni" customClass="CurrencyRateTableViewController" customModule="NBUStat" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CurrencyRateTableViewController" extendedLayoutIncludesOpaqueBars="YES" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="um8-nT-vni" customClass="CurrencyRateTableViewController" customModule="NBUStat" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" id="YRW-A1-a2E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,22 +148,40 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIH-yT-Auc">
+                                            <rect key="frame" x="10" y="46" width="35.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcZ-u6-eDC">
+                                            <rect key="frame" x="166" y="44.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="rcZ-u6-eDC" firstAttribute="centerX" secondItem="hx5-iA-2pu" secondAttribute="centerX" id="7oG-et-ZQe"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="DlS-2y-dca" secondAttribute="trailing" constant="0.5" id="COC-ic-K89"/>
                                         <constraint firstItem="DlS-2y-dca" firstAttribute="top" secondItem="35y-S7-zmB" secondAttribute="bottom" constant="5.5" id="LwH-NA-lHp"/>
                                         <constraint firstItem="VgB-sW-G6I" firstAttribute="top" secondItem="hx5-iA-2pu" secondAttribute="topMargin" constant="3" id="WH6-LH-hoU"/>
                                         <constraint firstItem="35y-S7-zmB" firstAttribute="centerY" secondItem="VgB-sW-G6I" secondAttribute="centerY" id="e0h-q8-WlP"/>
+                                        <constraint firstItem="bIH-yT-Auc" firstAttribute="leading" secondItem="VgB-sW-G6I" secondAttribute="leading" id="eOi-wA-a52"/>
                                         <constraint firstItem="VgB-sW-G6I" firstAttribute="leading" secondItem="hx5-iA-2pu" secondAttribute="leading" constant="10" id="fIA-U7-Vea"/>
                                         <constraint firstItem="35y-S7-zmB" firstAttribute="leading" secondItem="VgB-sW-G6I" secondAttribute="trailing" constant="10" id="gEp-EB-zvq"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="DlS-2y-dca" secondAttribute="bottom" constant="4.5" id="m2k-Ze-FM2"/>
+                                        <constraint firstItem="bIH-yT-Auc" firstAttribute="centerY" secondItem="DlS-2y-dca" secondAttribute="centerY" id="qHg-ww-MhO"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="35y-S7-zmB" secondAttribute="trailing" id="tgd-r8-7LB"/>
+                                        <constraint firstItem="rcZ-u6-eDC" firstAttribute="centerY" secondItem="bIH-yT-Auc" secondAttribute="centerY" id="x1H-Hp-Hh7"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="currenceRateLabel" destination="DlS-2y-dca" id="ZtA-9r-TM9"/>
                                     <outlet property="currencyFullName" destination="35y-S7-zmB" id="F7G-5j-2oX"/>
                                     <outlet property="currencyName" destination="VgB-sW-G6I" id="Q1G-vf-hnb"/>
+                                    <outlet property="differenceLabel" destination="rcZ-u6-eDC" id="KLz-6W-fZ2"/>
+                                    <outlet property="oldRate" destination="bIH-yT-Auc" id="Bsm-y1-w3g"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -184,7 +202,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ENd-Yb-ELw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="4j6-mg-oUH" customClass="CurrencyRateManager" customModule="NBUStat" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="-798"/>
+            <point key="canvasLocation" x="2244" y="-572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gDF-6u-HwN">

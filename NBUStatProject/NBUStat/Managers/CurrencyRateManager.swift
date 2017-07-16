@@ -17,8 +17,9 @@ class CurrencyRateManager: NSObject {
     private(set) var favoriteCodes:Set<String> = Set(UserDefaults.standard.stringArray(forKey: "favorite-rates") ?? [])
     
     var updateCallBack:()->() = {}
+    var cancelSearch: ()->() = {}
     
-    func loadList(date: Date)
+    func loadList(date: Date, completion: (([CurrencyRate])->())? = nil)
     {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
@@ -32,13 +33,28 @@ class CurrencyRateManager: NSObject {
                                     if let result = result as? [[String:AnyObject]]
                                     {
                                         self.rates = result.map{ CurrencyRate.init(dictionary: $0) }
+                                        completion?(self.rates)
                                         self.set(rates: self.rates, searchTerm: "")
+                                        if completion == nil
+                                        {
+                                            self.loadList(date: date.addingTimeInterval(-1*24*60*60), completion: { (oldrates) in
+                                                oldrates.forEach({ (oldrate) in
+                                                    if let index = self.rates.index(where: { (newrate) in oldrate.r030 == newrate.r030 })
+                                                    {
+                                                        self.rates[index].oldRate = oldrate.newRate
+                                                    }
+                                                })
+                                            })
+                                        }
                                     }
                                 
                                 default: break;
                             }
         }
     }
+    
+    
+    
     
     func isFavorite(atSection section: Int, andIndex row: Int) -> Bool
     {
@@ -159,5 +175,12 @@ extension CurrencyRateManager: UISearchResultsUpdating
 {
     func updateSearchResults(for searchController: UISearchController) {
         self.set(rates: rates, searchTerm: searchController.searchBar.text ?? "")
+    }
+}
+
+extension CurrencyRateManager: UISearchBarDelegate
+{
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        cancelSearch()
     }
 }
