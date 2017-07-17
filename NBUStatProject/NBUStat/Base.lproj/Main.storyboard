@@ -22,21 +22,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6FC-jR-Xq9">
+                                <rect key="frame" x="145" y="64" width="85.5" height="40"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CUy-sc-ePM" id="Aqw-Vu-ggN"/>
+                                </connections>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDU-7Q-7l9">
-                                <rect key="frame" x="144.5" y="64" width="85.5" height="40"/>
+                                <rect key="frame" x="145" y="64" width="85.5" height="40"/>
                                 <connections>
                                     <action selector="changeDateButtonPressed:" destination="CUy-sc-ePM" eventType="touchUpInside" id="d49-5r-bad"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljp-ow-WFR" userLabel="PreviousButton">
-                                <rect key="frame" x="16" y="64" width="128.5" height="40"/>
+                                <rect key="frame" x="16" y="64" width="129" height="40"/>
                                 <accessibility key="accessibilityConfiguration" label="PreviousButton"/>
                                 <connections>
                                     <action selector="previousButtonPressed:" destination="CUy-sc-ePM" eventType="touchUpInside" id="zcq-sy-mgD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWL-dm-yiP">
-                                <rect key="frame" x="16" y="64" width="128.5" height="40"/>
+                                <rect key="frame" x="16" y="64" width="129" height="40"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,14 +61,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuK-FU-Jsw" userLabel="NextButton">
-                                <rect key="frame" x="230" y="64" width="129" height="40"/>
+                                <rect key="frame" x="230.5" y="64" width="128.5" height="40"/>
                                 <accessibility key="accessibilityConfiguration" label="NextButton"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="CUy-sc-ePM" eventType="touchUpInside" id="OlC-eL-JKG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ck-db-cXG">
-                                <rect key="frame" x="230" y="64" width="129" height="40"/>
+                                <rect key="frame" x="230.5" y="64" width="128.5" height="40"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,6 +84,8 @@
                         <constraints>
                             <constraint firstItem="dg9-6Y-owa" firstAttribute="top" secondItem="5ky-FE-BSV" secondAttribute="bottom" id="0pS-od-rmA"/>
                             <constraint firstItem="5ky-FE-BSV" firstAttribute="leading" secondItem="alf-af-zCd" secondAttribute="leading" id="DQr-66-6KB"/>
+                            <constraint firstItem="6FC-jR-Xq9" firstAttribute="width" secondItem="yDU-7Q-7l9" secondAttribute="width" id="Dik-RD-5Nr"/>
+                            <constraint firstItem="6FC-jR-Xq9" firstAttribute="height" secondItem="yDU-7Q-7l9" secondAttribute="height" id="Dms-cP-ZQp"/>
                             <constraint firstAttribute="trailing" secondItem="5ky-FE-BSV" secondAttribute="trailing" id="E8n-kZ-siK"/>
                             <constraint firstItem="6Ck-db-cXG" firstAttribute="centerX" secondItem="wuK-FU-Jsw" secondAttribute="centerX" id="EPx-sQ-ptH"/>
                             <constraint firstItem="PWL-dm-yiP" firstAttribute="height" secondItem="Ljp-ow-WFR" secondAttribute="height" id="EvM-8y-nMh"/>
@@ -95,10 +107,12 @@
                             <constraint firstItem="6Ck-db-cXG" firstAttribute="centerY" secondItem="wuK-FU-Jsw" secondAttribute="centerY" id="sSM-Dq-x8x"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wuK-FU-Jsw" secondAttribute="trailing" id="sxt-VO-8Rb"/>
                             <constraint firstItem="wuK-FU-Jsw" firstAttribute="height" secondItem="Ljp-ow-WFR" secondAttribute="height" id="t6M-S7-mEr"/>
+                            <constraint firstItem="6FC-jR-Xq9" firstAttribute="centerY" secondItem="yDU-7Q-7l9" secondAttribute="centerY" id="twG-Xt-mIl"/>
                             <constraint firstItem="yDU-7Q-7l9" firstAttribute="width" secondItem="mEI-dy-iRj" secondAttribute="width" multiplier="1:4" id="tyn-jP-UD4"/>
                             <constraint firstItem="PWL-dm-yiP" firstAttribute="centerX" secondItem="Ljp-ow-WFR" secondAttribute="centerX" id="vlp-UP-RWG"/>
                             <constraint firstItem="yDU-7Q-7l9" firstAttribute="height" secondItem="mEI-dy-iRj" secondAttribute="height" id="xWJ-Ho-ZAM"/>
                             <constraint firstItem="PWL-dm-yiP" firstAttribute="width" secondItem="Ljp-ow-WFR" secondAttribute="width" id="zeF-Gh-FmQ"/>
+                            <constraint firstItem="6FC-jR-Xq9" firstAttribute="centerX" secondItem="yDU-7Q-7l9" secondAttribute="centerX" id="zrl-U8-1MR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Курси валют" id="MtV-hE-oPF">
@@ -110,6 +124,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="dateLabel" destination="mEI-dy-iRj" id="vXR-I1-Ca2"/>
+                        <outlet property="dateTextField" destination="6FC-jR-Xq9" id="Z2h-A4-0jB"/>
                         <outlet property="tomorrowButton" destination="wuK-FU-Jsw" id="xQw-Wp-LxX"/>
                         <outlet property="tomorrowLabel" destination="6Ck-db-cXG" id="0qi-rG-iRp"/>
                         <outlet property="yesterdayButton" destination="Ljp-ow-WFR" id="Idd-u5-wNA"/>

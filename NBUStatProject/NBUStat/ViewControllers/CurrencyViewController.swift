@@ -18,15 +18,55 @@ class CurrencyViewController: UIViewController {
     @IBOutlet weak var yesterdayButton: UIButton!
     @IBOutlet weak var yesterdayLabel: UILabel!
     @IBOutlet weak var tomorrowLabel: UILabel!
+    @IBOutlet weak var dateTextField: UITextField!
     
+    lazy var picker: UIDatePicker = {
+                    let picker = UIDatePicker()
+                    picker.date = self.date
+                    picker.datePickerMode = .date
+                    picker.maximumDate = Date()
+                    picker.minimumDate = Date(timeIntervalSince1970: 946727869)
+                    picker.sizeToFit()
+                    return picker
+    }()
+    
+    lazy var toolBar: UIToolbar = {
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .default
+        toolBar.isTranslucent = true
+        toolBar.tintColor =  UIColor.cyan
+        toolBar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        return toolBar
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateDate(label: dateLabel, date: date)
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(self.handleDynamicTypeChange(notification:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+        dateTextField.inputView = picker
+        dateTextField.inputAccessoryView = toolBar
     }
 
+    
+    func donePicker()
+    {
+        dateTextField.resignFirstResponder()
+        date = picker.date
+        presenter?.setDate(date: picker.date)
+        updateDate(label: dateLabel, date: picker.date)
+    }
+    
+    
+    func cancelPicker()
+    {
+        dateTextField.resignFirstResponder()
+    }
     
     func handleDynamicTypeChange(notification: Notification)
     {
@@ -47,8 +87,7 @@ class CurrencyViewController: UIViewController {
     
 
     @IBAction func changeDateButtonPressed(_ sender: Any) {
-        presenter?.setDate(date: date)
-        updateDate(label: dateLabel, date: date)
+        dateTextField.becomeFirstResponder()
     }
     
     @IBAction func previousButtonPressed(_ sender: Any) {

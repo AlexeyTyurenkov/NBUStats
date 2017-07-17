@@ -15,7 +15,8 @@ class CurrencyRateTableViewController: UITableViewController {
     @IBOutlet var manager: CurrencyRateManager!
     
     var searchViewController: UISearchController?
-
+    private var lastDate: Date = Date()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = 88
@@ -27,7 +28,7 @@ class CurrencyRateTableViewController: UITableViewController {
                 self?.refreshControl?.endRefreshing()
             }
         }
-        manager.loadList(date: Date())
+        manager.loadList(date: lastDate)
         self.searchViewController = UISearchController(searchResultsController: nil)
         definesPresentationContext = true
         self.searchViewController?.hidesNavigationBarDuringPresentation = false
@@ -61,7 +62,7 @@ class CurrencyRateTableViewController: UITableViewController {
     }
 
     func handleRefresh(_ refreshControl: UIRefreshControl) {
-        manager.loadList(date: Date())
+        manager.loadList(date: lastDate)
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,6 +76,7 @@ class CurrencyRateTableViewController: UITableViewController {
     
     public func setDate(date: Date)
     {
+        lastDate = date
         manager.loadList(date: date)
     }
     
