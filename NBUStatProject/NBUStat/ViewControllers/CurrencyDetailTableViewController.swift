@@ -55,8 +55,11 @@ class CurrencyDetailTableViewController: UITableViewController {
                             let rate = CurrencyRate(dictionary: result)
                             downloadedRates.append(rate)
                         }
-                        
-                    default: break;
+                    case .failure(let error):
+                        let alert = UIAlertController(title: "Помилка завантаження", message: error.localizedDescription, preferredStyle: .alert)
+                        DispatchQueue.main.async {
+                            self?.present(alert, animated: true, completion: nil)
+                        }
                     }
                     dispatchGroup.leave()
                 }

@@ -29,6 +29,13 @@ class CurrencyRateTableViewController: UITableViewController {
                 self?.refreshControl?.endRefreshing()
             }
         }
+        manager.errorMessage = {
+            [weak self] error in
+            let alert = UIAlertController(title: "Помилка завантаження", message: error.localizedDescription, preferredStyle: .alert)
+            DispatchQueue.main.async {
+                self?.present(alert, animated: true, completion: nil)
+            }
+        }
         manager.loadList(date: lastDate)
         self.searchViewController = UISearchController(searchResultsController: nil)
         definesPresentationContext = true

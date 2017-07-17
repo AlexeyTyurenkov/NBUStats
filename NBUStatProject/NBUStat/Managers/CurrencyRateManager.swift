@@ -18,6 +18,7 @@ class CurrencyRateManager: NSObject {
     
     var updateCallBack:()->() = {}
     var cancelSearch: ()->() = {}
+    var errorMessage: (Error)->() = { _ in }
     
     func loadList(date: Date, completion: (([CurrencyRate])->())? = nil)
     {
@@ -48,8 +49,8 @@ class CurrencyRateManager: NSObject {
                                         completion?(rates)
                                         self.set(rates: self.rates, searchTerm: "")
                                     }
-                                
-                                default: break;
+                                case .failure(let error):
+                                    self.errorMessage(error)
                             }
         }
     }
