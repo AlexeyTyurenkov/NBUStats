@@ -44,6 +44,8 @@ class CurrencyViewController: UIViewController {
         return toolBar
     }()
     
+    private(set) var detailedCurrency: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateDate(label: dateLabel, date: date)
@@ -113,8 +115,19 @@ class CurrencyViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        presenter = segue.destination as? CurrencyRateTableViewController
-        presenter?.setDate(date: date)
+        if let presenter = segue.destination as? CurrencyRateTableViewController
+        {
+            self.presenter = presenter
+            self.presenter?.setDate(date: date)
+            self.presenter?.openDetail = { [weak self](cc) in
+                self?.detailedCurrency = cc
+                if cc != ""
+                {
+                    
+                    self?.navigationController?.performSegue(withIdentifier: "ShowCurrency", sender: nil)
+                }
+            }
+        }
     }
  
     

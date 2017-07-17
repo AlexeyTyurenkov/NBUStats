@@ -170,6 +170,19 @@ extension CurrencyRateManager: UITableViewDataSource
             }
         }
     }
+    
+    func currencyCode(inSection section: Int, andIndex index: Int) -> String
+    {
+        if isFavorite(atSection: section , andIndex: index)
+        {
+            return favorites[index].cc
+        }
+        else
+        {
+            return commonRates[index].cc
+        }
+    }
+    
 }
 
 extension CurrencyRateManager: UISearchResultsUpdating

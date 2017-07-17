@@ -225,10 +225,63 @@
             </objects>
             <point key="canvasLocation" x="2244" y="-572"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Currency Detail Table View Controller-->
+        <scene sceneID="h5d-41-7by">
+            <objects>
+                <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="Jae-HR-X1a" customClass="CurrencyDetailTableViewController" customModule="NBUStat" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kph-no-lh9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoricalCurrencyRateTableViewCell" id="YZf-pF-3Dd" customClass="HistoricalCurrencyRateTableViewCell" customModule="NBUStat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YZf-pF-3Dd" id="1ht-Gq-H3Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsM-Br-Lcm">
+                                            <rect key="frame" x="8" y="12" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcL-2C-zm4">
+                                            <rect key="frame" x="325" y="12" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="fsM-Br-Lcm" secondAttribute="bottom" constant="3" id="Syf-BI-pAj"/>
+                                        <constraint firstItem="tcL-2C-zm4" firstAttribute="centerY" secondItem="fsM-Br-Lcm" secondAttribute="centerY" id="UNi-RK-pXU"/>
+                                        <constraint firstItem="fsM-Br-Lcm" firstAttribute="top" secondItem="1ht-Gq-H3Y" secondAttribute="topMargin" constant="4" id="WU7-Lp-xwN"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="tcL-2C-zm4" secondAttribute="trailing" id="f5o-Uu-cMU"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="fsM-Br-Lcm" secondAttribute="leading" id="rA5-gh-pb8"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="fsM-Br-Lcm" id="DvB-3U-2JM"/>
+                                    <outlet property="rateLabel" destination="tcL-2C-zm4" id="Ev9-Er-08Z"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Jae-HR-X1a" id="mFt-4K-v5a"/>
+                            <outlet property="delegate" destination="Jae-HR-X1a" id="DvA-un-3tM"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAJ-dE-eFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="170"/>
+        </scene>
+        <!--Currency Navigatoin Controller-->
         <scene sceneID="gDF-6u-HwN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KQZ-oe-ccn" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KQZ-oe-ccn" customClass="CurrencyNavigatoinController" customModule="NBUStat" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kod-R9-sUu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -237,6 +290,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="CUy-sc-ePM" kind="relationship" relationship="rootViewController" id="Ao0-ap-8R6"/>
+                        <segue destination="Jae-HR-X1a" kind="show" identifier="ShowCurrency" id="epl-6l-zMG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aL-NX-FyG" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -22,6 +22,9 @@
 		C61F1F411F18C18200F0AF87 /* CurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F401F18C18200F0AF87 /* CurrencyRateTableViewCell.swift */; };
 		C61F1F461F18C29500F0AF87 /* CurrencyRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F451F18C29500F0AF87 /* CurrencyRateManager.swift */; };
 		C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */; };
+		C66903831F1CED620063BA91 /* CurrencyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */; };
+		C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */; };
+		C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */; };
 		E0C84E5AC1FDD2E5657F7F05 /* Pods_NBUStatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AF7707F97B0A9C20B4BABE /* Pods_NBUStatTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,9 @@
 		C61F1F401F18C18200F0AF87 /* CurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
 		C61F1F451F18C29500F0AF87 /* CurrencyRateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateManager.swift; sourceTree = "<group>"; };
 		C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailTableViewController.swift; sourceTree = "<group>"; };
+		C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyNavigatoinController.swift; sourceTree = "<group>"; };
+		C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalCurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
 		EE964B0842E5E55D173C9DEC /* Pods-NBUStatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBUStatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBUStatTests/Pods-NBUStatTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,9 +198,11 @@
 		C61F1F3C1F18B58E00F0AF87 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */,
 				C61F1F3F1F18C16300F0AF87 /* Cells */,
 				C61F1F3D1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift */,
 				C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */,
+				C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				C61F1F401F18C18200F0AF87 /* CurrencyRateTableViewCell.swift */,
+				C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -513,7 +522,10 @@
 				C61F1F391F18B1EF00F0AF87 /* CurrencyRate.swift in Sources */,
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
 				C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */,
+				C66903831F1CED620063BA91 /* CurrencyDetailTableViewController.swift in Sources */,
 				C61F1F3B1F18B20100F0AF87 /* CurrencyRates.swift in Sources */,
+				C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */,
+				C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */,
 				C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */,
 				C61F1F461F18C29500F0AF87 /* CurrencyRateManager.swift in Sources */,
 				C61F1F411F18C18200F0AF87 /* CurrencyRateTableViewCell.swift in Sources */,

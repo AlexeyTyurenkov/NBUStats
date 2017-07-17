@@ -16,6 +16,7 @@ class CurrencyRateTableViewController: UITableViewController {
     
     var searchViewController: UISearchController?
     private var lastDate: Date = Date()
+    var openDetail: ((String)->())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,6 +93,10 @@ class CurrencyRateTableViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cc = self.manager.currencyCode(inSection: indexPath.section, andIndex: indexPath.row)
+        openDetail?(cc)
+    }
     
 //    // MARK: - Table view data source
 //
