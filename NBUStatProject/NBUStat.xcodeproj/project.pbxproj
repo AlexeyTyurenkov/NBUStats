@@ -25,6 +25,7 @@
 		C66903831F1CED620063BA91 /* CurrencyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */; };
 		C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */; };
 		C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */; };
+		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
 		E0C84E5AC1FDD2E5657F7F05 /* Pods_NBUStatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AF7707F97B0A9C20B4BABE /* Pods_NBUStatTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailTableViewController.swift; sourceTree = "<group>"; };
 		C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyNavigatoinController.swift; sourceTree = "<group>"; };
 		C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalCurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
+		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
 		EE964B0842E5E55D173C9DEC /* Pods-NBUStatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBUStatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBUStatTests/Pods-NBUStatTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +205,7 @@
 				C61F1F3D1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift */,
 				C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */,
 				C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */,
+				D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 			files = (
 				C61F1F3E1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift in Sources */,
 				C61F1F391F18B1EF00F0AF87 /* CurrencyRate.swift in Sources */,
+				D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */,
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
 				C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */,
 				C66903831F1CED620063BA91 /* CurrencyDetailTableViewController.swift in Sources */,

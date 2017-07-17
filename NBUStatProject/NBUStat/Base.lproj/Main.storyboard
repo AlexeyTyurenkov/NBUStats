@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KQZ-oe-ccn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KQZ-oe-ccn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -170,13 +170,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIH-yT-Auc">
-                                            <rect key="frame" x="10" y="45.5" width="39.5" height="19.5"/>
+                                            <rect key="frame" x="10" y="44.5" width="39.5" height="19.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcZ-u6-eDC">
-                                            <rect key="frame" x="165.5" y="45" width="43.5" height="21"/>
+                                            <rect key="frame" x="165.5" y="44" width="43.5" height="21"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -224,6 +224,64 @@
                 <customObject id="4j6-mg-oUH" customClass="CurrencyRateManager" customModule="NBUStat" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="2244" y="-572"/>
+        </scene>
+        <!--Currency Detail Container View Controller-->
+        <scene sceneID="OMf-aZ-uZj">
+            <objects>
+                <viewController storyboardIdentifier="CurrencyDetailContainerViewController" id="iTn-LE-mIM" customClass="CurrencyDetailContainerViewController" customModule="NBUStat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aEA-a8-pDb"/>
+                        <viewControllerLayoutGuide type="bottom" id="fhL-Wk-sEP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ome-RP-gZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vb2-sg-TiB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="Jae-HR-X1a" kind="embed" id="dKM-wR-oWs"/>
+                                </connections>
+                            </containerView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0q-BM-Bbb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="QLc-hL-Mvh">
+                                        <rect key="frame" x="157.5" y="303.5" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="E1U-4w-A7S"/>
+                                            <constraint firstAttribute="height" constant="60" id="zfn-nN-RlV"/>
+                                        </constraints>
+                                        <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QLc-hL-Mvh" firstAttribute="centerY" secondItem="k0q-BM-Bbb" secondAttribute="centerY" id="XLG-gn-zpe"/>
+                                    <constraint firstItem="QLc-hL-Mvh" firstAttribute="centerX" secondItem="k0q-BM-Bbb" secondAttribute="centerX" id="ZnQ-Td-Zsn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="k0q-BM-Bbb" secondAttribute="trailing" id="6Uy-xT-z5V"/>
+                            <constraint firstItem="Vb2-sg-TiB" firstAttribute="top" secondItem="ome-RP-gZ4" secondAttribute="topMargin" id="8t3-GG-Ccs"/>
+                            <constraint firstItem="k0q-BM-Bbb" firstAttribute="top" secondItem="ome-RP-gZ4" secondAttribute="topMargin" id="9Ed-XA-pfI"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="k0q-BM-Bbb" secondAttribute="bottom" id="Ghh-BQ-Oo9"/>
+                            <constraint firstItem="Vb2-sg-TiB" firstAttribute="leading" secondItem="ome-RP-gZ4" secondAttribute="leading" id="X76-9v-PjH"/>
+                            <constraint firstAttribute="trailing" secondItem="Vb2-sg-TiB" secondAttribute="trailing" id="YTa-bE-EsB"/>
+                            <constraint firstItem="k0q-BM-Bbb" firstAttribute="leading" secondItem="ome-RP-gZ4" secondAttribute="leading" id="bYn-6x-7xl"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Vb2-sg-TiB" secondAttribute="bottom" id="cTy-NP-6lW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityHolder" destination="k0q-BM-Bbb" id="5QR-SQ-Kj7"/>
+                        <outlet property="activityIndicator" destination="QLc-hL-Mvh" id="seo-9M-m61"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ert-PG-Jfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="171"/>
         </scene>
         <!--Currency Detail Table View Controller-->
         <scene sceneID="h5d-41-7by">
@@ -290,7 +348,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="CUy-sc-ePM" kind="relationship" relationship="rootViewController" id="Ao0-ap-8R6"/>
-                        <segue destination="Jae-HR-X1a" kind="show" identifier="ShowCurrency" id="epl-6l-zMG"/>
+                        <segue destination="iTn-LE-mIM" kind="show" identifier="ShowCurrency" id="0wY-vb-s7J"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aL-NX-FyG" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -88,4 +88,12 @@ class CurrencyRate
         return .same
     }
     
+    static func >(lhs:CurrencyRate, rhs: CurrencyRate)->Bool
+    {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        guard let ldate = formatter.date(from: lhs.exchangedate) else { return false }
+        guard let rdate = formatter.date(from: rhs.exchangedate) else { return true }
+        return ldate.compare(rdate) == ComparisonResult.orderedAscending
+    }
 }

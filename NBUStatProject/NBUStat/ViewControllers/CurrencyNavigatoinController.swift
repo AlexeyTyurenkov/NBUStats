@@ -34,7 +34,7 @@ class CurrencyNavigatoinController: UINavigationController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        if let detail = segue.destination as? CurrencyDetailTableViewController
+        if let detail = segue.destination as? CurrencyDetailContainerViewController
         {
             detail.currency = currencySource?.detailedCurrency ?? ""
         }

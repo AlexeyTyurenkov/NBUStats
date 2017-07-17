@@ -16,7 +16,7 @@ class CurrencyDetailTableViewController: UITableViewController {
     var currency: String = ""
     let dateFormatter = DateFormatter()
     private var rates: [CurrencyRate] = []
-    
+    weak var delegate: CurrencyDetailContainerViewController? 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +26,10 @@ class CurrencyDetailTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        self.title = currency
+        
         
         dateFormatter.dateFormat = "yyyyMMdd"
-        
+        delegate?.showActivity()
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let strongSelf = self else { return }
             let dispatchGroup = DispatchGroup()
@@ -65,9 +65,10 @@ class CurrencyDetailTableViewController: UITableViewController {
             dispatchGroup.wait()
             DispatchQueue.main.async {
                 self?.rates = downloadedRates.sorted(by: { (lhs, rhs) -> Bool in
-                    return lhs.exchangedate < rhs.exchangedate
+                    return rhs > lhs
                 })
                 strongSelf.tableView.reloadData()
+                strongSelf.delegate?.hideActivity()
             }
 
         }
