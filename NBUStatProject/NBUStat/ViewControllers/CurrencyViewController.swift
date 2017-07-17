@@ -24,8 +24,22 @@ class CurrencyViewController: UIViewController {
         super.viewDidLoad()
         updateDate(label: dateLabel, date: date)
         // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(self.handleDynamicTypeChange(notification:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
     }
 
+    
+    func handleDynamicTypeChange(notification: Notification)
+    {
+        presenter?.tableView.reloadData()
+        dateLabel.font = UIFont.preferredFont(forTextStyle: .body)
+        yesterdayLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
+        tomorrowLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
