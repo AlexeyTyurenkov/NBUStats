@@ -32,11 +32,10 @@ class CurrencyRateManager: NSObject {
                                 
                                     if let result = result as? [[String:AnyObject]]
                                     {
-                                        self.rates = result.map{ CurrencyRate.init(dictionary: $0) }
-                                        completion?(self.rates)
-                                        self.set(rates: self.rates, searchTerm: "")
+                                        let rates = result.map{ CurrencyRate.init(dictionary: $0) }
                                         if completion == nil
                                         {
+                                            self.rates = rates
                                             self.loadList(date: date.addingTimeInterval(-1*24*60*60), completion: { (oldrates) in
                                                 oldrates.forEach({ (oldrate) in
                                                     if let index = self.rates.index(where: { (newrate) in oldrate.r030 == newrate.r030 })
@@ -46,6 +45,8 @@ class CurrencyRateManager: NSObject {
                                                 })
                                             })
                                         }
+                                        completion?(rates)
+                                        self.set(rates: self.rates, searchTerm: "")
                                     }
                                 
                                 default: break;
