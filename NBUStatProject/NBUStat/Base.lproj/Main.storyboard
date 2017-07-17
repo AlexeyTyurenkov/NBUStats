@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KQZ-oe-ccn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KQZ-oe-ccn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Currency View Controller-->
+        <!--Курси валют-->
         <scene sceneID="o8T-Qy-m2o">
             <objects>
                 <viewController storyboardIdentifier="CurrencyViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="CUy-sc-ePM" customClass="CurrencyViewController" customModule="NBUStat" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,7 +101,13 @@
                             <constraint firstItem="PWL-dm-yiP" firstAttribute="width" secondItem="Ljp-ow-WFR" secondAttribute="width" id="zeF-Gh-FmQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MtV-hE-oPF"/>
+                    <navigationItem key="navigationItem" title="Курси валют" id="MtV-hE-oPF">
+                        <barButtonItem key="rightBarButtonItem" title="Сьогодні" id="lAU-Om-aCf">
+                            <connections>
+                                <action selector="todayButtonPressed:" destination="CUy-sc-ePM" id="TxJ-4i-BUK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateLabel" destination="mEI-dy-iRj" id="vXR-I1-Ca2"/>
                         <outlet property="tomorrowButton" destination="wuK-FU-Jsw" id="xQw-Wp-LxX"/>

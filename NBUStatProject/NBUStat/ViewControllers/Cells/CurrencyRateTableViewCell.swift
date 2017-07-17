@@ -38,5 +38,15 @@ extension CurrencyRateTableViewCell
         currenceRateLabel.text = currencyRate.todayRate
         oldRate.text = currencyRate.yesterdayRate
         differenceLabel.text = currencyRate.difference
+        switch currencyRate.change() {
+        case .goesdown:
+            differenceLabel.textColor = UIColor.red
+        case .grow:
+            differenceLabel.textColor = UIColor.green
+        case .same:
+            differenceLabel.textColor = UIColor.blue
+        default:
+            differenceLabel.textColor = UIColor.clear
+        }
     }
 }

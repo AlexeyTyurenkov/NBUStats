@@ -12,6 +12,14 @@ import Foundation
  
  {"r030":682,"txt":"Саудівський рiял","rate":7.016464,"cc":"SAR","exchangedate":"14.07.2017"}
  */
+enum DifferenceComparisonResult
+{
+    case same
+    case grow
+    case goesdown
+    case unknown
+}
+
 
 class CurrencyRate
 {
@@ -64,4 +72,20 @@ class CurrencyRate
         guard let number = number else { return "" }
         return formatter.string(from: number) ?? ""
     }
+    
+    func change() -> DifferenceComparisonResult
+    {
+        guard let oldrate = oldRate else { return .unknown }
+        let diff =  newRate.decimalValue - oldrate.decimalValue
+        if diff > 0
+        {
+            return .goesdown
+        }
+        if diff < 0
+        {
+            return .grow
+        }
+        return .same
+    }
+    
 }

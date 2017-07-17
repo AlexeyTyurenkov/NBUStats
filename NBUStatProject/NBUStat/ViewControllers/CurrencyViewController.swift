@@ -49,6 +49,10 @@ class CurrencyViewController: UIViewController {
         updateDate(label: dateLabel, date: date)
     }
     
+    @IBAction func todayButtonPressed(_ sender: Any) {
+        presenter?.setDate(date: Date())
+        updateDate(label: dateLabel, date: Date())
+    }
     
     // MARK: - Navigation
 
