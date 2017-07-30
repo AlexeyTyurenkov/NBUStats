@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_NBUStatTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_NBUStatTestsVersionString[];
+FOUNDATION_EXPORT double Pods_FinStat_UkraineVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_FinStat_UkraineVersionString[];
 

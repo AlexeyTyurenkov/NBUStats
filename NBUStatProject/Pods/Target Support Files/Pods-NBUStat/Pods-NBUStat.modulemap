@@ -1,6 +1,0 @@
-framework module Pods_NBUStat {
-  umbrella header "Pods-NBUStat-umbrella.h"
-
-  export *
-  module * { export * }
-}

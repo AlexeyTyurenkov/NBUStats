@@ -53,6 +53,10 @@ class CurrencyViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.handleDynamicTypeChange(notification:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
         dateTextField.inputView = picker
         dateTextField.inputAccessoryView = toolBar
+        
+        #if QA
+        print("QAAAAA")
+        #endif
     }
 
     
