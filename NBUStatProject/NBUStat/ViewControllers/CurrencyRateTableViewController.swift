@@ -46,6 +46,7 @@ class CurrencyRateTableViewController: UITableViewController {
         self.searchViewController?.searchBar.delegate = manager
         self.searchViewController?.searchBar.placeholder = "Шукати за кодом або назвою"
         self.searchViewController?.searchBar.sizeToFit()
+        self.searchViewController?.searchBar.tintColor = UIColor.white
         tableView.tableHeaderView = searchViewController!.searchBar
 
         manager.cancelSearch = { [weak self] in
