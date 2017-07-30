@@ -90,12 +90,13 @@ class CurrencyRateTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
     {
-        let more = UITableViewRowAction(style: .normal, title: manager.isFavorite(atSection: indexPath.section, andIndex: indexPath.row) ? "UnMark" : "Mark") {
+        let isFavorite = manager.isFavorite(atSection: indexPath.section, andIndex: indexPath.row)
+        let more = UITableViewRowAction(style: .normal, title: isFavorite ? "З обраних" : "В обрані") {
             action, index in
             self.manager.toggleMark(section: index.section, index: index.row)
             self.tableView.reloadData()
         }
-        
+        more.backgroundColor = isFavorite ? UIColor(colorLiteralRed: 213.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0) : UIColor(colorLiteralRed: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
         return [more]
         
     }
@@ -103,6 +104,11 @@ class CurrencyRateTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cc = self.manager.currencyCode(inSection: indexPath.section, andIndex: indexPath.row)
         openDetail?(cc)
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let header = view as? UITableViewHeaderFooterView  else { return }
+        header.textLabel?.textColor = UIColor(colorLiteralRed: 51.0/255.0, green: 51.0/255.0, blue: 51.0/255.0, alpha: 1.0)
     }
     
 //    // MARK: - Table view data source

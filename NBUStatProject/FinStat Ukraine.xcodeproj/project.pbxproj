@@ -55,17 +55,17 @@
 		9BFE933ACC3F86D33A6843AD /* Pods-NBUStatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBUStatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBUStatUITests/Pods-NBUStatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC1CD9401E878043DEA54D65 /* Pods-NBUStat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBUStat.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBUStat/Pods-NBUStat.release.xcconfig"; sourceTree = "<group>"; };
 		BC5E89F86AD0440CA6671393 /* Pods-NBUStatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBUStatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBUStatUITests/Pods-NBUStatUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C61F1F031F18B06700F0AF87 /* NBUStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBUStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61F1F031F18B06700F0AF87 /* FinStat Ukraine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FinStat Ukraine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61F1F061F18B06700F0AF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C61F1F0B1F18B06700F0AF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C61F1F0E1F18B06700F0AF87 /* NBUStat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NBUStat.xcdatamodel; sourceTree = "<group>"; };
 		C61F1F101F18B06700F0AF87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C61F1F131F18B06700F0AF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61F1F151F18B06700F0AF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C61F1F1A1F18B06700F0AF87 /* NBUStatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBUStatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61F1F1A1F18B06700F0AF87 /* FinStat UkraineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FinStat UkraineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61F1F1E1F18B06700F0AF87 /* NBUStatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBUStatTests.swift; sourceTree = "<group>"; };
 		C61F1F201F18B06700F0AF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C61F1F251F18B06700F0AF87 /* NBUStatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBUStatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61F1F251F18B06700F0AF87 /* FinStat UkraineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FinStat UkraineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61F1F291F18B06700F0AF87 /* NBUStatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBUStatUITests.swift; sourceTree = "<group>"; };
 		C61F1F2B1F18B06700F0AF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C61F1F381F18B1EF00F0AF87 /* CurrencyRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
@@ -147,9 +147,9 @@
 		C61F1F041F18B06700F0AF87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C61F1F031F18B06700F0AF87 /* NBUStat.app */,
-				C61F1F1A1F18B06700F0AF87 /* NBUStatTests.xctest */,
-				C61F1F251F18B06700F0AF87 /* NBUStatUITests.xctest */,
+				C61F1F031F18B06700F0AF87 /* FinStat Ukraine.app */,
+				C61F1F1A1F18B06700F0AF87 /* FinStat UkraineTests.xctest */,
+				C61F1F251F18B06700F0AF87 /* FinStat UkraineUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,9 +230,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C61F1F021F18B06700F0AF87 /* NBUStat */ = {
+		C61F1F021F18B06700F0AF87 /* FinStat Ukraine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C61F1F2E1F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "NBUStat" */;
+			buildConfigurationList = C61F1F2E1F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "FinStat Ukraine" */;
 			buildPhases = (
 				8375903984E80F018F6B5981 /* [CP] Check Pods Manifest.lock */,
 				C61F1EFF1F18B06700F0AF87 /* Sources */,
@@ -245,14 +245,14 @@
 			);
 			dependencies = (
 			);
-			name = NBUStat;
+			name = "FinStat Ukraine";
 			productName = NBUStat;
-			productReference = C61F1F031F18B06700F0AF87 /* NBUStat.app */;
+			productReference = C61F1F031F18B06700F0AF87 /* FinStat Ukraine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C61F1F191F18B06700F0AF87 /* NBUStatTests */ = {
+		C61F1F191F18B06700F0AF87 /* FinStat UkraineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C61F1F311F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "NBUStatTests" */;
+			buildConfigurationList = C61F1F311F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "FinStat UkraineTests" */;
 			buildPhases = (
 				90E90F32F50AE7C45CAB01A7 /* [CP] Check Pods Manifest.lock */,
 				C61F1F161F18B06700F0AF87 /* Sources */,
@@ -266,14 +266,14 @@
 			dependencies = (
 				C61F1F1C1F18B06700F0AF87 /* PBXTargetDependency */,
 			);
-			name = NBUStatTests;
+			name = "FinStat UkraineTests";
 			productName = NBUStatTests;
-			productReference = C61F1F1A1F18B06700F0AF87 /* NBUStatTests.xctest */;
+			productReference = C61F1F1A1F18B06700F0AF87 /* FinStat UkraineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C61F1F241F18B06700F0AF87 /* NBUStatUITests */ = {
+		C61F1F241F18B06700F0AF87 /* FinStat UkraineUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C61F1F341F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "NBUStatUITests" */;
+			buildConfigurationList = C61F1F341F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "FinStat UkraineUITests" */;
 			buildPhases = (
 				A882BCF2F9B3701B4AF17001 /* [CP] Check Pods Manifest.lock */,
 				C61F1F211F18B06700F0AF87 /* Sources */,
@@ -287,9 +287,9 @@
 			dependencies = (
 				C61F1F271F18B06700F0AF87 /* PBXTargetDependency */,
 			);
-			name = NBUStatUITests;
+			name = "FinStat UkraineUITests";
 			productName = NBUStatUITests;
-			productReference = C61F1F251F18B06700F0AF87 /* NBUStatUITests.xctest */;
+			productReference = C61F1F251F18B06700F0AF87 /* FinStat UkraineUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -319,7 +319,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C61F1EFE1F18B06600F0AF87 /* Build configuration list for PBXProject "NBUStat" */;
+			buildConfigurationList = C61F1EFE1F18B06600F0AF87 /* Build configuration list for PBXProject "FinStat Ukraine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -332,9 +332,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C61F1F021F18B06700F0AF87 /* NBUStat */,
-				C61F1F191F18B06700F0AF87 /* NBUStatTests */,
-				C61F1F241F18B06700F0AF87 /* NBUStatUITests */,
+				C61F1F021F18B06700F0AF87 /* FinStat Ukraine */,
+				C61F1F191F18B06700F0AF87 /* FinStat UkraineTests */,
+				C61F1F241F18B06700F0AF87 /* FinStat UkraineUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -557,12 +557,12 @@
 /* Begin PBXTargetDependency section */
 		C61F1F1C1F18B06700F0AF87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C61F1F021F18B06700F0AF87 /* NBUStat */;
+			target = C61F1F021F18B06700F0AF87 /* FinStat Ukraine */;
 			targetProxy = C61F1F1B1F18B06700F0AF87 /* PBXContainerItemProxy */;
 		};
 		C61F1F271F18B06700F0AF87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C61F1F021F18B06700F0AF87 /* NBUStat */;
+			target = C61F1F021F18B06700F0AF87 /* FinStat Ukraine */;
 			targetProxy = C61F1F261F18B06700F0AF87 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -692,9 +692,11 @@
 				INFOPLIST_FILE = NBUStat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.NBUStat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.FinStatUkraine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.3;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -708,9 +710,11 @@
 				INFOPLIST_FILE = NBUStat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.NBUStat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.FinStatUkraine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.3;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -725,7 +729,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.NBUStatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBUStat.app/NBUStat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinStat Ukraine.app/FinStat Ukraine";
 			};
 			name = Debug;
 		};
@@ -740,7 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.NBUStatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBUStat.app/NBUStat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinStat Ukraine.app/FinStat Ukraine";
 			};
 			name = Release;
 		};
@@ -775,7 +779,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C61F1EFE1F18B06600F0AF87 /* Build configuration list for PBXProject "NBUStat" */ = {
+		C61F1EFE1F18B06600F0AF87 /* Build configuration list for PBXProject "FinStat Ukraine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C61F1F2C1F18B06700F0AF87 /* Debug */,
@@ -784,7 +788,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C61F1F2E1F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "NBUStat" */ = {
+		C61F1F2E1F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "FinStat Ukraine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C61F1F2F1F18B06700F0AF87 /* Debug */,
@@ -793,7 +797,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C61F1F311F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "NBUStatTests" */ = {
+		C61F1F311F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "FinStat UkraineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C61F1F321F18B06700F0AF87 /* Debug */,
@@ -802,7 +806,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C61F1F341F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "NBUStatUITests" */ = {
+		C61F1F341F18B06700F0AF87 /* Build configuration list for PBXNativeTarget "FinStat UkraineUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C61F1F351F18B06700F0AF87 /* Debug */,
