@@ -24,6 +24,7 @@ class CurrencyViewController: UIViewController {
     @IBOutlet weak var yesterdayLabel: UILabel!
     @IBOutlet weak var tomorrowLabel: UILabel!
     @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var dropdownMarker: UIImageView!
     
     lazy var picker: UIDatePicker = {
                     let picker = UIDatePicker()
@@ -63,6 +64,7 @@ class CurrencyViewController: UIViewController {
     
     func donePicker()
     {
+        dropdownMarker.transform = CGAffineTransform(rotationAngle: 0)
         dateTextField.resignFirstResponder()
         date = picker.date
         presenter?.setDate(date: picker.date)
@@ -72,6 +74,7 @@ class CurrencyViewController: UIViewController {
     
     func cancelPicker()
     {
+        dropdownMarker.transform = CGAffineTransform(rotationAngle: 0)
         dateTextField.resignFirstResponder()
     }
     
@@ -94,6 +97,7 @@ class CurrencyViewController: UIViewController {
     
 
     @IBAction func changeDateButtonPressed(_ sender: Any) {
+        dropdownMarker.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         dateTextField.becomeFirstResponder()
     }
     
