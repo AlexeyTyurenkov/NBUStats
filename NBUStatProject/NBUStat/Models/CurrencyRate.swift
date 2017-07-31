@@ -29,7 +29,8 @@ class CurrencyRate
     var cc: String = ""
     var exchangedate: String = ""
     var oldRate: NSNumber?
-
+    var yesterdayDate: String = ""
+    
     private var formatter: NumberFormatter
     
     init(dictionary: [String:AnyObject]) {
