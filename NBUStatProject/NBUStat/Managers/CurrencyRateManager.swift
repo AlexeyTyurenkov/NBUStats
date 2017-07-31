@@ -16,9 +16,12 @@ class CurrencyRateManager: NSObject {
     private(set) var rates: [CurrencyRate] = []
     private(set) var favoriteCodes:Set<String> = Set(UserDefaults.standard.stringArray(forKey: "favorite-rates") ?? [])
     
-    var updateCallBack:()->() = {}
+    var updateCallBack:(_ professional: Bool)->() = { _ in }
     var cancelSearch: ()->() = {}
     var errorMessage: (Error)->() = { _ in }
+    var isProfessional: Bool = false
+    var listWillLoad: ()->() = {}
+    var listDidLoad: ()->() = {}
     
     func loadList(date: Date, completion: (([CurrencyRate])->())? = nil)
     {
@@ -56,7 +59,15 @@ class CurrencyRateManager: NSObject {
     }
     
     
-    
+    override init() {
+        super.init()
+        registerSettingsBundle()
+        updateDisplayFromDefaults()
+        NotificationCenter.default.addObserver(self,
+                                                         selector: #selector(CurrencyRateManager.defaultsChanged),
+                                                         name: UserDefaults.didChangeNotification,
+                                                         object: nil)
+    }
     
     func isFavorite(atSection section: Int, andIndex row: Int) -> Bool
     {
@@ -110,9 +121,34 @@ class CurrencyRateManager: NSObject {
             self.favorites   = []
             self.commonRates = rates.filter( { searchTerm == "" || $0.cc.contains(searchTerm) || $0.name.contains(searchTerm) || $0.r030.contains(searchTerm) })
         }
-        self.updateCallBack()
+        self.updateCallBack(isProfessional)
     }
     
+    deinit { //Not needed for iOS9 and above. ARC deals with the observer.
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func registerSettingsBundle(){
+        let appDefaults = [String:AnyObject]()
+        UserDefaults.standard.register(defaults: appDefaults)
+        //NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
+    func updateDisplayFromDefaults(){
+        #if QA
+        //Get the defaults
+        let defaults = UserDefaults.standard
+        //Set the controls to the default values.
+        isProfessional = defaults.bool(forKey: "isProfessional")
+        
+        self.updateCallBack(isProfessional)
+        #endif
+    }
+    
+    func defaultsChanged(){
+        updateDisplayFromDefaults()
+    }
+
 }
 
 extension CurrencyRateManager: UITableViewDataSource

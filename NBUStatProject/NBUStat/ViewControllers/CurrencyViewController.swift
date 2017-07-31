@@ -53,10 +53,6 @@ class CurrencyViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.handleDynamicTypeChange(notification:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
         dateTextField.inputView = picker
         dateTextField.inputAccessoryView = toolBar
-        
-        #if QA
-        print("QAAAAA")
-        #endif
     }
 
     
@@ -139,7 +135,7 @@ class CurrencyViewController: UIViewController {
     {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy"
-        
+        self.date = date
         label.text = dateFormatter.string(from: date)
         yesterdayLabel.text = dateFormatter.string(from: date.addingTimeInterval(-1*24*60*60))
         tomorrowLabel.text = dateFormatter.string(from: date.addingTimeInterval(1*24*60*60))

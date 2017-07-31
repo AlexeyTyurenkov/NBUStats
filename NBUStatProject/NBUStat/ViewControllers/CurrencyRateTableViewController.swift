@@ -17,14 +17,17 @@ class CurrencyRateTableViewController: UITableViewController {
     var searchViewController: UISearchController?
     private var lastDate: Date = Date()
     var openDetail: ((String)->())?
+    private var isProfessional: Bool = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = 88
         tableView.tableFooterView = UIView()
         self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: UIControlEvents.valueChanged)
-        manager.updateCallBack = { [weak self] in
+        manager.updateCallBack = {  [weak self] isProfessional in
             DispatchQueue.main.async {
+                self?.isProfessional = isProfessional
                 self?.tableView.reloadData()
                 self?.refreshControl?.endRefreshing()
             }
@@ -32,6 +35,7 @@ class CurrencyRateTableViewController: UITableViewController {
         manager.errorMessage = {
             [weak self] error in
             let alert = UIAlertController(title: "Помилка завантаження", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in }))
             DispatchQueue.main.async {
                 self?.present(alert, animated: true, completion: nil)
             }
