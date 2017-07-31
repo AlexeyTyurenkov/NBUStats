@@ -12,6 +12,11 @@ class CurrencyViewController: UIViewController {
 
     weak var presenter: CurrencyRateTableViewController?
     var date = Date()
+    {
+        didSet{
+            picker.date = self.date
+        }
+    }
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var tomorrowButton: UIButton!
@@ -38,7 +43,7 @@ class CurrencyViewController: UIViewController {
         toolBar.sizeToFit()
         let doneButton = UIBarButtonItem(title: "Готово", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "Відміна", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
+        let cancelButton = UIBarButtonItem(title: "Відміна", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelPicker))
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         return toolBar

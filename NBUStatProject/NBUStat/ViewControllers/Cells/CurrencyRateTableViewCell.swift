@@ -42,9 +42,15 @@ extension CurrencyRateTableViewCell
         oldRate.text = currencyRate.yesterdayRate
         differenceLabel.text = currencyRate.difference
         
+        
         oldRateCaption.text = currencyRate.yesterdayDate
         differenceCaption.text = "Різниця"
         currencyRateCaption.text = currencyRate.exchangedate
+        
+        differenceCaption.isHidden = isProfessional
+        oldRateCaption.isHidden = isProfessional
+        currencyRateCaption.isHidden = isProfessional
+
         
         switch currencyRate.change() {
         case .goesdown:
