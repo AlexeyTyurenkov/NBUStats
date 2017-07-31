@@ -25,7 +25,7 @@
 		C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */; };
 		C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */; };
 		C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CA1F2F7C3100363DC1 /* Settings.bundle */; };
-		C6F323CD1F2F8B5F00363DC1 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CC1F2F8B5F00363DC1 /* .travis.yml */; };
+		C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CE1F2F900400363DC1 /* .travis.yml */; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +74,7 @@
 		C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyNavigatoinController.swift; sourceTree = "<group>"; };
 		C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalCurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
 		C6F323CA1F2F7C3100363DC1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		C6F323CC1F2F8B5F00363DC1 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		C6F323CE1F2F900400363DC1 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,7 +125,7 @@
 		C61F1EFA1F18B06600F0AF87 = {
 			isa = PBXGroup;
 			children = (
-				C6F323CC1F2F8B5F00363DC1 /* .travis.yml */,
+				C6F323CE1F2F900400363DC1 /* .travis.yml */,
 				C61F1F051F18B06700F0AF87 /* NBUStat */,
 				C61F1F1D1F18B06700F0AF87 /* NBUStatTests */,
 				C61F1F281F18B06700F0AF87 /* NBUStatUITests */,
@@ -331,7 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F323CD1F2F8B5F00363DC1 /* .travis.yml in Resources */,
+				C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */,
 				C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */,
 				C61F1F141F18B06700F0AF87 /* LaunchScreen.storyboard in Resources */,
 				C61F1F111F18B06700F0AF87 /* Assets.xcassets in Resources */,
