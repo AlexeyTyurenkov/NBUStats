@@ -29,7 +29,8 @@ class CurrencyRate
     var cc: String = ""
     var exchangedate: String = ""
     var oldRate: NSNumber?
-
+    var yesterdayDate: String = ""
+    
     private var formatter: NumberFormatter
     
     init(dictionary: [String:AnyObject]) {
@@ -46,8 +47,8 @@ class CurrencyRate
     
     func contains(_ searchTerm: String) -> Bool
     {
-        let localizedTerm = searchTerm.localizedLowercase
-        return (searchTerm == "" || cc.lowercased().contains(localizedTerm) || name.lowercased().contains(localizedTerm) || r030.lowercased().contains(localizedTerm))
+        let localizedTerm = searchTerm.trimmingCharacters(in: .whitespacesAndNewlines).localizedLowercase
+        return (localizedTerm == "" || cc.lowercased().contains(localizedTerm) || name.lowercased().contains(localizedTerm) || r030.lowercased().contains(localizedTerm))
     }
     
     var todayRate: String
@@ -63,7 +64,7 @@ class CurrencyRate
     var difference: String
     {
         guard let oldRate = oldRate else { return ""}
-        let diff = newRate.decimalValue - oldRate.decimalValue
+        let diff = abs(newRate.decimalValue - oldRate.decimalValue)
         return formatted(number: diff as NSNumber)
     }
     

@@ -89,8 +89,11 @@ class CurrencyRateTableViewController: UITableViewController {
     
     public func setDate(date: Date)
     {
-        lastDate = date
-        manager.loadList(date: date)
+        if NSCalendar.current.compare(date, to: lastDate, toGranularity: .day) != .orderedSame
+        {
+            lastDate = date
+            manager.loadList(date: date)
+        }
     }
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
