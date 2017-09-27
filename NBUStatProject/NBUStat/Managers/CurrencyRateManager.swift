@@ -145,7 +145,7 @@ class CurrencyRateManager: NSObject {
         #endif
     }
     
-    func defaultsChanged(){
+    @objc func defaultsChanged(){
         updateDisplayFromDefaults()
     }
 

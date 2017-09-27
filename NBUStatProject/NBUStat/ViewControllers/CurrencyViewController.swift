@@ -34,7 +34,7 @@ class CurrencyViewController: UIViewController {
         let toolBar = UIToolbar()
         toolBar.barStyle = .default
         toolBar.isTranslucent = true
-        toolBar.tintColor =  UIColor(colorLiteralRed: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
+        toolBar.tintColor =  UIColor(red: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
         toolBar.sizeToFit()
         let doneButton = UIBarButtonItem(title: "Готово", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
@@ -56,7 +56,7 @@ class CurrencyViewController: UIViewController {
     }
 
     
-    func donePicker()
+    @objc func donePicker()
     {
         dateTextField.resignFirstResponder()
         date = picker.date
@@ -70,7 +70,7 @@ class CurrencyViewController: UIViewController {
         dateTextField.resignFirstResponder()
     }
     
-    func handleDynamicTypeChange(notification: Notification)
+    @objc func handleDynamicTypeChange(notification: Notification)
     {
         presenter?.tableView.reloadData()
         dateLabel.font = UIFont.preferredFont(forTextStyle: .body)
