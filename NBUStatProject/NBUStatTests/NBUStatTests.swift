@@ -22,7 +22,6 @@ class NBUStatTests: XCTestCase {
     }
     
     func testExample() {
-        XCTFail("Test Fail")
     }
     
     func testPerformanceExample() {
