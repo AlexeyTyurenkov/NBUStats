@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import NBUStat
+@testable import FinStat_Ukraine
 
 class NBUStatTests: XCTestCase {
     
