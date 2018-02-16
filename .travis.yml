@@ -3,4 +3,4 @@ script:
     - cd NBUStatProject
     - pod install 
     - xcodebuild -workspace "FinStat Ukraine.xcworkspace" -scheme "FinStat Ukraine - QA" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-osx_image: xcode8.3
+osx_image: xcode9.2

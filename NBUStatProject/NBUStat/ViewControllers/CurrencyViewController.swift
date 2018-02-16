@@ -114,6 +114,7 @@ class CurrencyViewController: UIViewController {
     }
     
     @IBAction func todayButtonPressed(_ sender: Any) {
+        
         presenter?.setDate(date: Date())
         updateDate(label: dateLabel, date: Date())
     }
@@ -122,8 +123,6 @@ class CurrencyViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
         if let presenter = segue.destination as? CurrencyRateTableViewController
         {
             self.presenter = presenter

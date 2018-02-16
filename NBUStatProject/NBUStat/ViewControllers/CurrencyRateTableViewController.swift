@@ -91,6 +91,7 @@ class CurrencyRateTableViewController: UITableViewController {
     {
         if NSCalendar.current.compare(date, to: lastDate, toGranularity: .day) != .orderedSame
         {
+            manager.cancelSearch()
             lastDate = date
             manager.loadList(date: date)
         }

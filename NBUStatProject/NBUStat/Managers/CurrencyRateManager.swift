@@ -112,16 +112,8 @@ class CurrencyRateManager: NSObject {
     
     func set(rates: [CurrencyRate], searchTerm: String)
     {
-        if self.favoriteCodes.count > 0
-        {
-            self.favorites = rates.filter({ self.favoriteCodes.contains($0.r030) && (searchTerm == "" || $0.cc.contains(searchTerm) || $0.name.contains(searchTerm) || $0.r030.contains(searchTerm)) })
-            self.commonRates     = rates.filter({ !self.favoriteCodes.contains($0.r030) && $0.contains(searchTerm) })
-        }
-        else
-        {
-            self.favorites   = []
-            self.commonRates = rates.filter( { searchTerm == "" || $0.cc.contains(searchTerm) || $0.name.contains(searchTerm) || $0.r030.contains(searchTerm) })
-        }
+        self.favorites = rates.filter({ self.favoriteCodes.contains($0.r030) && $0.contains(searchTerm) })
+        self.commonRates     = rates.filter({ !self.favoriteCodes.contains($0.r030) && $0.contains(searchTerm) })
         self.updateCallBack(isProfessional)
     }
     
