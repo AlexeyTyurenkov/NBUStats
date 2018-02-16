@@ -1,4 +1,6 @@
-osx_image: xcode9.2
 language: objective-c
-xcode_workspace: "NBUStatProject/FinStat Ukraine.xcodeproj"
-xcode_scheme: "FinStat UkraineTests"
+script:
+    - cd NBUStatProject
+    - pod install 
+    - xcodebuild -workspace "FinStat Ukraine.xcworkspace" -scheme "FinStat Ukraine - QA" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+osx_image: xcode9.2
