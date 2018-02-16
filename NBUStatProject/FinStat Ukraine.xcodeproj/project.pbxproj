@@ -303,6 +303,7 @@
 					};
 					C61F1F241F18B06700F0AF87 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = FEM5E9C5MW;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C61F1F021F18B06700F0AF87;
@@ -676,13 +677,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FEM5E9C5MW;
 				INFOPLIST_FILE = NBUStatUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.NBUStatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = NBUStat;
+				TEST_TARGET_NAME = "FinStat Ukraine";
 			};
 			name = Debug;
 		};
@@ -690,13 +693,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FEM5E9C5MW;
 				INFOPLIST_FILE = NBUStatUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.NBUStatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = NBUStat;
+				TEST_TARGET_NAME = "FinStat Ukraine";
 			};
 			name = Release;
 		};
@@ -796,13 +801,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FEM5E9C5MW;
 				INFOPLIST_FILE = NBUStatUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiitiurenkov.NBUStatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = NBUStat;
+				TEST_TARGET_NAME = "FinStat Ukraine";
 			};
 			name = QA;
 		};
