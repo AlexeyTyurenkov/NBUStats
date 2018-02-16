@@ -131,6 +131,8 @@ class CurrencyViewController: UIViewController {
     }
  
     
+
+    
     func updateDate(label: UILabel, date: Date)
     {
         let dateFormatter = DateFormatter()
