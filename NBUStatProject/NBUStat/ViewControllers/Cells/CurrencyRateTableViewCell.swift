@@ -12,8 +12,11 @@ class CurrencyRateTableViewCell: UITableViewCell {
 
     @IBOutlet weak var currencyFullName: UILabel!
     @IBOutlet weak var currencyName: UILabel!
+    @IBOutlet weak var currencyRateCaption: UILabel!
     @IBOutlet weak var currenceRateLabel: UILabel!
+    @IBOutlet weak var oldRateCaption: UILabel!
     @IBOutlet weak var oldRate: UILabel!
+    @IBOutlet weak var differenceCaption: UILabel!
     @IBOutlet weak var differenceLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,13 +34,24 @@ class CurrencyRateTableViewCell: UITableViewCell {
 
 extension CurrencyRateTableViewCell
 {
-    func configure(currencyRate: CurrencyRate)
+    func configure(currencyRate: CurrencyRate, isProfessional:Bool)
     {
         currencyName.text = currencyRate.cc
         currencyFullName.text = currencyRate.name
         currenceRateLabel.text = currencyRate.todayRate
         oldRate.text = currencyRate.yesterdayRate
         differenceLabel.text = currencyRate.difference
+        
+        
+        oldRateCaption.text = currencyRate.yesterdayDate
+        differenceCaption.text = "Різниця"
+        currencyRateCaption.text = currencyRate.exchangedate
+        
+        differenceCaption.isHidden = isProfessional
+        oldRateCaption.isHidden = isProfessional
+        currencyRateCaption.isHidden = isProfessional
+
+        
         switch currencyRate.change() {
         case .goesdown:
             //rgba(231, 76, 60,1.0)

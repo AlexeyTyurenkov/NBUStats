@@ -45,6 +45,7 @@ class CurrencyRateManager: NSObject {
                                                     if let index = self.rates.index(where: { (newrate) in oldrate.r030 == newrate.r030 })
                                                     {
                                                         self.rates[index].oldRate = oldrate.newRate
+                                                        self.rates[index].yesterdayDate = oldrate.exchangedate
                                                     }
                                                 })
                                             })
@@ -180,11 +181,11 @@ extension CurrencyRateManager: UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "CurrencyRateTableViewCell") as? CurrencyRateTableViewCell
         if isFavorite(atSection: indexPath.section, andIndex: indexPath.row)
         {
-            cell?.configure(currencyRate: favorites[indexPath.row])
+            cell?.configure(currencyRate: favorites[indexPath.row], isProfessional: isProfessional)
         }
         else
         {
-            cell?.configure(currencyRate: commonRates[indexPath.row])
+            cell?.configure(currencyRate: commonRates[indexPath.row], isProfessional: isProfessional)
         }
         return cell ?? UITableViewCell()
     }

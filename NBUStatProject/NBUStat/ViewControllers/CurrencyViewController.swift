@@ -12,6 +12,11 @@ class CurrencyViewController: UIViewController {
 
     weak var presenter: CurrencyRateTableViewController?
     var date = Date()
+    {
+        didSet{
+            picker.date = self.date
+        }
+    }
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var tomorrowButton: UIButton!
@@ -19,6 +24,7 @@ class CurrencyViewController: UIViewController {
     @IBOutlet weak var yesterdayLabel: UILabel!
     @IBOutlet weak var tomorrowLabel: UILabel!
     @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var dropdownMarker: UIImageView!
     
     lazy var picker: UIDatePicker = {
                     let picker = UIDatePicker()
@@ -38,7 +44,7 @@ class CurrencyViewController: UIViewController {
         toolBar.sizeToFit()
         let doneButton = UIBarButtonItem(title: "Готово", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "Відміна", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
+        let cancelButton = UIBarButtonItem(title: "Відміна", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelPicker))
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         return toolBar
@@ -58,6 +64,7 @@ class CurrencyViewController: UIViewController {
     
     @objc func donePicker()
     {
+        dropdownMarker.transform = CGAffineTransform(rotationAngle: 0)
         dateTextField.resignFirstResponder()
         date = picker.date
         presenter?.setDate(date: picker.date)
@@ -67,6 +74,7 @@ class CurrencyViewController: UIViewController {
     
     func cancelPicker()
     {
+        dropdownMarker.transform = CGAffineTransform(rotationAngle: 0)
         dateTextField.resignFirstResponder()
     }
     
@@ -89,6 +97,7 @@ class CurrencyViewController: UIViewController {
     
 
     @IBAction func changeDateButtonPressed(_ sender: Any) {
+        dropdownMarker.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         dateTextField.becomeFirstResponder()
     }
     

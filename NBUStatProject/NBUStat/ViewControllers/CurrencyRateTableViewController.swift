@@ -89,8 +89,11 @@ class CurrencyRateTableViewController: UITableViewController {
     
     public func setDate(date: Date)
     {
-        lastDate = date
-        manager.loadList(date: date)
+        if NSCalendar.current.compare(date, to: lastDate, toGranularity: .day) != .orderedSame
+        {
+            lastDate = date
+            manager.loadList(date: date)
+        }
     }
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
@@ -103,7 +106,7 @@ class CurrencyRateTableViewController: UITableViewController {
         }
         more.backgroundColor = isFavorite ? UIColor(red: 213.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0) : UIColor(red: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
         return [more]
-        
+         
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -33,7 +33,7 @@ class CurrencyDetailTableViewController: UITableViewController {
             //let endDate = Date() // last date
             var downloadedRates:[CurrencyRate] = []
 
-            for i in 1...30
+            for i in 0...31
             {
                 dispatchGroup.enter()
                 let date = calendar.date(byAdding: .day, value: -1 * i, to: startDate)!
