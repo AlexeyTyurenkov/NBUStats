@@ -28,7 +28,15 @@
 		C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CE1F2F900400363DC1 /* .travis.yml */; };
 		D96F175A203A171A00869372 /* Info-QA.plist in Resources */ = {isa = PBXBuildFile; fileRef = D96F1759203A171A00869372 /* Info-QA.plist */; };
 		D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96F175B203A183F00869372 /* MainMasterDetail.storyboard */; };
+		D96F175F203A23E200869372 /* DataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F175E203A23E200869372 /* DataProviders.swift */; };
+		D96F1761203A248900869372 /* DataProvidersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1760203A248900869372 /* DataProvidersTests.swift */; };
+		D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1762203A25AB00869372 /* ProvidersListTableViewController.swift */; };
+		D96F1766203A261900869372 /* ProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1764203A261900869372 /* ProviderTableViewCell.swift */; };
+		D96F1767203A261900869372 /* ProviderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96F1765203A261900869372 /* ProviderTableViewCell.xib */; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
+		D9EC9CA6203A2AE100BC8954 /* MainScreenCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EC9CA5203A2AE100BC8954 /* MainScreenCellProtocol.swift */; };
+		D9EC9CA8203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EC9CA7203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift */; };
+		D9EC9CAA203A2F1B00BC8954 /* DefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EC9CA9203A2F1A00BC8954 /* DefaultConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +87,15 @@
 		C6F323CE1F2F900400363DC1 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		D96F1759203A171A00869372 /* Info-QA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-QA.plist"; sourceTree = "<group>"; };
 		D96F175C203A183F00869372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMasterDetail.storyboard; sourceTree = "<group>"; };
+		D96F175E203A23E200869372 /* DataProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviders.swift; sourceTree = "<group>"; };
+		D96F1760203A248900869372 /* DataProvidersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvidersTests.swift; sourceTree = "<group>"; };
+		D96F1762203A25AB00869372 /* ProvidersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersListTableViewController.swift; sourceTree = "<group>"; };
+		D96F1764203A261900869372 /* ProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTableViewCell.swift; sourceTree = "<group>"; };
+		D96F1765203A261900869372 /* ProviderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderTableViewCell.xib; sourceTree = "<group>"; };
 		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
+		D9EC9CA5203A2AE100BC8954 /* MainScreenCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCellProtocol.swift; sourceTree = "<group>"; };
+		D9EC9CA7203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProviderTableViewCell+MainScreenCellProtocol.swift"; sourceTree = "<group>"; };
+		D9EC9CA9203A2F1A00BC8954 /* DefaultConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +187,7 @@
 		C61F1F1D1F18B06700F0AF87 /* NBUStatTests */ = {
 			isa = PBXGroup;
 			children = (
+				D96F1760203A248900869372 /* DataProvidersTests.swift */,
 				C61F1F1E1F18B06700F0AF87 /* NBUStatTests.swift */,
 				C61F1F201F18B06700F0AF87 /* Info.plist */,
 			);
@@ -204,6 +221,7 @@
 				C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */,
 				C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */,
 				D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */,
+				D96F1762203A25AB00869372 /* ProvidersListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -213,6 +231,9 @@
 			children = (
 				C61F1F401F18C18200F0AF87 /* CurrencyRateTableViewCell.swift */,
 				C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */,
+				D96F1764203A261900869372 /* ProviderTableViewCell.swift */,
+				D96F1765203A261900869372 /* ProviderTableViewCell.xib */,
+				D9EC9CA7203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -221,6 +242,9 @@
 			isa = PBXGroup;
 			children = (
 				C61F1F451F18C29500F0AF87 /* CurrencyRateManager.swift */,
+				D96F175E203A23E200869372 /* DataProviders.swift */,
+				D9EC9CA5203A2AE100BC8954 /* MainScreenCellProtocol.swift */,
+				D9EC9CA9203A2F1A00BC8954 /* DefaultConfiguration.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -341,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96F1767203A261900869372 /* ProviderTableViewCell.xib in Resources */,
 				D96F175A203A171A00869372 /* Info-QA.plist in Resources */,
 				C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */,
 				C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */,
@@ -443,16 +468,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C61F1F3E1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift in Sources */,
+				D9EC9CA8203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift in Sources */,
 				C61F1F391F18B1EF00F0AF87 /* CurrencyRate.swift in Sources */,
 				D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */,
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
+				D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */,
 				C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */,
 				C66903831F1CED620063BA91 /* CurrencyDetailTableViewController.swift in Sources */,
 				C61F1F3B1F18B20100F0AF87 /* CurrencyRates.swift in Sources */,
 				C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */,
 				C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */,
+				D96F1766203A261900869372 /* ProviderTableViewCell.swift in Sources */,
 				C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */,
 				C61F1F461F18C29500F0AF87 /* CurrencyRateManager.swift in Sources */,
+				D9EC9CAA203A2F1B00BC8954 /* DefaultConfiguration.swift in Sources */,
+				D96F175F203A23E200869372 /* DataProviders.swift in Sources */,
+				D9EC9CA6203A2AE100BC8954 /* MainScreenCellProtocol.swift in Sources */,
 				C61F1F411F18C18200F0AF87 /* CurrencyRateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96F1761203A248900869372 /* DataProvidersTests.swift in Sources */,
 				C61F1F1F1F18B06700F0AF87 /* NBUStatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
