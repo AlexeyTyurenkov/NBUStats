@@ -26,6 +26,7 @@
 		C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */; };
 		C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CA1F2F7C3100363DC1 /* Settings.bundle */; };
 		C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CE1F2F900400363DC1 /* .travis.yml */; };
+		D96F175A203A171A00869372 /* Info-QA.plist in Resources */ = {isa = PBXBuildFile; fileRef = D96F1759203A171A00869372 /* Info-QA.plist */; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalCurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
 		C6F323CA1F2F7C3100363DC1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C6F323CE1F2F900400363DC1 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
+		D96F1759203A171A00869372 /* Info-QA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-QA.plist"; sourceTree = "<group>"; };
 		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 				C61F1F101F18B06700F0AF87 /* Assets.xcassets */,
 				C61F1F121F18B06700F0AF87 /* LaunchScreen.storyboard */,
 				C61F1F151F18B06700F0AF87 /* Info.plist */,
+				D96F1759203A171A00869372 /* Info-QA.plist */,
 				C61F1F0D1F18B06700F0AF87 /* NBUStat.xcdatamodeld */,
 				C6F323CA1F2F7C3100363DC1 /* Settings.bundle */,
 			);
@@ -335,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96F175A203A171A00869372 /* Info-QA.plist in Resources */,
 				C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */,
 				C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */,
 				C61F1F141F18B06700F0AF87 /* LaunchScreen.storyboard in Resources */,
@@ -368,10 +372,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FinStat Ukraine/Pods-FinStat Ukraine-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -619,7 +625,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -638,7 +644,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -777,7 +783,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = QA;
