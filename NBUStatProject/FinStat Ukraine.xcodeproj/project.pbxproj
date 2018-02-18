@@ -27,6 +27,7 @@
 		C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CA1F2F7C3100363DC1 /* Settings.bundle */; };
 		C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CE1F2F900400363DC1 /* .travis.yml */; };
 		D96F175A203A171A00869372 /* Info-QA.plist in Resources */ = {isa = PBXBuildFile; fileRef = D96F1759203A171A00869372 /* Info-QA.plist */; };
+		D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96F175B203A183F00869372 /* MainMasterDetail.storyboard */; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		C6F323CA1F2F7C3100363DC1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C6F323CE1F2F900400363DC1 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		D96F1759203A171A00869372 /* Info-QA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-QA.plist"; sourceTree = "<group>"; };
+		D96F175C203A183F00869372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMasterDetail.storyboard; sourceTree = "<group>"; };
 		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				C61F1F371F18B1D100F0AF87 /* Models */,
 				C61F1F061F18B06700F0AF87 /* AppDelegate.swift */,
 				C61F1F0A1F18B06700F0AF87 /* Main.storyboard */,
+				D96F175B203A183F00869372 /* MainMasterDetail.storyboard */,
 				C61F1F101F18B06700F0AF87 /* Assets.xcassets */,
 				C61F1F121F18B06700F0AF87 /* LaunchScreen.storyboard */,
 				C61F1F151F18B06700F0AF87 /* Info.plist */,
@@ -344,6 +347,7 @@
 				C61F1F141F18B06700F0AF87 /* LaunchScreen.storyboard in Resources */,
 				C61F1F111F18B06700F0AF87 /* Assets.xcassets in Resources */,
 				C61F1F0C1F18B06700F0AF87 /* Main.storyboard in Resources */,
+				D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +503,14 @@
 				C61F1F131F18B06700F0AF87 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D96F175B203A183F00869372 /* MainMasterDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96F175C203A183F00869372 /* Base */,
+			);
+			name = MainMasterDetail.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -775,7 +787,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = FEM5E9C5MW;
-				INFOPLIST_FILE = NBUStat/Info.plist;
+				INFOPLIST_FILE = "NBUStat/Info-QA.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
