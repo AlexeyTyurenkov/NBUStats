@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Курси валют-->
+        <!--Курси валют НБУ-->
         <scene sceneID="o8T-Qy-m2o">
             <objects>
                 <viewController storyboardIdentifier="CurrencyViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="CUy-sc-ePM" customClass="CurrencyViewController" customModule="FinStat_Ukraine" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,14 +137,7 @@
                             <constraint firstItem="6FC-jR-Xq9" firstAttribute="centerX" secondItem="yDU-7Q-7l9" secondAttribute="centerX" id="zrl-U8-1MR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Курси валют" id="MtV-hE-oPF">
-                        <barButtonItem key="rightBarButtonItem" title="Сьогодні" id="lAU-Om-aCf">
-                            <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            <connections>
-                                <action selector="todayButtonPressed:" destination="CUy-sc-ePM" id="TxJ-4i-BUK"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Курси валют НБУ" id="MtV-hE-oPF"/>
                     <connections>
                         <outlet property="dateLabel" destination="mEI-dy-iRj" id="vXR-I1-Ca2"/>
                         <outlet property="dateTextField" destination="6FC-jR-Xq9" id="Z2h-A4-0jB"/>
@@ -344,9 +337,6 @@
                 <navigationItem title="Курси валют" id="CPs-EF-ym4">
                     <barButtonItem key="rightBarButtonItem" title="Сьогодні" id="0Be-St-CLE">
                         <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        <connections>
-                            <action selector="todayButtonPressed:" destination="CUy-sc-ePM" id="zrJ-d9-34I"/>
-                        </connections>
                     </barButtonItem>
                 </navigationItem>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ert-PG-Jfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -409,9 +399,6 @@
                 <navigationItem title="Курси валют" id="ywd-cv-GCT">
                     <barButtonItem key="rightBarButtonItem" title="Графік" id="GZS-4s-uZI">
                         <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        <connections>
-                            <action selector="todayButtonPressed:" destination="CUy-sc-ePM" id="4lT-QT-qMI"/>
-                        </connections>
                     </barButtonItem>
                 </navigationItem>
             </objects>

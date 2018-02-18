@@ -44,8 +44,9 @@ class CurrencyViewController: UIViewController {
         toolBar.sizeToFit()
         let doneButton = UIBarButtonItem(title: "Готово", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let todayButton = UIBarButtonItem(title: "Сьогодні", style: UIBarButtonItemStyle.plain, target: self, action: #selector(todayPicker))
         let cancelButton = UIBarButtonItem(title: "Відміна", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelPicker))
-        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.setItems([cancelButton, spaceButton, todayButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         return toolBar
     }()
@@ -61,21 +62,30 @@ class CurrencyViewController: UIViewController {
         dateTextField.inputAccessoryView = toolBar
     }
 
-    
+    //MARK: - date picker handling
     @objc func donePicker()
+    {
+        closePicker(with: picker.date)
+    }
+    
+    @objc func todayPicker()
+    {
+        closePicker(with: Date())
+    }
+    
+    private func closePicker(with date: Date? = nil)
     {
         dropdownMarker.transform = CGAffineTransform(rotationAngle: 0)
         dateTextField.resignFirstResponder()
-        date = picker.date
-        presenter?.setDate(date: picker.date)
-        updateDate(label: dateLabel, date: picker.date)
+        guard let date = date else { return }
+        presenter?.setDate(date: date)
+        updateDate(label: dateLabel, date: date)
     }
     
     
-    func cancelPicker()
+    @objc func cancelPicker()
     {
-        dropdownMarker.transform = CGAffineTransform(rotationAngle: 0)
-        dateTextField.resignFirstResponder()
+        closePicker()
     }
     
     @objc func handleDynamicTypeChange(notification: Notification)
@@ -92,7 +102,6 @@ class CurrencyViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
@@ -113,11 +122,6 @@ class CurrencyViewController: UIViewController {
         updateDate(label: dateLabel, date: date)
     }
     
-    @IBAction func todayButtonPressed(_ sender: Any) {
-        
-        presenter?.setDate(date: Date())
-        updateDate(label: dateLabel, date: Date())
-    }
     
     // MARK: - Navigation
 
