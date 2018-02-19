@@ -12,7 +12,7 @@ import UIKit
 class NBUCurrencyModuleBuilder: ModuleBuilderProtocol {
     func viewController() -> UIViewController {
         let storyBoard = UIStoryboard(name: "MainMasterDetail", bundle: nil)
-        return storyBoard.instantiateViewController(withIdentifier: "CurrencyNavigationController")
+        return storyBoard.instantiateViewController(withIdentifier: "CurrencyNavigatoinController")
     }
     
     var moduleName: String
