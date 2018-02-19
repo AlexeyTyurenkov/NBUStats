@@ -25,6 +25,7 @@
 		C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */; };
 		C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CA1F2F7C3100363DC1 /* Settings.bundle */; };
 		C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CE1F2F900400363DC1 /* .travis.yml */; };
+		D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A04203B971C00027099 /* BaseTableViewController.swift */; };
 		D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96F175B203A183F00869372 /* MainMasterDetail.storyboard */; };
 		D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F175E203A23E200869372 /* ModuleProvider.swift */; };
 		D96F1761203A248900869372 /* DataProvidersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1760203A248900869372 /* DataProvidersTests.swift */; };
@@ -88,6 +89,7 @@
 		C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalCurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
 		C6F323CA1F2F7C3100363DC1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C6F323CE1F2F900400363DC1 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
+		D96B2A04203B971C00027099 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		D96F1759203A171A00869372 /* Info-QA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-QA.plist"; sourceTree = "<group>"; };
 		D96F175C203A183F00869372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMasterDetail.storyboard; sourceTree = "<group>"; };
 		D96F175E203A23E200869372 /* ModuleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleProvider.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 			children = (
 				D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */,
 				D99C89CF203B8622002C55CB /* RatesServiceProtocol.swift */,
+				D96B2A04203B971C00027099 /* BaseTableViewController.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */,
 				D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */,
 				C61F1F461F18C29500F0AF87 /* NBUCurrencyRatesManager.swift in Sources */,
+				D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */,
 				D9EC9CAA203A2F1B00BC8954 /* DefaultConfiguration.swift in Sources */,
 				D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */,
 				D9EC9CA6203A2AE100BC8954 /* MainScreenCellProtocol.swift in Sources */,
