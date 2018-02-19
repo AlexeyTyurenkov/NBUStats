@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0920"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -20,6 +20,20 @@
                ReferencedContainer = "container:FinStat Ukraine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C61F1F241F18B06700F0AF87"
+               BuildableName = "FinStat UkraineUITests.xctest"
+               BlueprintName = "FinStat UkraineUITests"
+               ReferencedContainer = "container:FinStat Ukraine.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -27,6 +41,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
+      systemAttachmentLifetime = "keepNever"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -36,16 +51,6 @@
                BlueprintIdentifier = "C61F1F191F18B06700F0AF87"
                BuildableName = "FinStat UkraineTests.xctest"
                BlueprintName = "FinStat UkraineTests"
-               ReferencedContainer = "container:FinStat Ukraine.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C61F1F241F18B06700F0AF87"
-               BuildableName = "FinStat UkraineUITests.xctest"
-               BlueprintName = "FinStat UkraineUITests"
                ReferencedContainer = "container:FinStat Ukraine.xcodeproj">
             </BuildableReference>
          </TestableReference>

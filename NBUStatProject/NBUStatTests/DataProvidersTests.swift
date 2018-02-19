@@ -12,7 +12,7 @@ import XCTest
 
 class DataProvidersTests: XCTestCase {
     
-    let dataProviders = DataProviders()
+    let dataProviders = ModuleProvider()
     
     
     override func setUp() {

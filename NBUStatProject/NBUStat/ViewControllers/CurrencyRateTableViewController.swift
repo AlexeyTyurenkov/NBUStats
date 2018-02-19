@@ -12,7 +12,7 @@ class CurrencyRateTableViewController: UITableViewController {
 
     
     
-    @IBOutlet var manager: CurrencyRateManager!
+    @IBOutlet var manager: NBUCurrencyRatesManager!
     
     var searchViewController: UISearchController?
     private var lastDate: Date = Date()

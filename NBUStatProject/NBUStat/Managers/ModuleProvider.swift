@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 class ModuleProvider
 {
@@ -24,4 +24,8 @@ class ModuleProvider
         return dataProviders[index].moduleName
     }
     
+    func viewController(at index: Int) -> UIViewController? {
+        guard index >= 0 && index < count else { return nil }
+        return dataProviders[index].viewController()
+    }
 }

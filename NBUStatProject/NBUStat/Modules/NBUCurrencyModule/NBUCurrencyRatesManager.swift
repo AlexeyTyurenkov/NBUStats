@@ -10,16 +10,18 @@ import Foundation
 import UIKit
 import Alamofire
 
-class CurrencyRateManager: NSObject {
+class NBUCurrencyRatesManager: NSObject {
     private(set) var commonRates: [CurrencyRate] = []
     private(set) var favorites: [CurrencyRate] = []
     private(set) var rates: [CurrencyRate] = []
     private(set) var favoriteCodes:Set<String> = Set(UserDefaults.standard.stringArray(forKey: "favorite-rates") ?? [])
+    private let service = NBURatesService()
+    var isProfessional: Bool = false
+
     
     var updateCallBack:(_ professional: Bool)->() = { _ in }
     var cancelSearch: ()->() = {}
     var errorMessage: (Error)->() = { _ in }
-    var isProfessional: Bool = false
     var listWillLoad: ()->() = {}
     var listDidLoad: ()->() = {}
     
@@ -28,34 +30,29 @@ class CurrencyRateManager: NSObject {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
         let dateString = dateFormatter.string(from: date)
-        Alamofire.request(String(format:"https://www.bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=%@&json",dateString),
-                          method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { response in
-                            switch response.result
+        service.loadList(param: dateString) { (rates, error) in
+            if let error = error
+            {
+                self.errorMessage(error)
+            }
+            else
+            {
+                if completion == nil
+                {
+                    self.rates = rates
+                    self.loadList(date: date.addingTimeInterval(-1*24*60*60), completion: { (oldrates) in
+                        oldrates.forEach({ (oldrate) in
+                            if let index = self.rates.index(where: { (newrate) in oldrate.r030 == newrate.r030 })
                             {
-                                case .success(let result):
-                                
-                                    if let result = result as? [[String:AnyObject]]
-                                    {
-                                        let rates = result.map{ CurrencyRate.init(dictionary: $0) }
-                                        if completion == nil
-                                        {
-                                            self.rates = rates
-                                            self.loadList(date: date.addingTimeInterval(-1*24*60*60), completion: { (oldrates) in
-                                                oldrates.forEach({ (oldrate) in
-                                                    if let index = self.rates.index(where: { (newrate) in oldrate.r030 == newrate.r030 })
-                                                    {
-                                                        self.rates[index].oldRate = oldrate.newRate
-                                                        self.rates[index].yesterdayDate = oldrate.exchangedate
-                                                    }
-                                                })
-                                            })
-                                        }
-                                        completion?(rates)
-                                        self.set(rates: self.rates, searchTerm: "")
-                                    }
-                                case .failure(let error):
-                                    self.errorMessage(error)
+                                self.rates[index].oldRate = oldrate.newRate
+                                self.rates[index].yesterdayDate = oldrate.exchangedate
                             }
+                        })
+                    })
+                }
+                completion?(rates)
+                self.set(rates: self.rates, searchTerm: "")
+            }
         }
     }
     
@@ -65,7 +62,7 @@ class CurrencyRateManager: NSObject {
         registerSettingsBundle()
         updateDisplayFromDefaults()
         NotificationCenter.default.addObserver(self,
-                                                         selector: #selector(CurrencyRateManager.defaultsChanged),
+                                                         selector: #selector(NBUCurrencyRatesManager.defaultsChanged),
                                                          name: UserDefaults.didChangeNotification,
                                                          object: nil)
     }
@@ -143,7 +140,7 @@ class CurrencyRateManager: NSObject {
 
 }
 
-extension CurrencyRateManager: UITableViewDataSource
+extension NBUCurrencyRatesManager: UITableViewDataSource
 {
     func numberOfSections(in tableView: UITableView) -> Int {
         return favorites.count > 0 ? 2 : 1
@@ -214,14 +211,14 @@ extension CurrencyRateManager: UITableViewDataSource
     
 }
 
-extension CurrencyRateManager: UISearchResultsUpdating
+extension NBUCurrencyRatesManager: UISearchResultsUpdating
 {
     func updateSearchResults(for searchController: UISearchController) {
         self.set(rates: rates, searchTerm: searchController.searchBar.text ?? "")
     }
 }
 
-extension CurrencyRateManager: UISearchBarDelegate
+extension NBUCurrencyRatesManager: UISearchBarDelegate
 {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         cancelSearch()

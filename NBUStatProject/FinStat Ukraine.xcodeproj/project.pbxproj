@@ -18,21 +18,25 @@
 		C61F1F3B1F18B20100F0AF87 /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F3A1F18B20100F0AF87 /* CurrencyRates.swift */; };
 		C61F1F3E1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F3D1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift */; };
 		C61F1F411F18C18200F0AF87 /* CurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F401F18C18200F0AF87 /* CurrencyRateTableViewCell.swift */; };
-		C61F1F461F18C29500F0AF87 /* CurrencyRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F451F18C29500F0AF87 /* CurrencyRateManager.swift */; };
+		C61F1F461F18C29500F0AF87 /* NBUCurrencyRatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F451F18C29500F0AF87 /* NBUCurrencyRatesManager.swift */; };
 		C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */; };
 		C66903831F1CED620063BA91 /* CurrencyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */; };
 		C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */; };
 		C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */; };
 		C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CA1F2F7C3100363DC1 /* Settings.bundle */; };
 		C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CE1F2F900400363DC1 /* .travis.yml */; };
-		D96F175A203A171A00869372 /* Info-QA.plist in Resources */ = {isa = PBXBuildFile; fileRef = D96F1759203A171A00869372 /* Info-QA.plist */; };
 		D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96F175B203A183F00869372 /* MainMasterDetail.storyboard */; };
-		D96F175F203A23E200869372 /* DataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F175E203A23E200869372 /* DataProviders.swift */; };
+		D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F175E203A23E200869372 /* ModuleProvider.swift */; };
 		D96F1761203A248900869372 /* DataProvidersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1760203A248900869372 /* DataProvidersTests.swift */; };
 		D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1762203A25AB00869372 /* ProvidersListTableViewController.swift */; };
 		D96F1766203A261900869372 /* ProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1764203A261900869372 /* ProviderTableViewCell.swift */; };
 		D96F1767203A261900869372 /* ProviderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96F1765203A261900869372 /* ProviderTableViewCell.xib */; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
+		D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */; };
+		D99C89CE203B85D4002C55CB /* NBURatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89CD203B85D4002C55CB /* NBURatesService.swift */; };
+		D99C89D0203B8622002C55CB /* RatesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89CF203B8622002C55CB /* RatesServiceProtocol.swift */; };
+		D99C89D2203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89D1203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift */; };
+		D99C89D4203B8DBF002C55CB /* InterbankRatesModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89D3203B8DBF002C55CB /* InterbankRatesModuleBuilder.swift */; };
 		D9EC9CA6203A2AE100BC8954 /* MainScreenCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EC9CA5203A2AE100BC8954 /* MainScreenCellProtocol.swift */; };
 		D9EC9CA8203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EC9CA7203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift */; };
 		D9EC9CAA203A2F1B00BC8954 /* DefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EC9CA9203A2F1A00BC8954 /* DefaultConfiguration.swift */; };
@@ -77,7 +81,7 @@
 		C61F1F3A1F18B20100F0AF87 /* CurrencyRates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
 		C61F1F3D1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateTableViewController.swift; sourceTree = "<group>"; };
 		C61F1F401F18C18200F0AF87 /* CurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
-		C61F1F451F18C29500F0AF87 /* CurrencyRateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateManager.swift; sourceTree = "<group>"; };
+		C61F1F451F18C29500F0AF87 /* NBUCurrencyRatesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBUCurrencyRatesManager.swift; sourceTree = "<group>"; };
 		C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailTableViewController.swift; sourceTree = "<group>"; };
 		C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyNavigatoinController.swift; sourceTree = "<group>"; };
@@ -86,12 +90,17 @@
 		C6F323CE1F2F900400363DC1 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		D96F1759203A171A00869372 /* Info-QA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-QA.plist"; sourceTree = "<group>"; };
 		D96F175C203A183F00869372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMasterDetail.storyboard; sourceTree = "<group>"; };
-		D96F175E203A23E200869372 /* DataProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviders.swift; sourceTree = "<group>"; };
+		D96F175E203A23E200869372 /* ModuleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleProvider.swift; sourceTree = "<group>"; };
 		D96F1760203A248900869372 /* DataProvidersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvidersTests.swift; sourceTree = "<group>"; };
 		D96F1762203A25AB00869372 /* ProvidersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersListTableViewController.swift; sourceTree = "<group>"; };
 		D96F1764203A261900869372 /* ProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTableViewCell.swift; sourceTree = "<group>"; };
 		D96F1765203A261900869372 /* ProviderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderTableViewCell.xib; sourceTree = "<group>"; };
 		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
+		D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
+		D99C89CD203B85D4002C55CB /* NBURatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBURatesService.swift; sourceTree = "<group>"; };
+		D99C89CF203B8622002C55CB /* RatesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesServiceProtocol.swift; sourceTree = "<group>"; };
+		D99C89D1203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBUCurrencyModuleBuilder.swift; sourceTree = "<group>"; };
+		D99C89D3203B8DBF002C55CB /* InterbankRatesModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterbankRatesModuleBuilder.swift; sourceTree = "<group>"; };
 		D9EC9CA5203A2AE100BC8954 /* MainScreenCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCellProtocol.swift; sourceTree = "<group>"; };
 		D9EC9CA7203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProviderTableViewCell+MainScreenCellProtocol.swift"; sourceTree = "<group>"; };
 		D9EC9CA9203A2F1A00BC8954 /* DefaultConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConfiguration.swift; sourceTree = "<group>"; };
@@ -174,6 +183,7 @@
 		C61F1F051F18B06700F0AF87 /* NBUStat */ = {
 			isa = PBXGroup;
 			children = (
+				D99C89C5203B850F002C55CB /* Modules */,
 				C61F1F441F18C27600F0AF87 /* Managers */,
 				C61F1F3C1F18B58E00F0AF87 /* ViewControllers */,
 				C61F1F371F18B1D100F0AF87 /* Models */,
@@ -247,12 +257,48 @@
 		C61F1F441F18C27600F0AF87 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C61F1F451F18C29500F0AF87 /* CurrencyRateManager.swift */,
-				D96F175E203A23E200869372 /* DataProviders.swift */,
+				D96F175E203A23E200869372 /* ModuleProvider.swift */,
 				D9EC9CA5203A2AE100BC8954 /* MainScreenCellProtocol.swift */,
 				D9EC9CA9203A2F1A00BC8954 /* DefaultConfiguration.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		D99C89C5203B850F002C55CB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D99C89CC203B858C002C55CB /* BaseClasses */,
+				D99C89CB203B8571002C55CB /* InterbankRatesModule */,
+				D99C89CA203B8545002C55CB /* NBUCurrencyModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D99C89CA203B8545002C55CB /* NBUCurrencyModule */ = {
+			isa = PBXGroup;
+			children = (
+				C61F1F451F18C29500F0AF87 /* NBUCurrencyRatesManager.swift */,
+				D99C89CD203B85D4002C55CB /* NBURatesService.swift */,
+				D99C89D1203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift */,
+			);
+			path = NBUCurrencyModule;
+			sourceTree = "<group>";
+		};
+		D99C89CB203B8571002C55CB /* InterbankRatesModule */ = {
+			isa = PBXGroup;
+			children = (
+				D99C89D3203B8DBF002C55CB /* InterbankRatesModuleBuilder.swift */,
+			);
+			path = InterbankRatesModule;
+			sourceTree = "<group>";
+		};
+		D99C89CC203B858C002C55CB /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */,
+				D99C89CF203B8622002C55CB /* RatesServiceProtocol.swift */,
+			);
+			path = BaseClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,7 +368,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Oleksii Tiurenkov";
 				TargetAttributes = {
 					C61F1F021F18B06700F0AF87 = {
@@ -374,7 +420,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96F1767203A261900869372 /* ProviderTableViewCell.xib in Resources */,
-				D96F175A203A171A00869372 /* Info-QA.plist in Resources */,
 				C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */,
 				C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */,
 				C61F1F141F18B06700F0AF87 /* LaunchScreen.storyboard in Resources */,
@@ -476,8 +521,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C61F1F3E1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift in Sources */,
+				D99C89CE203B85D4002C55CB /* NBURatesService.swift in Sources */,
+				D99C89D0203B8622002C55CB /* RatesServiceProtocol.swift in Sources */,
 				D9EC9CA8203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift in Sources */,
 				C61F1F391F18B1EF00F0AF87 /* CurrencyRate.swift in Sources */,
+				D99C89D4203B8DBF002C55CB /* InterbankRatesModuleBuilder.swift in Sources */,
 				D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */,
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
 				D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */,
@@ -488,10 +536,12 @@
 				C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */,
 				D96F1766203A261900869372 /* ProviderTableViewCell.swift in Sources */,
 				C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */,
-				C61F1F461F18C29500F0AF87 /* CurrencyRateManager.swift in Sources */,
+				D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */,
+				C61F1F461F18C29500F0AF87 /* NBUCurrencyRatesManager.swift in Sources */,
 				D9EC9CAA203A2F1B00BC8954 /* DefaultConfiguration.swift in Sources */,
-				D96F175F203A23E200869372 /* DataProviders.swift in Sources */,
+				D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */,
 				D9EC9CA6203A2AE100BC8954 /* MainScreenCellProtocol.swift in Sources */,
+				D99C89D2203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift in Sources */,
 				C61F1F411F18C18200F0AF87 /* CurrencyRateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

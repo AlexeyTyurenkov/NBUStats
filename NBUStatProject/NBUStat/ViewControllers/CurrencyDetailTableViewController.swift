@@ -20,9 +20,6 @@ class CurrencyDetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        
         dateFormatter.dateFormat = "yyyyMMdd"
         delegate?.showActivity()
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in

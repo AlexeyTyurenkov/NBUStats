@@ -42,7 +42,7 @@ class CurrencyViewController: UIViewController {
         toolBar.isTranslucent = true
         toolBar.tintColor =  UIColor(red: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
         toolBar.sizeToFit()
-        let doneButton = UIBarButtonItem(title: "Готово", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
+        let doneButton = UIBarButtonItem(title: NSLocalizedString("Готово", comment: ""), style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         let todayButton = UIBarButtonItem(title: "Сьогодні", style: UIBarButtonItemStyle.plain, target: self, action: #selector(todayPicker))
         let cancelButton = UIBarButtonItem(title: "Відміна", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelPicker))
@@ -60,6 +60,8 @@ class CurrencyViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.handleDynamicTypeChange(notification:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
         dateTextField.inputView = picker
         dateTextField.inputAccessoryView = toolBar
+        navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+        navigationItem.leftItemsSupplementBackButton = true
     }
 
     //MARK: - date picker handling

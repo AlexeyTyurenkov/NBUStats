@@ -10,14 +10,15 @@ import UIKit
 
 class ProvidersListTableViewController: UITableViewController {
 
-    
-    let list = DataProviders()
+    private var collapseDetailViewController = true
+    let list = ModuleProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = 88
         tableView.tableFooterView = UIView()
         tableView.register(ProviderTableViewCell.Nib(), forCellReuseIdentifier: ProviderTableViewCell.CellIdentifier())
+        splitViewController?.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,14 +47,27 @@ class ProvidersListTableViewController: UITableViewController {
         cell.configure(withTitle: list.title(at: indexPath.row))
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        collapseDetailViewController = false
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let controller = list.viewController(at: indexPath.row)
+        {
+            splitViewController?.showDetailViewController(controller, sender: nil)
+        }
+    }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-    }
-
 }
+
+extension ProvidersListTableViewController: UISplitViewControllerDelegate
+{
+    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController, ontoPrimaryViewController primaryViewController: UIViewController) -> Bool {
+        return collapseDetailViewController
+    }
+    
+    
+}
+
