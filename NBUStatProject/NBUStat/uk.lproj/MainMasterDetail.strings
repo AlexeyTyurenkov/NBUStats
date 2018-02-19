@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "35y-S7-zmB"; */
+"35y-S7-zmB.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6Ck-db-cXG"; */
+"6Ck-db-cXG.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6Vw-be-ILQ"; */
+"6Vw-be-ILQ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "DlS-2y-dca"; */
+"DlS-2y-dca.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Графік"; ObjectID = "GZS-4s-uZI"; */
+"GZS-4s-uZI.title" = "Графік";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "L0S-K7-Wze"; */
+"L0S-K7-Wze.text" = "Label";
+
+/* Class = "UIButton"; accessibilityLabel = "PreviousButton"; ObjectID = "Ljp-ow-WFR"; */
+"Ljp-ow-WFR.accessibilityLabel" = "PreviousButton";
+
+/* Class = "UINavigationItem"; title = "Курси валют НБУ"; ObjectID = "MtV-hE-oPF"; */
+"MtV-hE-oPF.title" = "Курси валют НБУ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PWL-dm-yiP"; */
+"PWL-dm-yiP.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Дані "; ObjectID = "RBY-zi-PAt"; */
+"RBY-zi-PAt.title" = "Дані ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VgB-sW-G6I"; */
+"VgB-sW-G6I.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bIH-yT-Auc"; */
+"bIH-yT-Auc.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fsM-Br-Lcm"; */
+"fsM-Br-Lcm.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "mEI-dy-iRj"; */
+"mEI-dy-iRj.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rcZ-u6-eDC"; */
+"rcZ-u6-eDC.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "sls-w8-YXj"; */
+"sls-w8-YXj.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tcL-2C-zm4"; */
+"tcL-2C-zm4.text" = "Label";
+
+/* Class = "UIButton"; accessibilityLabel = "NextButton"; ObjectID = "wuK-FU-Jsw"; */
+"wuK-FU-Jsw.accessibilityLabel" = "NextButton";
+
+/* Class = "UINavigationItem"; title = "Курси валют"; ObjectID = "ywd-cv-GCT"; */
+"ywd-cv-GCT.title" = "Курси валют";

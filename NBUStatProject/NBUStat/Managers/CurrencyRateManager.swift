@@ -117,25 +117,24 @@ class CurrencyRateManager: NSObject {
         self.updateCallBack(isProfessional)
     }
     
-    deinit { //Not needed for iOS9 and above. ARC deals with the observer.
+    deinit {
         NotificationCenter.default.removeObserver(self)
     }
     
     func registerSettingsBundle(){
         let appDefaults = [String:AnyObject]()
         UserDefaults.standard.register(defaults: appDefaults)
+        
         //NSUserDefaults.standardUserDefaults().synchronize()
     }
     
     func updateDisplayFromDefaults(){
-        #if QA
         //Get the defaults
         let defaults = UserDefaults.standard
         //Set the controls to the default values.
         isProfessional = defaults.bool(forKey: "isProfessional")
         
         self.updateCallBack(isProfessional)
-        #endif
     }
     
     @objc func defaultsChanged(){

@@ -137,7 +137,7 @@
                             <constraint firstItem="6FC-jR-Xq9" firstAttribute="centerX" secondItem="yDU-7Q-7l9" secondAttribute="centerX" id="zrl-U8-1MR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Курси валют НБУ" id="MtV-hE-oPF"/>
+                    <navigationItem key="navigationItem" title="Курси валют НБУ" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="MtV-hE-oPF"/>
                     <connections>
                         <outlet property="dateLabel" destination="mEI-dy-iRj" id="vXR-I1-Ca2"/>
                         <outlet property="dateTextField" destination="6FC-jR-Xq9" id="Z2h-A4-0jB"/>
@@ -334,11 +334,6 @@
                         <outlet property="activityIndicator" destination="QLc-hL-Mvh" id="seo-9M-m61"/>
                     </connections>
                 </viewController>
-                <navigationItem title="Курси валют" id="CPs-EF-ym4">
-                    <barButtonItem key="rightBarButtonItem" title="Сьогодні" id="0Be-St-CLE">
-                        <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </barButtonItem>
-                </navigationItem>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ert-PG-Jfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="881" y="171"/>
@@ -373,10 +368,12 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="tcL-2C-zm4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ht-Gq-H3Y" secondAttribute="leadingMargin" id="EVc-u8-9ft"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="fsM-Br-Lcm" secondAttribute="bottom" constant="3" id="Syf-BI-pAj"/>
                                         <constraint firstItem="tcL-2C-zm4" firstAttribute="centerY" secondItem="fsM-Br-Lcm" secondAttribute="centerY" id="UNi-RK-pXU"/>
                                         <constraint firstItem="fsM-Br-Lcm" firstAttribute="top" secondItem="1ht-Gq-H3Y" secondAttribute="topMargin" constant="4" id="WU7-Lp-xwN"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="tcL-2C-zm4" secondAttribute="trailing" id="f5o-Uu-cMU"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fsM-Br-Lcm" secondAttribute="trailingMargin" id="l99-ce-o6P"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="fsM-Br-Lcm" secondAttribute="leading" id="rA5-gh-pb8"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -404,7 +401,7 @@
             </objects>
             <point key="canvasLocation" x="1646" y="170"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Дані -->
         <scene sceneID="3OS-ij-fQL">
             <objects>
                 <tableViewController id="g6Q-iC-yhI" customClass="ProvidersListTableViewController" customModule="FinStat_Ukraine" customModuleProvider="target" sceneMemberID="viewController">
@@ -427,7 +424,7 @@
                             <outlet property="delegate" destination="g6Q-iC-yhI" id="k8c-cv-ngu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="RBY-zi-PAt"/>
+                    <navigationItem key="navigationItem" title="Дані " leftItemsSupplementBackButton="YES" id="RBY-zi-PAt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPa-RY-m0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -443,6 +440,9 @@
                         <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <color key="barTintColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textAttributes>
                     </navigationBar>
@@ -472,7 +472,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KQZ-oe-ccn" customClass="CurrencyNavigatoinController" customModule="FinStat_Ukraine" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="kod-R9-sUu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kod-R9-sUu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -483,6 +483,9 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0vD-BF-4jA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="CUy-sc-ePM" kind="relationship" relationship="rootViewController" id="Ao0-ap-8R6"/>
                         <segue destination="iTn-LE-mIM" kind="show" identifier="ShowCurrency" id="0wY-vb-s7J"/>
