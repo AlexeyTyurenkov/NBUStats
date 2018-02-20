@@ -10,7 +10,7 @@ import UIKit
 
 class CurrencyViewController: UIViewController {
 
-    weak var presenter: CurrencyRateTableViewController?
+    weak var presenter: DateDependedPresenterProtocol?
     var date = Date()
     {
         didSet{
@@ -80,7 +80,7 @@ class CurrencyViewController: UIViewController {
         dropdownMarker.transform = CGAffineTransform(rotationAngle: 0)
         dateTextField.resignFirstResponder()
         guard let date = date else { return }
-        presenter?.setDate(date: date)
+        presenter?.date = date
         updateDate(label: dateLabel, date: date)
     }
     
@@ -92,7 +92,7 @@ class CurrencyViewController: UIViewController {
     
     @objc func handleDynamicTypeChange(notification: Notification)
     {
-        presenter?.tableView.reloadData()
+        presenter?.updateView()
         dateLabel.font = UIFont.preferredFont(forTextStyle: .body)
         yesterdayLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         tomorrowLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
@@ -114,13 +114,13 @@ class CurrencyViewController: UIViewController {
     
     @IBAction func previousButtonPressed(_ sender: Any) {
         date = date.addingTimeInterval(-1*24*60*60)
-        presenter?.setDate(date: date)
+        presenter?.date = date
         updateDate(label: dateLabel, date: date)
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
         date = date.addingTimeInterval(1*24*60*60)
-        presenter?.setDate(date: date)
+        presenter?.date = date
         updateDate(label: dateLabel, date: date)
     }
     
@@ -129,11 +129,13 @@ class CurrencyViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let presenter = segue.destination as? CurrencyRateTableViewController
+        if let viewController = segue.destination as? CurrencyRateTableViewController
         {
+            let presenter = NBUCurrencyRatesManager(date: Date())
             self.presenter = presenter
-            self.presenter?.setDate(date: date)
-            self.presenter?.openDetail = { [weak self](cc) in
+            viewController.presenter = presenter
+            viewController.presenter.delegate = viewController
+            viewController.openDetail = { [weak self](cc) in
                 self?.detailedCurrency = cc
                 if cc != ""
                 {

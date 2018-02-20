@@ -26,6 +26,8 @@
 		C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CA1F2F7C3100363DC1 /* Settings.bundle */; };
 		C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CE1F2F900400363DC1 /* .travis.yml */; };
 		D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A04203B971C00027099 /* BaseTableViewController.swift */; };
+		D96B2A07203CA41800027099 /* PresenterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */; };
+		D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A08203CA55A00027099 /* PresenterProtocol.swift */; };
 		D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96F175B203A183F00869372 /* MainMasterDetail.storyboard */; };
 		D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F175E203A23E200869372 /* ModuleProvider.swift */; };
 		D96F1761203A248900869372 /* DataProvidersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1760203A248900869372 /* DataProvidersTests.swift */; };
@@ -90,6 +92,8 @@
 		C6F323CA1F2F7C3100363DC1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C6F323CE1F2F900400363DC1 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		D96B2A04203B971C00027099 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewDelegate.swift; sourceTree = "<group>"; };
+		D96B2A08203CA55A00027099 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
 		D96F1759203A171A00869372 /* Info-QA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-QA.plist"; sourceTree = "<group>"; };
 		D96F175C203A183F00869372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMasterDetail.storyboard; sourceTree = "<group>"; };
 		D96F175E203A23E200869372 /* ModuleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleProvider.swift; sourceTree = "<group>"; };
@@ -300,6 +304,8 @@
 				D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */,
 				D99C89CF203B8622002C55CB /* RatesServiceProtocol.swift */,
 				D96B2A04203B971C00027099 /* BaseTableViewController.swift */,
+				D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */,
+				D96B2A08203CA55A00027099 /* PresenterProtocol.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -533,10 +539,12 @@
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
 				D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */,
 				C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */,
+				D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */,
 				C66903831F1CED620063BA91 /* CurrencyDetailTableViewController.swift in Sources */,
 				C61F1F3B1F18B20100F0AF87 /* CurrencyRates.swift in Sources */,
 				C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */,
 				C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */,
+				D96B2A07203CA41800027099 /* PresenterViewDelegate.swift in Sources */,
 				D96F1766203A261900869372 /* ProviderTableViewCell.swift in Sources */,
 				C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */,
 				D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */,

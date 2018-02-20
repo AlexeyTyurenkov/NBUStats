@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 import Alamofire
 
-class NBUCurrencyRatesManager: NSObject {
+class NBUCurrencyRatesManager: NSObject, DateDependedPresenterProtocol {
+    weak var delegate: PresenterViewDelegate?
+    
     private(set) var commonRates: [CurrencyRate] = []
     private(set) var favorites: [CurrencyRate] = []
     private(set) var rates: [CurrencyRate] = []
@@ -18,14 +20,18 @@ class NBUCurrencyRatesManager: NSObject {
     private let service = NBURatesService()
     var isProfessional: Bool = false
 
+    var date: Date {
+        didSet {
+            if NSCalendar.current.compare(date, to: oldValue, toGranularity: .day) != .orderedSame
+            {
+                delegate?.presenterCancelSearch(self)
+                loadList(date: date)
+            }
+        }
+        
+    }
     
-    var updateCallBack:(_ professional: Bool)->() = { _ in }
-    var cancelSearch: ()->() = {}
-    var errorMessage: (Error)->() = { _ in }
-    var listWillLoad: ()->() = {}
-    var listDidLoad: ()->() = {}
-    
-    func loadList(date: Date, completion: (([CurrencyRate])->())? = nil)
+    private func loadList(date: Date, completion: (([CurrencyRate])->())? = nil)
     {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
@@ -33,7 +39,7 @@ class NBUCurrencyRatesManager: NSObject {
         service.loadList(param: dateString) { (rates, error) in
             if let error = error
             {
-                self.errorMessage(error)
+                self.delegate?.presenter(self, getError: error)
             }
             else
             {
@@ -57,7 +63,8 @@ class NBUCurrencyRatesManager: NSObject {
     }
     
     
-    override init() {
+    init(date: Date) {
+        self.date = date
         super.init()
         registerSettingsBundle()
         updateDisplayFromDefaults()
@@ -65,6 +72,7 @@ class NBUCurrencyRatesManager: NSObject {
                                                          selector: #selector(NBUCurrencyRatesManager.defaultsChanged),
                                                          name: UserDefaults.didChangeNotification,
                                                          object: nil)
+        
     }
     
     func isFavorite(atSection section: Int, andIndex row: Int) -> Bool
@@ -111,7 +119,7 @@ class NBUCurrencyRatesManager: NSObject {
     {
         self.favorites = rates.filter({ self.favoriteCodes.contains($0.r030) && $0.contains(searchTerm) })
         self.commonRates     = rates.filter({ !self.favoriteCodes.contains($0.r030) && $0.contains(searchTerm) })
-        self.updateCallBack(isProfessional)
+        delegate?.presenter(self, updateAsProfessional: isProfessional)
     }
     
     deinit {
@@ -130,14 +138,22 @@ class NBUCurrencyRatesManager: NSObject {
         let defaults = UserDefaults.standard
         //Set the controls to the default values.
         isProfessional = defaults.bool(forKey: "isProfessional")
+        delegate?.presenter(self, updateAsProfessional: isProfessional)
         
-        self.updateCallBack(isProfessional)
     }
     
     @objc func defaultsChanged(){
         updateDisplayFromDefaults()
     }
 
+    func updateView() {
+        delegate?.presenter(self, updateAsProfessional: isProfessional)
+    }
+    
+    func viewLoaded() {
+        loadList(date: date)
+    }
+    
 }
 
 extension NBUCurrencyRatesManager: UITableViewDataSource
@@ -221,6 +237,6 @@ extension NBUCurrencyRatesManager: UISearchResultsUpdating
 extension NBUCurrencyRatesManager: UISearchBarDelegate
 {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        cancelSearch()
+        delegate?.presenterCancelSearch(self)
     }
 }

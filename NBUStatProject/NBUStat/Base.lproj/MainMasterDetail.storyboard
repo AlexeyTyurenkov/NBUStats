@@ -260,7 +260,6 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="4j6-mg-oUH" id="KFx-9E-qBH"/>
                             <outlet property="delegate" destination="um8-nT-vni" id="NQ9-54-Ygx"/>
                         </connections>
                     </tableView>
@@ -269,12 +268,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
-                    <connections>
-                        <outlet property="manager" destination="4j6-mg-oUH" id="orU-X6-jND"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ENd-Yb-ELw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="4j6-mg-oUH" customClass="NBUCurrencyRatesManager" customModule="FinStat_Ukraine" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="2244" y="-572"/>
         </scene>
