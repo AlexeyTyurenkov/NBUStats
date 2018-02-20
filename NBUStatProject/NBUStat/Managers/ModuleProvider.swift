@@ -28,4 +28,8 @@ class ModuleProvider
         guard index >= 0 && index < count else { return nil }
         return dataProviders[index].viewController()
     }
+    
+    func firstController() -> UIViewController {
+        return viewController(at:0) ?? UIViewController()
+    }
 }

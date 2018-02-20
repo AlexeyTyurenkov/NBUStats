@@ -11,7 +11,8 @@ import UIKit
 class ProvidersListTableViewController: UITableViewController {
 
     private var collapseDetailViewController = true
-    let list = ModuleProvider()
+    var list: ModuleProvider!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +69,8 @@ extension ProvidersListTableViewController: UISplitViewControllerDelegate
         return collapseDetailViewController
     }
     
-    
+    func splitViewController(_ splitViewController: UISplitViewController, show vc: UIViewController, sender: Any?) -> Bool {
+        return true
+    }
 }
 

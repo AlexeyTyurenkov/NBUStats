@@ -16,11 +16,10 @@
 		C61F1F2A1F18B06700F0AF87 /* NBUStatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F291F18B06700F0AF87 /* NBUStatUITests.swift */; };
 		C61F1F391F18B1EF00F0AF87 /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F381F18B1EF00F0AF87 /* CurrencyRate.swift */; };
 		C61F1F3B1F18B20100F0AF87 /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F3A1F18B20100F0AF87 /* CurrencyRates.swift */; };
-		C61F1F3E1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F3D1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift */; };
-		C61F1F411F18C18200F0AF87 /* CurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F401F18C18200F0AF87 /* CurrencyRateTableViewCell.swift */; };
+		C61F1F3E1F18C14E00F0AF87 /* NBURatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F3D1F18C14E00F0AF87 /* NBURatesTableViewController.swift */; };
 		C61F1F461F18C29500F0AF87 /* NBUCurrencyRatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F451F18C29500F0AF87 /* NBUCurrencyRatesManager.swift */; };
 		C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */; };
-		C66903831F1CED620063BA91 /* CurrencyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */; };
+		C66903831F1CED620063BA91 /* NBURateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903821F1CED620063BA91 /* NBURateTableViewController.swift */; };
 		C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */; };
 		C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */; };
 		C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6F323CA1F2F7C3100363DC1 /* Settings.bundle */; };
@@ -28,6 +27,11 @@
 		D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A04203B971C00027099 /* BaseTableViewController.swift */; };
 		D96B2A07203CA41800027099 /* PresenterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */; };
 		D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A08203CA55A00027099 /* PresenterProtocol.swift */; };
+		D96B2A0C203CB36500027099 /* NBURatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A0A203CB36500027099 /* NBURatesTableViewCell.swift */; };
+		D96B2A0D203CB36500027099 /* NBURatesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96B2A0B203CB36500027099 /* NBURatesTableViewCell.xib */; };
+		D96B2A0F203CB39500027099 /* BaseTableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A0E203CB39500027099 /* BaseTableCellProtocol.swift */; };
+		D96B2A11203CBF7D00027099 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A10203CBF7D00027099 /* MainViewController.swift */; };
+		D96B2A13203CC55900027099 /* DetailControllerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A12203CC55900027099 /* DetailControllerPresenterProtocol.swift */; };
 		D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96F175B203A183F00869372 /* MainMasterDetail.storyboard */; };
 		D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F175E203A23E200869372 /* ModuleProvider.swift */; };
 		D96F1761203A248900869372 /* DataProvidersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1760203A248900869372 /* DataProvidersTests.swift */; };
@@ -82,11 +86,10 @@
 		C61F1F2B1F18B06700F0AF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C61F1F381F18B1EF00F0AF87 /* CurrencyRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
 		C61F1F3A1F18B20100F0AF87 /* CurrencyRates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
-		C61F1F3D1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateTableViewController.swift; sourceTree = "<group>"; };
-		C61F1F401F18C18200F0AF87 /* CurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
+		C61F1F3D1F18C14E00F0AF87 /* NBURatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBURatesTableViewController.swift; sourceTree = "<group>"; };
 		C61F1F451F18C29500F0AF87 /* NBUCurrencyRatesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBUCurrencyRatesManager.swift; sourceTree = "<group>"; };
 		C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
-		C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailTableViewController.swift; sourceTree = "<group>"; };
+		C66903821F1CED620063BA91 /* NBURateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBURateTableViewController.swift; sourceTree = "<group>"; };
 		C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyNavigatoinController.swift; sourceTree = "<group>"; };
 		C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalCurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
 		C6F323CA1F2F7C3100363DC1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -94,6 +97,11 @@
 		D96B2A04203B971C00027099 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewDelegate.swift; sourceTree = "<group>"; };
 		D96B2A08203CA55A00027099 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
+		D96B2A0A203CB36500027099 /* NBURatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBURatesTableViewCell.swift; sourceTree = "<group>"; };
+		D96B2A0B203CB36500027099 /* NBURatesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBURatesTableViewCell.xib; sourceTree = "<group>"; };
+		D96B2A0E203CB39500027099 /* BaseTableCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCellProtocol.swift; sourceTree = "<group>"; };
+		D96B2A10203CBF7D00027099 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D96B2A12203CC55900027099 /* DetailControllerPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailControllerPresenterProtocol.swift; sourceTree = "<group>"; };
 		D96F1759203A171A00869372 /* Info-QA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-QA.plist"; sourceTree = "<group>"; };
 		D96F175C203A183F00869372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMasterDetail.storyboard; sourceTree = "<group>"; };
 		D96F175E203A23E200869372 /* ModuleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleProvider.swift; sourceTree = "<group>"; };
@@ -239,11 +247,10 @@
 			children = (
 				C66903841F1CF3070063BA91 /* CurrencyNavigatoinController.swift */,
 				C61F1F3F1F18C16300F0AF87 /* Cells */,
-				C61F1F3D1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift */,
 				C61F1F471F18DE9A00F0AF87 /* CurrencyViewController.swift */,
-				C66903821F1CED620063BA91 /* CurrencyDetailTableViewController.swift */,
 				D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */,
 				D96F1762203A25AB00869372 /* ProvidersListTableViewController.swift */,
+				D96B2A10203CBF7D00027099 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,11 +258,12 @@
 		C61F1F3F1F18C16300F0AF87 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C61F1F401F18C18200F0AF87 /* CurrencyRateTableViewCell.swift */,
 				C66903861F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift */,
 				D96F1764203A261900869372 /* ProviderTableViewCell.swift */,
 				D96F1765203A261900869372 /* ProviderTableViewCell.xib */,
 				D9EC9CA7203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift */,
+				D96B2A0A203CB36500027099 /* NBURatesTableViewCell.swift */,
+				D96B2A0B203CB36500027099 /* NBURatesTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -283,6 +291,8 @@
 		D99C89CA203B8545002C55CB /* NBUCurrencyModule */ = {
 			isa = PBXGroup;
 			children = (
+				C66903821F1CED620063BA91 /* NBURateTableViewController.swift */,
+				C61F1F3D1F18C14E00F0AF87 /* NBURatesTableViewController.swift */,
 				C61F1F451F18C29500F0AF87 /* NBUCurrencyRatesManager.swift */,
 				D99C89CD203B85D4002C55CB /* NBURatesService.swift */,
 				D99C89D1203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift */,
@@ -306,6 +316,8 @@
 				D96B2A04203B971C00027099 /* BaseTableViewController.swift */,
 				D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */,
 				D96B2A08203CA55A00027099 /* PresenterProtocol.swift */,
+				D96B2A0E203CB39500027099 /* BaseTableCellProtocol.swift */,
+				D96B2A12203CC55900027099 /* DetailControllerPresenterProtocol.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -429,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96F1767203A261900869372 /* ProviderTableViewCell.xib in Resources */,
+				D96B2A0D203CB36500027099 /* NBURatesTableViewCell.xib in Resources */,
 				C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */,
 				C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */,
 				C61F1F141F18B06700F0AF87 /* LaunchScreen.storyboard in Resources */,
@@ -529,18 +542,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61F1F3E1F18C14E00F0AF87 /* CurrencyRateTableViewController.swift in Sources */,
+				C61F1F3E1F18C14E00F0AF87 /* NBURatesTableViewController.swift in Sources */,
+				D96B2A13203CC55900027099 /* DetailControllerPresenterProtocol.swift in Sources */,
 				D99C89CE203B85D4002C55CB /* NBURatesService.swift in Sources */,
 				D99C89D0203B8622002C55CB /* RatesServiceProtocol.swift in Sources */,
 				D9EC9CA8203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift in Sources */,
 				C61F1F391F18B1EF00F0AF87 /* CurrencyRate.swift in Sources */,
 				D99C89D4203B8DBF002C55CB /* InterbankRatesModuleBuilder.swift in Sources */,
+				D96B2A0C203CB36500027099 /* NBURatesTableViewCell.swift in Sources */,
+				D96B2A11203CBF7D00027099 /* MainViewController.swift in Sources */,
 				D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */,
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
 				D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */,
 				C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */,
 				D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */,
-				C66903831F1CED620063BA91 /* CurrencyDetailTableViewController.swift in Sources */,
+				C66903831F1CED620063BA91 /* NBURateTableViewController.swift in Sources */,
 				C61F1F3B1F18B20100F0AF87 /* CurrencyRates.swift in Sources */,
 				C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */,
 				C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */,
@@ -551,10 +567,10 @@
 				C61F1F461F18C29500F0AF87 /* NBUCurrencyRatesManager.swift in Sources */,
 				D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */,
 				D9EC9CAA203A2F1B00BC8954 /* DefaultConfiguration.swift in Sources */,
+				D96B2A0F203CB39500027099 /* BaseTableCellProtocol.swift in Sources */,
 				D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */,
 				D9EC9CA6203A2AE100BC8954 /* MainScreenCellProtocol.swift in Sources */,
 				D99C89D2203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift in Sources */,
-				C61F1F411F18C18200F0AF87 /* CurrencyRateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

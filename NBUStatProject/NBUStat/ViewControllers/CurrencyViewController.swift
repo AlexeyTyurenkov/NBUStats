@@ -11,6 +11,9 @@ import UIKit
 class CurrencyViewController: UIViewController {
 
     weak var presenter: DateDependedPresenterProtocol?
+    
+    
+    
     var date = Date()
     {
         didSet{
@@ -129,7 +132,7 @@ class CurrencyViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? CurrencyRateTableViewController
+        if let viewController = segue.destination as? NBURatesTableViewController
         {
             let presenter = NBUCurrencyRatesManager(date: Date())
             self.presenter = presenter
@@ -139,7 +142,6 @@ class CurrencyViewController: UIViewController {
                 self?.detailedCurrency = cc
                 if cc != ""
                 {
-                    
                     self?.navigationController?.performSegue(withIdentifier: "ShowCurrency", sender: nil)
                 }
             }

@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 
-class CurrencyDetailTableViewController: UITableViewController {
+class NBURateTableViewController: UITableViewController {
 
     
     var currency: String = ""

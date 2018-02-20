@@ -25,12 +25,10 @@ class BaseTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
         return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return 0
     }
 
@@ -53,5 +51,9 @@ class BaseTableViewController: UITableViewController {
         tableView.tableHeaderView = searchViewController!.searchBar
     }
     
+    func register(cellType: BaseTableCellProtocol.Type)
+    {
+        tableView.register(cellType.Nib(), forCellReuseIdentifier: cellType.CellIdentifier())
+    }
     
 }

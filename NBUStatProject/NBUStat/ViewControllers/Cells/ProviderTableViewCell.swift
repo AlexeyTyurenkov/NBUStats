@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class ProviderTableViewCell: UITableViewCell {
+class ProviderTableViewCell: UITableViewCell, BaseTableCellProtocol {
 
     @IBOutlet weak var title: UILabel!
     override func awakeFromNib() {
@@ -25,12 +25,12 @@ class ProviderTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    class func CellIdentifier() -> String
+    static func CellIdentifier() -> String
     {
         return "ProviderTableViewCell"
     }
     
-    class func Nib() -> UINib
+    static func Nib() -> UINib
     {
         return UINib(nibName: "ProviderTableViewCell", bundle: nil)
     }

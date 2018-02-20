@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurrencyRateTableViewController: BaseTableViewController, PresenterViewDelegate {
+class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegate {
     
     var presenter: NBUCurrencyRatesManager!
     var openDetail: ((String)->())?
@@ -20,8 +20,12 @@ class CurrencyRateTableViewController: BaseTableViewController, PresenterViewDel
         self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: UIControlEvents.valueChanged)
         self.tableView.dataSource = presenter
         super.configureSearch(searchUpdater: presenter)
+        register(cellType: NBURatesTableViewCell.self)
         presenter.viewLoaded()
     }
+    
+    
+    
 
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         presenter.viewLoaded()

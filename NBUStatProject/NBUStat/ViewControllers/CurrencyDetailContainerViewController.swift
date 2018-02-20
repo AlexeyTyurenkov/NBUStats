@@ -31,7 +31,7 @@ class CurrencyDetailContainerViewController: UIViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let container = segue.destination as? CurrencyDetailTableViewController
+        if let container = segue.destination as? NBURateTableViewController
         {
             container.currency = currency
             container.delegate = self

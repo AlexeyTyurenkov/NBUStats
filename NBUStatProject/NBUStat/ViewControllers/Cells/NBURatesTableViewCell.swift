@@ -1,15 +1,16 @@
 //
-//  CurrencyRateTableViewCell.swift
-//  NBUStat
+//  NBURatesTableViewCell.swift
+//  FinStat Ukraine
 //
-//  Created by Oleksii Tiurenkov on 7/14/17.
-//  Copyright © 2017 Oleksii Tiurenkov. All rights reserved.
+//  Created by Aleksey Tyurenkov on 2/20/18.
+//  Copyright © 2018 Oleksii Tiurenkov. All rights reserved.
 //
 
 import UIKit
 
-class CurrencyRateTableViewCell: UITableViewCell {
+class NBURatesTableViewCell: UITableViewCell, BaseTableCellProtocol {
 
+    
     @IBOutlet weak var currencyFullName: UILabel!
     @IBOutlet weak var currencyName: UILabel!
     @IBOutlet weak var currencyRateCaption: UILabel!
@@ -18,21 +19,20 @@ class CurrencyRateTableViewCell: UITableViewCell {
     @IBOutlet weak var oldRate: UILabel!
     @IBOutlet weak var differenceCaption: UILabel!
     @IBOutlet weak var differenceLabel: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    static func CellIdentifier() -> String
+    {
+        return "NBURatesTableViewCell"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    static func Nib() -> UINib
+    {
+        return UINib(nibName: "NBURatesTableViewCell", bundle: nil)
     }
-
 }
 
 
-extension CurrencyRateTableViewCell
+extension NBURatesTableViewCell
 {
     func configure(currencyRate: CurrencyRate, isProfessional:Bool)
     {
@@ -50,7 +50,7 @@ extension CurrencyRateTableViewCell
         differenceCaption.isHidden = isProfessional
         oldRateCaption.isHidden = isProfessional
         currencyRateCaption.isHidden = isProfessional
-
+        
         
         switch currencyRate.change() {
         case .goesdown:
@@ -66,4 +66,6 @@ extension CurrencyRateTableViewCell
             differenceLabel.textColor = UIColor.clear
         }
     }
+    
+
 }

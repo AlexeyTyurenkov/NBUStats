@@ -182,7 +182,7 @@ extension NBUCurrencyRatesManager: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CurrencyRateTableViewCell") as? CurrencyRateTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NBURatesTableViewCell") as? NBURatesTableViewCell
         if isFavorite(atSection: indexPath.section, andIndex: indexPath.row)
         {
             cell?.configure(currencyRate: favorites[indexPath.row], isProfessional: isProfessional)
