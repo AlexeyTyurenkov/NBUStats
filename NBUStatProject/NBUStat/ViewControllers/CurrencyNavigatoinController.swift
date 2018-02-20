@@ -11,33 +11,15 @@ import UIKit
 class CurrencyNavigatoinController: UINavigationController {
 
     
-    weak var currencySource: CurrencyViewController?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let destination = viewControllers.first as? CurrencyViewController
-        {
-            currencySource = destination
-        }
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        if let detail = segue.destination as? CurrencyDetailContainerViewController
-        {
-            detail.currency = currencySource?.detailedCurrency ?? ""
-        }
-
-    }
 
     
     

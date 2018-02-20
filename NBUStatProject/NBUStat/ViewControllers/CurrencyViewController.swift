@@ -142,9 +142,13 @@ class CurrencyViewController: UIViewController {
                 self?.detailedCurrency = cc
                 if cc != ""
                 {
-                    self?.navigationController?.performSegue(withIdentifier: "ShowCurrency", sender: nil)
+                    self?.performSegue(withIdentifier: "ShowCurrency", sender: nil)
                 }
             }
+        }
+        else if let viewController = segue.destination as? CurrencyDetailContainerViewController
+        {
+            viewController.currency = detailedCurrency
         }
     }
  
