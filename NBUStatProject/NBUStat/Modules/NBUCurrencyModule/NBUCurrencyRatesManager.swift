@@ -8,9 +8,13 @@
 
 import Foundation
 import UIKit
-import Alamofire
 
-class NBUCurrencyRatesManager: NSObject, DateDependedPresenterProtocol {
+class NBUCurrencyRatesManager: NSObject, DateDependedPresenterProtocol, FavoritePresenter {
+   
+    
+    
+    var cellTypes: [BaseTableCellProtocol.Type] = [NBURatesTableViewCell.self]
+    
     weak var delegate: PresenterViewDelegate?
     
     private(set) var commonRates: [CurrencyRate] = []

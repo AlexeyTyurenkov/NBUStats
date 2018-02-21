@@ -8,19 +8,38 @@
 
 import UIKit
 
+protocol FavoritePresenter
+{
+    func isFavorite(atSection: Int, andIndex: Int) -> Bool
+    func currencyCode(inSection: Int, andIndex: Int) -> String
+    func toggleMark(section: Int, index: Int)
+}
+
+
 class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegate {
     
-    var presenter: NBUCurrencyRatesManager!
+    var presenter: DateDependedPresenterProtocol!
     var openDetail: ((String)->())?
     private var isProfessional: Bool = false
     
+    private var favoritePresenter: FavoritePresenter {
+        return presenter as! FavoritePresenter
+    }
+    
+    private var tableDataSource: UITableViewDataSource
+    {
+        return presenter as! UITableViewDataSource
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: UIControlEvents.valueChanged)
-        self.tableView.dataSource = presenter
-        super.configureSearch(searchUpdater: presenter)
-        register(cellType: NBURatesTableViewCell.self)
+        self.tableView.dataSource = tableDataSource
+        if let uiSearchDelegate = presenter as? UISearchResultsUpdating & UISearchBarDelegate
+        {
+            super.configureSearch(searchUpdater: uiSearchDelegate)
+        }
+        presenter.cellTypes.forEach { self.register(cellType: $0)}
         presenter.viewLoaded()
     }
     
@@ -33,10 +52,10 @@ class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegat
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
     {
-        let isFavorite = presenter.isFavorite(atSection: indexPath.section, andIndex: indexPath.row)
+        let isFavorite = favoritePresenter.isFavorite(atSection: indexPath.section, andIndex: indexPath.row)
         let more = UITableViewRowAction(style: .normal, title: isFavorite ? "З обраних" : "В обрані") {
             action, index in
-            self.presenter.toggleMark(section: index.section, index: index.row)
+            self.favoritePresenter.toggleMark(section: index.section, index: index.row)
             self.tableView.reloadData()
         }
         more.backgroundColor = isFavorite ? UIColor(red: 213.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0) : UIColor(red: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
@@ -44,7 +63,7 @@ class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegat
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cc = self.presenter.currencyCode(inSection: indexPath.section, andIndex: indexPath.row)
+        let cc = self.favoritePresenter.currencyCode(inSection: indexPath.section, andIndex: indexPath.row)
         openDetail?(cc)
     }
     

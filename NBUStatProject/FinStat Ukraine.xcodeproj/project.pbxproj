@@ -38,6 +38,11 @@
 		D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1762203A25AB00869372 /* ProvidersListTableViewController.swift */; };
 		D96F1766203A261900869372 /* ProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F1764203A261900869372 /* ProviderTableViewCell.swift */; };
 		D96F1767203A261900869372 /* ProviderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96F1765203A261900869372 /* ProviderTableViewCell.xib */; };
+		D9720A35203E0CA000F81CBB /* CurrencyRates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9720A34203E0CA000F81CBB /* CurrencyRates.storyboard */; };
+		D9720A37203E123C00F81CBB /* InterbankRatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A36203E123C00F81CBB /* InterbankRatesManager.swift */; };
+		D9720A39203E12C700F81CBB /* OpenRateInUaRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A38203E12C700F81CBB /* OpenRateInUaRate.swift */; };
+		D9720A3B203E14F000F81CBB /* OpenRateInUaRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A3A203E14F000F81CBB /* OpenRateInUaRates.swift */; };
+		D9720A3D203E163300F81CBB /* InterbankRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A3C203E163300F81CBB /* InterbankRatesService.swift */; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
 		D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */; };
 		D99C89CE203B85D4002C55CB /* NBURatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89CD203B85D4002C55CB /* NBURatesService.swift */; };
@@ -109,6 +114,11 @@
 		D96F1762203A25AB00869372 /* ProvidersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersListTableViewController.swift; sourceTree = "<group>"; };
 		D96F1764203A261900869372 /* ProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTableViewCell.swift; sourceTree = "<group>"; };
 		D96F1765203A261900869372 /* ProviderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProviderTableViewCell.xib; sourceTree = "<group>"; };
+		D9720A34203E0CA000F81CBB /* CurrencyRates.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyRates.storyboard; sourceTree = "<group>"; };
+		D9720A36203E123C00F81CBB /* InterbankRatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterbankRatesManager.swift; sourceTree = "<group>"; };
+		D9720A38203E12C700F81CBB /* OpenRateInUaRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRateInUaRate.swift; sourceTree = "<group>"; };
+		D9720A3A203E14F000F81CBB /* OpenRateInUaRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRateInUaRates.swift; sourceTree = "<group>"; };
+		D9720A3C203E163300F81CBB /* InterbankRatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterbankRatesService.swift; sourceTree = "<group>"; };
 		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
 		D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		D99C89CD203B85D4002C55CB /* NBURatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBURatesService.swift; sourceTree = "<group>"; };
@@ -210,6 +220,7 @@
 				C61F1F0D1F18B06700F0AF87 /* NBUStat.xcdatamodeld */,
 				C6F323CA1F2F7C3100363DC1 /* Settings.bundle */,
 				D9EC9CB3203AB05600BC8954 /* Localizable.strings */,
+				D9720A34203E0CA000F81CBB /* CurrencyRates.storyboard */,
 			);
 			path = NBUStat;
 			sourceTree = "<group>";
@@ -238,6 +249,8 @@
 			children = (
 				C61F1F381F18B1EF00F0AF87 /* CurrencyRate.swift */,
 				C61F1F3A1F18B20100F0AF87 /* CurrencyRates.swift */,
+				D9720A38203E12C700F81CBB /* OpenRateInUaRate.swift */,
+				D9720A3A203E14F000F81CBB /* OpenRateInUaRates.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				D99C89D3203B8DBF002C55CB /* InterbankRatesModuleBuilder.swift */,
+				D9720A36203E123C00F81CBB /* InterbankRatesManager.swift */,
+				D9720A3C203E163300F81CBB /* InterbankRatesService.swift */,
 			);
 			path = InterbankRatesModule;
 			sourceTree = "<group>";
@@ -448,6 +463,7 @@
 				D9EC9CB1203AB05600BC8954 /* Localizable.strings in Resources */,
 				C61F1F111F18B06700F0AF87 /* Assets.xcassets in Resources */,
 				D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */,
+				D9720A35203E0CA000F81CBB /* CurrencyRates.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +578,7 @@
 				C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */,
 				D96B2A07203CA41800027099 /* PresenterViewDelegate.swift in Sources */,
 				D96F1766203A261900869372 /* ProviderTableViewCell.swift in Sources */,
+				D9720A39203E12C700F81CBB /* OpenRateInUaRate.swift in Sources */,
 				C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */,
 				D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */,
 				C61F1F461F18C29500F0AF87 /* NBUCurrencyRatesManager.swift in Sources */,
@@ -569,7 +586,10 @@
 				D9EC9CAA203A2F1B00BC8954 /* DefaultConfiguration.swift in Sources */,
 				D96B2A0F203CB39500027099 /* BaseTableCellProtocol.swift in Sources */,
 				D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */,
+				D9720A3D203E163300F81CBB /* InterbankRatesService.swift in Sources */,
+				D9720A3B203E14F000F81CBB /* OpenRateInUaRates.swift in Sources */,
 				D9EC9CA6203A2AE100BC8954 /* MainScreenCellProtocol.swift in Sources */,
+				D9720A37203E123C00F81CBB /* InterbankRatesManager.swift in Sources */,
 				D99C89D2203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

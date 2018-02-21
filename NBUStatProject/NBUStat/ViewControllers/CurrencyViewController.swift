@@ -10,8 +10,7 @@ import UIKit
 
 class CurrencyViewController: UIViewController {
 
-    weak var presenter: DateDependedPresenterProtocol?
-    
+    var presenter: DateDependedPresenterProtocol? = NBUCurrencyRatesManager(date: Date())
     
     
     var date = Date()
@@ -134,8 +133,6 @@ class CurrencyViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? NBURatesTableViewController
         {
-            let presenter = NBUCurrencyRatesManager(date: Date())
-            self.presenter = presenter
             viewController.presenter = presenter
             viewController.presenter.delegate = viewController
             viewController.openDetail = { [weak self](cc) in
