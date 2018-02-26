@@ -14,7 +14,7 @@ import Alamofire
 class InterbankRatesService: RatesServiceProtocol {
     func loadList(param: String, completion: @escaping (([OpenRateInUaRate], Error?) -> ()))
     {
-        Alamofire.request(String(format:"http://openrates.in.ua/rates?date=%@&json",param),
+        Alamofire.request(String(format:"http://openrates.in.ua/rates?date=%@   ",param),
                           method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { response in
                             switch response.result
                             {

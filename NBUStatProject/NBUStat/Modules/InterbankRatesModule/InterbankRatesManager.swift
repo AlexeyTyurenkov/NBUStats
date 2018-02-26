@@ -12,13 +12,13 @@ import Foundation
 import UIKit
 import Alamofire
 
-class InterbankRatesManager: NSObject, DateDependedPresenterProtocol {
+class InterbankRatesManager: NSObject, DateDependedPresenterProtocol, DayDateDependedProtocol {
     weak var delegate: PresenterViewDelegate?
     
 
     private(set) var rates: [OpenRateInUaRate] = []
     private let service = InterbankRatesService()
-    let cellTypes: [BaseTableCellProtocol.Type] = [NBURatesTableViewCell.self]
+    let cellTypes: [BaseTableCellProtocol.Type] = [InterbankRatesTableViewCell.self]
     
     var date: Date {
         didSet {
@@ -42,7 +42,7 @@ class InterbankRatesManager: NSObject, DateDependedPresenterProtocol {
             }
             else
             {
-                self.set(rates: self.rates)
+                self.set(rates: rates)
             }
         }
     }
@@ -62,6 +62,7 @@ class InterbankRatesManager: NSObject, DateDependedPresenterProtocol {
    
     func set(rates: [OpenRateInUaRate])
     {
+        self.rates = rates
         delegate?.presenter(self, updateAsProfessional: false)
     }
     
@@ -106,8 +107,8 @@ extension InterbankRatesManager: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NBURatesTableViewCell") as? NBURatesTableViewCell
-        //cell?.configure(currencyRate: rates[indexPath.row], isProfessional: false)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "InterbankRatesTableViewCell") as? InterbankRatesTableViewCell
+        cell?.configure(rate: rates[indexPath.row])
 
         return cell ?? UITableViewCell()
     }

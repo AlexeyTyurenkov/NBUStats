@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class NBUCurrencyRatesManager: NSObject, DateDependedPresenterProtocol, FavoritePresenter {
+class NBUCurrencyRatesManager: NSObject, DateDependedPresenterProtocol, FavoritePresenter,DayDateDependedProtocol {
    
     
     

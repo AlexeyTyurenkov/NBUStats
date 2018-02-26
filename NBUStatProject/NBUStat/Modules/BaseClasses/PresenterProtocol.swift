@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 protocol PresenterProtocol: class {
     var delegate: PresenterViewDelegate? { get set }
@@ -19,4 +19,13 @@ protocol PresenterProtocol: class {
 protocol DateDependedPresenterProtocol:PresenterProtocol
 {
     var date: Date { get set }
+    var picker: UIDatePicker {get}
+    var dateFormatter: DateFormatter{ get }
+    var nextDate:String {get}
+    var prevDate:String {get}
+    var currentDate: String {get}
+    func moveNextDate()
+    func movePreviousDate()
 }
+
+

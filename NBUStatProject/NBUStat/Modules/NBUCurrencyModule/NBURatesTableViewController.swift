@@ -22,8 +22,8 @@ class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegat
     var openDetail: ((String)->())?
     private var isProfessional: Bool = false
     
-    private var favoritePresenter: FavoritePresenter {
-        return presenter as! FavoritePresenter
+    private var favoritePresenter: FavoritePresenter? {
+        return presenter as? FavoritePresenter
     }
     
     private var tableDataSource: UITableViewDataSource
@@ -52,19 +52,25 @@ class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegat
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
     {
-        let isFavorite = favoritePresenter.isFavorite(atSection: indexPath.section, andIndex: indexPath.row)
-        let more = UITableViewRowAction(style: .normal, title: isFavorite ? "З обраних" : "В обрані") {
+        var more: [UITableViewRowAction] = []
+        if let isFavorite = favoritePresenter?.isFavorite(atSection: indexPath.section, andIndex: indexPath.row)
+        {
+            let action = UITableViewRowAction(style: .normal, title: isFavorite ? "З обраних" : "В обрані") {
             action, index in
-            self.favoritePresenter.toggleMark(section: index.section, index: index.row)
+            self.favoritePresenter?.toggleMark(section: index.section, index: index.row)
             self.tableView.reloadData()
+            }
+            action.backgroundColor = isFavorite ? UIColor(red: 213.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0) : UIColor(red: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
+            more.append(action)
         }
-        more.backgroundColor = isFavorite ? UIColor(red: 213.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0) : UIColor(red: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
-        return [more]
+        return more
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cc = self.favoritePresenter.currencyCode(inSection: indexPath.section, andIndex: indexPath.row)
-        openDetail?(cc)
+        if let cc = self.favoritePresenter?.currencyCode(inSection: indexPath.section, andIndex: indexPath.row)
+        {
+            openDetail?(cc)
+        }
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {

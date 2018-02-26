@@ -10,15 +10,8 @@ import UIKit
 
 class CurrencyViewController: UIViewController {
 
-    var presenter: DateDependedPresenterProtocol? = NBUCurrencyRatesManager(date: Date())
-    
-    
-    var date = Date()
-    {
-        didSet{
-            picker.date = self.date
-        }
-    }
+    var presenter: DateDependedPresenterProtocol = NBUCurrencyRatesManager(date: Date())
+
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var tomorrowButton: UIButton!
@@ -29,13 +22,7 @@ class CurrencyViewController: UIViewController {
     @IBOutlet weak var dropdownMarker: UIImageView!
     
     lazy var picker: UIDatePicker = {
-                    let picker = UIDatePicker()
-                    picker.date = self.date
-                    picker.datePickerMode = .date
-                    picker.maximumDate = Date()
-                    picker.minimumDate = Date(timeIntervalSince1970: 946727869)
-                    picker.sizeToFit()
-                    return picker
+        return self.presenter.picker
     }()
     
     lazy var toolBar: UIToolbar = {
@@ -57,7 +44,7 @@ class CurrencyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateDate(label: dateLabel, date: date)
+        updateDate(label: dateLabel)
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(self.handleDynamicTypeChange(notification:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
         dateTextField.inputView = picker
@@ -82,8 +69,8 @@ class CurrencyViewController: UIViewController {
         dropdownMarker.transform = CGAffineTransform(rotationAngle: 0)
         dateTextField.resignFirstResponder()
         guard let date = date else { return }
-        presenter?.date = date
-        updateDate(label: dateLabel, date: date)
+        presenter.date = date
+        updateDate(label: dateLabel)
     }
     
     
@@ -94,7 +81,7 @@ class CurrencyViewController: UIViewController {
     
     @objc func handleDynamicTypeChange(notification: Notification)
     {
-        presenter?.updateView()
+        presenter.updateView()
         dateLabel.font = UIFont.preferredFont(forTextStyle: .body)
         yesterdayLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         tomorrowLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
@@ -115,15 +102,13 @@ class CurrencyViewController: UIViewController {
     }
     
     @IBAction func previousButtonPressed(_ sender: Any) {
-        date = date.addingTimeInterval(-1*24*60*60)
-        presenter?.date = date
-        updateDate(label: dateLabel, date: date)
+        presenter.movePreviousDate()
+        updateDate(label: dateLabel)
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
-        date = date.addingTimeInterval(1*24*60*60)
-        presenter?.date = date
-        updateDate(label: dateLabel, date: date)
+        presenter.moveNextDate()
+        updateDate(label: dateLabel)
     }
     
     
@@ -152,15 +137,11 @@ class CurrencyViewController: UIViewController {
     
 
     
-    func updateDate(label: UILabel, date: Date)
+    func updateDate(label: UILabel)
     {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd.MM.yyyy"
-        self.date = date
-        label.text = dateFormatter.string(from: date)
-        yesterdayLabel.text = dateFormatter.string(from: date.addingTimeInterval(-1*24*60*60))
-        tomorrowLabel.text = dateFormatter.string(from: date.addingTimeInterval(1*24*60*60))
-        
+        label.text = presenter.currentDate
+        yesterdayLabel.text = presenter.prevDate
+        tomorrowLabel.text = presenter.nextDate
     }
 
     
