@@ -46,6 +46,9 @@
 		D9720A40203E222D00F81CBB /* InterbankRatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A3E203E222D00F81CBB /* InterbankRatesTableViewCell.swift */; };
 		D9720A41203E222D00F81CBB /* InterbankRatesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9720A3F203E222D00F81CBB /* InterbankRatesTableViewCell.xib */; };
 		D9720A452044B13200F81CBB /* DayDateDependedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A442044B13200F81CBB /* DayDateDependedProtocol.swift */; };
+		D9720A472044BAEF00F81CBB /* GovermentBudgetModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A462044BAEF00F81CBB /* GovermentBudgetModuleBuilder.swift */; };
+		D9720A492044BB7C00F81CBB /* GovermentBudgetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A482044BB7C00F81CBB /* GovermentBudgetPresenter.swift */; };
+		D9720A4B2044BBC300F81CBB /* MonthDateDependedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A4A2044BBC300F81CBB /* MonthDateDependedProtocol.swift */; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
 		D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */; };
 		D99C89CE203B85D4002C55CB /* NBURatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89CD203B85D4002C55CB /* NBURatesService.swift */; };
@@ -125,6 +128,9 @@
 		D9720A3E203E222D00F81CBB /* InterbankRatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterbankRatesTableViewCell.swift; sourceTree = "<group>"; };
 		D9720A3F203E222D00F81CBB /* InterbankRatesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterbankRatesTableViewCell.xib; sourceTree = "<group>"; };
 		D9720A442044B13200F81CBB /* DayDateDependedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDateDependedProtocol.swift; sourceTree = "<group>"; };
+		D9720A462044BAEF00F81CBB /* GovermentBudgetModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovermentBudgetModuleBuilder.swift; sourceTree = "<group>"; };
+		D9720A482044BB7C00F81CBB /* GovermentBudgetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovermentBudgetPresenter.swift; sourceTree = "<group>"; };
+		D9720A4A2044BBC300F81CBB /* MonthDateDependedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthDateDependedProtocol.swift; sourceTree = "<group>"; };
 		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
 		D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		D99C89CD203B85D4002C55CB /* NBURatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBURatesService.swift; sourceTree = "<group>"; };
@@ -310,6 +316,8 @@
 		D9720A432044AED100F81CBB /* Government budget Module  */ = {
 			isa = PBXGroup;
 			children = (
+				D9720A462044BAEF00F81CBB /* GovermentBudgetModuleBuilder.swift */,
+				D9720A482044BB7C00F81CBB /* GovermentBudgetPresenter.swift */,
 			);
 			path = "Government budget Module ";
 			sourceTree = "<group>";
@@ -358,6 +366,7 @@
 				D96B2A0E203CB39500027099 /* BaseTableCellProtocol.swift */,
 				D96B2A12203CC55900027099 /* DetailControllerPresenterProtocol.swift */,
 				D9720A442044B13200F81CBB /* DayDateDependedProtocol.swift */,
+				D9720A4A2044BBC300F81CBB /* MonthDateDependedProtocol.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -519,11 +528,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FinStat Ukraine/Pods-FinStat Ukraine-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/NTMonthYearPicker/NTMonthYearPicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NTMonthYearPicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -592,15 +603,18 @@
 				C61F1F391F18B1EF00F0AF87 /* CurrencyRate.swift in Sources */,
 				D99C89D4203B8DBF002C55CB /* InterbankRatesModuleBuilder.swift in Sources */,
 				D96B2A0C203CB36500027099 /* NBURatesTableViewCell.swift in Sources */,
+				D9720A472044BAEF00F81CBB /* GovermentBudgetModuleBuilder.swift in Sources */,
 				D96B2A11203CBF7D00027099 /* MainViewController.swift in Sources */,
 				D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */,
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
 				D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */,
+				D9720A492044BB7C00F81CBB /* GovermentBudgetPresenter.swift in Sources */,
 				C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */,
 				D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */,
 				C66903831F1CED620063BA91 /* NBURateTableViewController.swift in Sources */,
 				C61F1F3B1F18B20100F0AF87 /* CurrencyRates.swift in Sources */,
 				C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */,
+				D9720A4B2044BBC300F81CBB /* MonthDateDependedProtocol.swift in Sources */,
 				C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */,
 				D96B2A07203CA41800027099 /* PresenterViewDelegate.swift in Sources */,
 				D96F1766203A261900869372 /* ProviderTableViewCell.swift in Sources */,

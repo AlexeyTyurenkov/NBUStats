@@ -7,6 +7,7 @@ target 'FinStat Ukraine' do
   use_frameworks!
   pod 'Alamofire', '~> 4.2'
   pod 'Charts'
+  pod 'NTMonthYearPicker'
   # Pods for NBUStat
 
 #target 'NBUStatTests' do
