@@ -23,6 +23,10 @@ class GovermentBudgetService: RatesServiceProtocol {
                                     completion(rates,nil)
                                     
                                 }
+                                else
+                                {
+                                    completion([],nil)
+                                }
                             case .failure(let error):
                                 completion([], error)
                             }

@@ -8,6 +8,7 @@ target 'FinStat Ukraine' do
   pod 'Alamofire', '~> 4.2'
   pod 'Charts'
   pod 'NTMonthYearPicker'
+  pod 'KJExpandableTableTree'
   # Pods for NBUStat
 
 #target 'NBUStatTests' do
