@@ -18,7 +18,7 @@ class GovermentBudgetModuleBuilder: ModuleBuilderProtocol
         {
             if let controller = navigationController.topViewController as? CurrencyViewController
             {
-                controller.presenter = InterbankRatesManager(date: Date())
+                controller.presenter = GovermentBudgetPresenter(date: Calendar.current.date(byAdding: .month, value: -3, to: Date()) ?? Date())
             }
         }
         return initialController ?? UIViewController()

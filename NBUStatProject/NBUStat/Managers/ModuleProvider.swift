@@ -12,7 +12,7 @@ import UIKit
 class ModuleProvider
 {
     private let dataProviders: [ModuleBuilderProtocol] = [NBUCurrencyModuleBuilder(),
-                                 InterbankRatesModuleBuilder()
+                                 GovermentBudgetModuleBuilder()
                                  ]
     
     var count: Int {
