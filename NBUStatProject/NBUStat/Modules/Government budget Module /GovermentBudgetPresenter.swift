@@ -16,7 +16,7 @@ class GovermentBudgetPresenter: NSObject, DateDependedPresenterProtocol, MonthDa
     
     private(set) var rates: [GovermentBudgetLine] = []
     private let service = GovermentBudgetService()
-    let cellTypes: [BaseTableCellProtocol.Type] = [InterbankRatesTableViewCell.self]
+    let cellTypes: [BaseTableCellProtocol.Type] = [GovermentBudgetTableViewCell.self]
     
     var date: Date {
         didSet {
@@ -105,7 +105,7 @@ extension GovermentBudgetPresenter: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "InterbankRatesTableViewCell") as? InterbankRatesTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: GovermentBudgetTableViewCell.CellIdentifier()) as? GovermentBudgetTableViewCell
         //cell?.configure(rate: rates[indexPath.row])
         
         return cell ?? UITableViewCell()

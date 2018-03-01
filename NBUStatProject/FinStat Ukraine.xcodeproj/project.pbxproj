@@ -51,6 +51,8 @@
 		D9720A4B2044BBC300F81CBB /* MonthDateDependedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A4A2044BBC300F81CBB /* MonthDateDependedProtocol.swift */; };
 		D9720A4D2045219500F81CBB /* GovermentBudgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A4C2045219500F81CBB /* GovermentBudgetService.swift */; };
 		D9720A4F2045231000F81CBB /* GovermentBudgetLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A4E2045231000F81CBB /* GovermentBudgetLine.swift */; };
+		D9720A522047D7C000F81CBB /* GovermentBudgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A502047D7C000F81CBB /* GovermentBudgetTableViewCell.swift */; };
+		D9720A532047D7C000F81CBB /* GovermentBudgetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9720A512047D7C000F81CBB /* GovermentBudgetTableViewCell.xib */; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
 		D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */; };
 		D99C89CE203B85D4002C55CB /* NBURatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89CD203B85D4002C55CB /* NBURatesService.swift */; };
@@ -135,6 +137,8 @@
 		D9720A4A2044BBC300F81CBB /* MonthDateDependedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthDateDependedProtocol.swift; sourceTree = "<group>"; };
 		D9720A4C2045219500F81CBB /* GovermentBudgetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovermentBudgetService.swift; sourceTree = "<group>"; };
 		D9720A4E2045231000F81CBB /* GovermentBudgetLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovermentBudgetLine.swift; sourceTree = "<group>"; };
+		D9720A502047D7C000F81CBB /* GovermentBudgetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovermentBudgetTableViewCell.swift; sourceTree = "<group>"; };
+		D9720A512047D7C000F81CBB /* GovermentBudgetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GovermentBudgetTableViewCell.xib; sourceTree = "<group>"; };
 		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
 		D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		D99C89CD203B85D4002C55CB /* NBURatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBURatesService.swift; sourceTree = "<group>"; };
@@ -324,6 +328,8 @@
 				D9720A462044BAEF00F81CBB /* GovermentBudgetModuleBuilder.swift */,
 				D9720A482044BB7C00F81CBB /* GovermentBudgetPresenter.swift */,
 				D9720A4C2045219500F81CBB /* GovermentBudgetService.swift */,
+				D9720A502047D7C000F81CBB /* GovermentBudgetTableViewCell.swift */,
+				D9720A512047D7C000F81CBB /* GovermentBudgetTableViewCell.xib */,
 			);
 			path = "Government budget Module ";
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 				D96F1767203A261900869372 /* ProviderTableViewCell.xib in Resources */,
 				D96B2A0D203CB36500027099 /* NBURatesTableViewCell.xib in Resources */,
 				C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */,
+				D9720A532047D7C000F81CBB /* GovermentBudgetTableViewCell.xib in Resources */,
 				C6F323CB1F2F7C3100363DC1 /* Settings.bundle in Resources */,
 				C61F1F141F18B06700F0AF87 /* LaunchScreen.storyboard in Resources */,
 				D9EC9CB1203AB05600BC8954 /* Localizable.strings in Resources */,
@@ -631,6 +638,7 @@
 				C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */,
 				D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */,
 				C61F1F461F18C29500F0AF87 /* NBUCurrencyRatesManager.swift in Sources */,
+				D9720A522047D7C000F81CBB /* GovermentBudgetTableViewCell.swift in Sources */,
 				D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */,
 				D9720A452044B13200F81CBB /* DayDateDependedProtocol.swift in Sources */,
 				D9720A4F2045231000F81CBB /* GovermentBudgetLine.swift in Sources */,
