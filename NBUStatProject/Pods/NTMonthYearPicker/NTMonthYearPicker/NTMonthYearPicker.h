@@ -45,4 +45,6 @@ typedef enum {
 // If animated is YES, animate the wheels to display the new date
 - (void)setDate:(NSDate *)date animated:(BOOL)animated;
 
+
+- (UIPickerView*)asPicker;
 @end

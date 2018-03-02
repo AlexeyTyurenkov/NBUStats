@@ -21,7 +21,7 @@ struct GovermentBudgetLine
     private var formatter: NumberFormatter
     
     init(dictionary: [String:AnyObject]) {
-        txt = (dictionary["text"] as? String) ?? ""
+        txt = (dictionary["txt"] as? String) ?? ""
         txten = (dictionary["txten"] as? String) ?? ""
         id_api = (dictionary["id_api"] as? String) ?? ""
         leveli = (dictionary["leveli"] as? Int) ?? -1

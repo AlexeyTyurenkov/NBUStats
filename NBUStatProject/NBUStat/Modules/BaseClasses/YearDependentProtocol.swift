@@ -1,8 +1,8 @@
 //
-//  MonthDateDependedProtocol.swift
+//  YearDependentProtocol.swift
 //  FinStat Ukraine
 //
-//  Created by Aleksey Tyurenkov on 2/27/18.
+//  Created by Aleksey Tyurenkov on 3/1/18.
 //  Copyright © 2018 Oleksii Tiurenkov. All rights reserved.
 //
 
@@ -11,21 +11,21 @@ import UIKit
 import NTMonthYearPicker
 
 
-protocol MonthDateDependedProtocol: DateDependedPresenterProtocol {
+protocol YearDependentProtocol: DateDependedPresenterProtocol {
     
 }
 
 
-extension MonthDateDependedProtocol
+extension YearDependentProtocol
 {
     var picker: UIDatePicker {
-        let picker = UIDatePicker()
-        picker.datePickerMode = .date
+        let picker = NTMonthYearPicker()
+        picker.datePickerMode = NTMonthYearPickerMode.init(rawValue: 1)
         picker.maximumDate = Date()
         picker.date = self.date
         picker.minimumDate = Date(timeIntervalSince1970: 946727869)
         picker.sizeToFit()
-        return picker
+        return (picker as? UIDatePicker) ?? UIDatePicker()
     }
     
     func nextDate(for date: Date) -> Date
@@ -44,5 +44,5 @@ extension MonthDateDependedProtocol
         return dateFormatter
     }
     
-
+    
 }

@@ -62,6 +62,13 @@ NSInteger _maximumMonth = -1;
 const NSInteger kMinYear = 1;
 const NSInteger kMaxYear = 10000;
 
+
+
+- (UIPickerView*)asPicker
+{
+    return (UIPickerView*)self;
+}
+
 #pragma mark - Initialization
 
 - (id)initWithFrame:(CGRect)frame {
@@ -396,6 +403,8 @@ NTMonthYearPickerView *_pickerView;
 - (void)didSelectDate {
     [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
+
+
 
 #pragma mark - NTMonthYearPicker API
 

@@ -31,8 +31,8 @@ class GovermentBudgetPresenter: NSObject, DateDependedPresenterProtocol, MonthDa
     private func loadList(date: Date)
     {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyyMM"
-        let dateString = dateFormatter.string(from: date)
+        dateFormatter.dateFormat = "yyyy"
+        let dateString = "\(dateFormatter.string(from: date))01"
         service.loadList(param: dateString) { (rates, error) in
             if let error = error
             {
@@ -106,7 +106,7 @@ extension GovermentBudgetPresenter: UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: GovermentBudgetTableViewCell.CellIdentifier()) as? GovermentBudgetTableViewCell
-        //cell?.configure(rate: rates[indexPath.row])
+        cell?.configure(line: rates[indexPath.row])
         
         return cell ?? UITableViewCell()
     }
