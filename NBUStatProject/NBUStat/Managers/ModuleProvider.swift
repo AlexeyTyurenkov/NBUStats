@@ -12,7 +12,9 @@ import UIKit
 class ModuleProvider
 {
     private let dataProviders: [ModuleBuilderProtocol] = [NBUCurrencyModuleBuilder(),
-                                 GovermentBudgetModuleBuilder()
+                                 CommercialHTModuleBuilder(),
+                                 InterbankHTModuleBuilder(),
+                                 BlackHTModuleBuilder()
                                  ]
     
     var count: Int {

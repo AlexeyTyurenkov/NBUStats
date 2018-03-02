@@ -16,9 +16,9 @@ struct HrTodayRate
     var buyChange: String
     var sellChange: String
     var name: String
-    var updated: Date
+    var updated: String
     
-    init?(name: String, dictionary:[String:Any]?)
+    init?(dictionary:[String:Any]?)
     {
         /*
  {
@@ -36,15 +36,17 @@ struct HrTodayRate
  */
         guard let code = dictionary?["cc"] as? String else { return nil}
         guard let updated = dictionary?["updated_at"] as? String else { return nil}
-        let dateFormatter = DateFormatter()
-        guard let date = dateFormatter.date(from: updated) else {return nil}
-        self.updated = date
+        self.updated = updated.UTCToLocal()
         self.code = code
-        self.name = dictionary?["name"] as? String ?? code
+        self.name = dictionary?["name"] as? String ?? CurrencyName.by(code: code)
         buy = dictionary?["buy"] as? String ?? ""
-        sell = dictionary?["sell"] as? String ?? ""
+        sell = dictionary?["sale"] as? String ?? ""
         buyChange = dictionary?["buychange"] as? String ?? ""
-        sellChange = dictionary?["sellChange"] as? String ?? ""
+        sellChange = dictionary?["salechange"] as? String ?? ""
 
     }
+    
+    
+    
+    
 }
