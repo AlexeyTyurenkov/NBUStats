@@ -9,6 +9,14 @@
 import UIKit
 
 class HrTodayTableViewCell: UITableViewCell, BaseTableCellProtocol {
+    static func CellIdentifier() -> String {
+        return "HrTodayTableViewCell"
+    }
+    
+    static func Nib() -> UINib {
+        return UINib(nibName: "HrTodayTableViewCell", bundle: nil)
+    }
+    
 
 
     
