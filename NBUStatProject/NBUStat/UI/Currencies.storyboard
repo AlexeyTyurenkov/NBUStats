@@ -44,7 +44,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="afQ-EV-2ti"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Курси валют" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="5JT-bP-1DQ"/>
+                    <navigationItem key="navigationItem" title="Курси валют" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="5JT-bP-1DQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="WZv-li-nfI">
+                            <connections>
+                                <segue destination="QFk-II-96C" kind="show" id="bbn-DU-KtV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="S0z-Si-4rL" kind="show" identifier="ShowCurrency" id="eqx-F0-M0X">
                             <nil key="action"/>
@@ -54,6 +60,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0VO-HE-u7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1278" y="-571"/>
+        </scene>
+        <!--DataProviderCredits-->
+        <scene sceneID="Ri4-h0-aUq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DataProviderCredits" id="QFk-II-96C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xwj-CI-3ZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2042" y="-1054"/>
         </scene>
         <!--Hryvnia Today Table View Controller-->
         <scene sceneID="ZVT-hS-YUi">

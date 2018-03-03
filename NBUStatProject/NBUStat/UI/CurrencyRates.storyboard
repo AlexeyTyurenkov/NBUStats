@@ -139,7 +139,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2pz-Zb-Ojl"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Курси валют НБУ" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="fZu-jc-FB2"/>
+                    <navigationItem key="navigationItem" title="Курси валют НБУ" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="fZu-jc-FB2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="vvA-Lb-AlW">
+                            <connections>
+                                <segue destination="Kka-BJ-rGY" kind="show" id="cvw-Ns-JOU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateLabel" destination="WKQ-Co-QCB" id="F5J-nT-oHz"/>
                         <outlet property="dateTextField" destination="KbE-Vi-ldk" id="ibM-3k-vSL"/>
@@ -156,6 +162,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2p-tN-8qu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1278" y="-571"/>
+        </scene>
+        <!--DataProviderCredits-->
+        <scene sceneID="FlV-kR-GDy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DataProviderCredits" id="Kka-BJ-rGY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBC-dw-Rof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="-1125"/>
         </scene>
         <!--Rates Table View Controller-->
         <scene sceneID="6UF-AZ-TLf">

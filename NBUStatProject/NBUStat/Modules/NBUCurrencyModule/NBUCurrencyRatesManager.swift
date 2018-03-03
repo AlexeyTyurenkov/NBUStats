@@ -158,6 +158,11 @@ class NBUCurrencyRatesManager: NSObject, DateDependedPresenterProtocol, Favorite
         loadList(date: date)
     }
     
+    var dataProviderInfo: DataProviderInfoProtocol{
+        return self
+    }
+    
+    
 }
 
 extension NBUCurrencyRatesManager: UITableViewDataSource

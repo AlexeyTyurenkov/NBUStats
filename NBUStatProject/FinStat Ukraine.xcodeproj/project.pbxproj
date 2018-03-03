@@ -36,6 +36,11 @@
 		D906291D204A050700118375 /* String+DifferenceComparationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906291C204A050700118375 /* String+DifferenceComparationResult.swift */; };
 		D906291F204A052200118375 /* DifferenceComparationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906291E204A052100118375 /* DifferenceComparationResult.swift */; };
 		D9062921204A06AA00118375 /* UILabel+Colorification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9062920204A06AA00118375 /* UILabel+Colorification.swift */; };
+		D9062923204B425600118375 /* DataProviderCredits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9062922204B425500118375 /* DataProviderCredits.storyboard */; };
+		D9062925204B45FC00118375 /* DataProviderInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9062924204B45FC00118375 /* DataProviderInfoViewController.swift */; };
+		D9062927204B4A1200118375 /* DataProviderInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9062926204B4A1200118375 /* DataProviderInfoProtocol.swift */; };
+		D9062929204B4ED800118375 /* NBUCurrencyRatesManager+DataProviderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9062928204B4ED800118375 /* NBUCurrencyRatesManager+DataProviderInfo.swift */; };
+		D906292B204B524D00118375 /* HryvniaTodayPresenter+DataProviderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906292A204B524D00118375 /* HryvniaTodayPresenter+DataProviderInfo.swift */; };
 		D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A04203B971C00027099 /* BaseTableViewController.swift */; };
 		D96B2A07203CA41800027099 /* PresenterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */; };
 		D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A08203CA55A00027099 /* PresenterProtocol.swift */; };
@@ -137,6 +142,11 @@
 		D906291C204A050700118375 /* String+DifferenceComparationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DifferenceComparationResult.swift"; sourceTree = "<group>"; };
 		D906291E204A052100118375 /* DifferenceComparationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceComparationResult.swift; sourceTree = "<group>"; };
 		D9062920204A06AA00118375 /* UILabel+Colorification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Colorification.swift"; sourceTree = "<group>"; };
+		D9062922204B425500118375 /* DataProviderCredits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DataProviderCredits.storyboard; sourceTree = "<group>"; };
+		D9062924204B45FC00118375 /* DataProviderInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderInfoViewController.swift; sourceTree = "<group>"; };
+		D9062926204B4A1200118375 /* DataProviderInfoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderInfoProtocol.swift; sourceTree = "<group>"; };
+		D9062928204B4ED800118375 /* NBUCurrencyRatesManager+DataProviderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NBUCurrencyRatesManager+DataProviderInfo.swift"; sourceTree = "<group>"; };
+		D906292A204B524D00118375 /* HryvniaTodayPresenter+DataProviderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HryvniaTodayPresenter+DataProviderInfo.swift"; sourceTree = "<group>"; };
 		D96B2A04203B971C00027099 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewDelegate.swift; sourceTree = "<group>"; };
 		D96B2A08203CA55A00027099 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
@@ -324,6 +334,7 @@
 				D96F1762203A25AB00869372 /* ProvidersListTableViewController.swift */,
 				D96B2A10203CBF7D00027099 /* MainViewController.swift */,
 				D90629122049ED0E00118375 /* ContainerViewController.swift */,
+				D9062924204B45FC00118375 /* DataProviderInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -361,6 +372,7 @@
 				D96F175B203A183F00869372 /* MainMasterDetail.storyboard */,
 				D9720A34203E0CA000F81CBB /* CurrencyRates.storyboard */,
 				D90629102049EBEB00118375 /* Currencies.storyboard */,
+				D9062922204B425500118375 /* DataProviderCredits.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -384,6 +396,7 @@
 				D906290C2049E6E200118375 /* HryvniaTodayService.swift */,
 				D906290E2049E91F00118375 /* HryvniaTodayPresenter.swift */,
 				D90629142049EE2200118375 /* HryvniaTodayTableViewController.swift */,
+				D906292A204B524D00118375 /* HryvniaTodayPresenter+DataProviderInfo.swift */,
 			);
 			path = "Hryvnia Today Interbank";
 			sourceTree = "<group>";
@@ -408,6 +421,7 @@
 				C61F1F451F18C29500F0AF87 /* NBUCurrencyRatesManager.swift */,
 				D99C89CD203B85D4002C55CB /* NBURatesService.swift */,
 				D99C89D1203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift */,
+				D9062928204B4ED800118375 /* NBUCurrencyRatesManager+DataProviderInfo.swift */,
 			);
 			path = NBUCurrencyModule;
 			sourceTree = "<group>";
@@ -435,6 +449,7 @@
 				D9720A442044B13200F81CBB /* DayDateDependedProtocol.swift */,
 				D9720A4A2044BBC300F81CBB /* MonthDateDependedProtocol.swift */,
 				D9720A562047E08F00F81CBB /* YearDependentProtocol.swift */,
+				D9062926204B4A1200118375 /* DataProviderInfoProtocol.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -567,6 +582,7 @@
 				D9EC9CB1203AB05600BC8954 /* Localizable.strings in Resources */,
 				D9720A41203E222D00F81CBB /* InterbankRatesTableViewCell.xib in Resources */,
 				C61F1F111F18B06700F0AF87 /* Assets.xcassets in Resources */,
+				D9062923204B425600118375 /* DataProviderCredits.storyboard in Resources */,
 				D90629112049EBEB00118375 /* Currencies.storyboard in Resources */,
 				D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */,
 				D9720A35203E0CA000F81CBB /* CurrencyRates.storyboard in Resources */,
@@ -675,6 +691,7 @@
 				D99C89CE203B85D4002C55CB /* NBURatesService.swift in Sources */,
 				D906291F204A052200118375 /* DifferenceComparationResult.swift in Sources */,
 				D99C89D0203B8622002C55CB /* RatesServiceProtocol.swift in Sources */,
+				D9062929204B4ED800118375 /* NBUCurrencyRatesManager+DataProviderInfo.swift in Sources */,
 				D9EC9CA8203A2B7100BC8954 /* ProviderTableViewCell+MainScreenCellProtocol.swift in Sources */,
 				C61F1F391F18B1EF00F0AF87 /* CurrencyRate.swift in Sources */,
 				D99C89D4203B8DBF002C55CB /* InterbankRatesModuleBuilder.swift in Sources */,
@@ -684,6 +701,7 @@
 				D9720A4D2045219500F81CBB /* GovermentBudgetService.swift in Sources */,
 				D90629132049ED0E00118375 /* ContainerViewController.swift in Sources */,
 				D9720A472044BAEF00F81CBB /* GovermentBudgetModuleBuilder.swift in Sources */,
+				D9062927204B4A1200118375 /* DataProviderInfoProtocol.swift in Sources */,
 				D96B2A11203CBF7D00027099 /* MainViewController.swift in Sources */,
 				D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */,
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
@@ -707,6 +725,7 @@
 				D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */,
 				C61F1F461F18C29500F0AF87 /* NBUCurrencyRatesManager.swift in Sources */,
 				D9720A522047D7C000F81CBB /* GovermentBudgetTableViewCell.swift in Sources */,
+				D9062925204B45FC00118375 /* DataProviderInfoViewController.swift in Sources */,
 				D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */,
 				D9720A452044B13200F81CBB /* DayDateDependedProtocol.swift in Sources */,
 				D9720A4F2045231000F81CBB /* GovermentBudgetLine.swift in Sources */,
@@ -717,6 +736,7 @@
 				D906290F2049E91F00118375 /* HryvniaTodayPresenter.swift in Sources */,
 				D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */,
 				D9720A3D203E163300F81CBB /* InterbankRatesService.swift in Sources */,
+				D906292B204B524D00118375 /* HryvniaTodayPresenter+DataProviderInfo.swift in Sources */,
 				D9720A3B203E14F000F81CBB /* OpenRateInUaRates.swift in Sources */,
 				D9EC9CA6203A2AE100BC8954 /* MainScreenCellProtocol.swift in Sources */,
 				D9062921204A06AA00118375 /* UILabel+Colorification.swift in Sources */,

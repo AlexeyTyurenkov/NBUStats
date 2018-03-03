@@ -78,6 +78,10 @@ class HryvniaTodayPresenter: NSObject, PresenterProtocol {
         loadList()
     }
     
+    var dataProviderInfo: DataProviderInfoProtocol{
+        return self
+    }
+    
 }
 
 extension HryvniaTodayPresenter: UITableViewDataSource

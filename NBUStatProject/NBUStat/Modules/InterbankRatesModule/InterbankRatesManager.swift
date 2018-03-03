@@ -93,6 +93,11 @@ class InterbankRatesManager: NSObject, DateDependedPresenterProtocol, DayDateDep
         loadList(date: date)
     }
     
+    var dataProviderInfo: DataProviderInfoProtocol
+    {
+        return self as! DataProviderInfoProtocol
+    }
+    
 }
 
 extension InterbankRatesManager: UITableViewDataSource

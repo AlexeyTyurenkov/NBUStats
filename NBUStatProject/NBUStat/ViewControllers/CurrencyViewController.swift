@@ -132,6 +132,10 @@ class CurrencyViewController: UIViewController {
         {
             viewController.currency = detailedCurrency
         }
+        else if let viewController = segue.destination as? DataProviderInfoViewController
+        {
+            viewController.info = presenter.dataProviderInfo
+        }
     }
  
     

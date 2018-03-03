@@ -19,7 +19,7 @@ class HryvniaTodayModuleBuilder: ModuleBuilderProtocol
         {
             if let controller = navigationController.topViewController as? ContainerViewController
             {
-
+                controller.navigationItem.title = self.moduleName
                 controller.presenter = presenter
             }
         }
@@ -42,7 +42,7 @@ class InterbankHTModuleBuilder: HryvniaTodayModuleBuilder
     }
     
     override var moduleName: String{
-        return NSLocalizedString("Оперативні курси по Miжбанку(Hryvna.Today)", comment: "")
+        return NSLocalizedString("Оперативні курси валют на Miжбанку\n(Hryvna.Today)", comment: "")
     }
 }
 
@@ -56,7 +56,7 @@ class BlackHTModuleBuilder: HryvniaTodayModuleBuilder
     }
     
     override var moduleName: String{
-        return NSLocalizedString("Очікування готівкого ринку(Hryvna.Today)", comment: "")
+        return NSLocalizedString("Очікування готівкого ринку\n(Hryvna.Today)", comment: "")
     }
 }
 
@@ -70,6 +70,6 @@ class CommercialHTModuleBuilder: HryvniaTodayModuleBuilder
     }
     
     override var moduleName: String{
-        return NSLocalizedString("Оперативні середні готівкові курси по банках(Hryvna.Today)", comment: "")
+        return NSLocalizedString("Оперативні середні готівкові курси по банках\n(Hryvna.Today)", comment: "")
     }
 }

@@ -25,7 +25,10 @@ class ContainerViewController: UIViewController {
             viewController.presenter = presenter
             viewController.presenter.delegate = viewController
         }
-
+        else if let viewController = segue.destination as? DataProviderInfoViewController
+        {
+            viewController.info = presenter.dataProviderInfo
+        }
     }
 
 }

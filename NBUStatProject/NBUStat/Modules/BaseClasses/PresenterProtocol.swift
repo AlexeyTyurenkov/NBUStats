@@ -14,6 +14,7 @@ protocol PresenterProtocol: class {
     func updateView()
     func viewLoaded()
     var cellTypes: [BaseTableCellProtocol.Type] { get }
+    var dataProviderInfo: DataProviderInfoProtocol { get }
 }
 
 protocol DateDependedPresenterProtocol:PresenterProtocol

@@ -91,6 +91,11 @@ class GovermentBudgetPresenter: NSObject, DateDependedPresenterProtocol, MonthDa
         loadList(date: date)
     }
     
+    var dataProviderInfo: DataProviderInfoProtocol
+    {
+        return self as! DataProviderInfoProtocol
+    }
+    
 }
 
 extension GovermentBudgetPresenter: UITableViewDataSource
