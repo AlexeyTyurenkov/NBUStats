@@ -16,6 +16,7 @@ extension String
         formatter.numberStyle = NumberFormatter.Style.decimal
         formatter.roundingMode = NumberFormatter.RoundingMode.halfUp
         formatter.maximumFractionDigits = 3
+        formatter.decimalSeparator = "."
         let number = formatter.number(from: self) ?? NSNumber(integerLiteral: 0)
         var result:DifferenceComparisonResult = .unknown
         if number.floatValue > with

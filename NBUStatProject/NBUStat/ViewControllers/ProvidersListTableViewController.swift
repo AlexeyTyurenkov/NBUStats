@@ -39,8 +39,9 @@ class ProvidersListTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ProviderTableViewCell.CellIdentifier(), for: indexPath)
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ProviderTableViewCell.CellIdentifier(), for: indexPath) as? ProviderTableViewCell
+        cell?.configure(withTitle: list.title(at: indexPath.row))
+        return cell ?? UITableViewCell()
     }
  
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
