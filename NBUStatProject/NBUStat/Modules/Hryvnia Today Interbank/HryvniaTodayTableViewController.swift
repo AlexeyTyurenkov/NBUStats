@@ -13,13 +13,13 @@ class HryvniaTodayTableViewController: BaseTableViewController, PresenterViewDel
     var presenter: PresenterProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        self.configureRefreshControl()
         self.tableView.dataSource = presenter as! UITableViewDataSource
         presenter.cellTypes.forEach { self.register(cellType: $0)}
         presenter.viewLoaded()
     }
 
-    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+    @objc override func handleRefresh(_ refreshControl: UIRefreshControl) {
         presenter.viewLoaded()
     }
     
@@ -59,10 +59,5 @@ class HryvniaTodayTableViewController: BaseTableViewController, PresenterViewDel
             self.refreshControl?.endRefreshing()
         }
     }
-
-    
-    
-    
-
 
 }

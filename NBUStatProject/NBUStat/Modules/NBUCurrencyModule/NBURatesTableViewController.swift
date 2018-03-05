@@ -22,6 +22,8 @@ class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegat
     var openDetail: ((String)->())?
     private var isProfessional: Bool = false
     
+    
+    
     private var favoritePresenter: FavoritePresenter? {
         return presenter as? FavoritePresenter
     }
@@ -33,7 +35,7 @@ class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        self.configureRefreshControl()
         self.tableView.dataSource = tableDataSource
         if let uiSearchDelegate = presenter as? UISearchResultsUpdating & UISearchBarDelegate
         {
@@ -42,11 +44,8 @@ class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegat
         presenter.cellTypes.forEach { self.register(cellType: $0)}
         presenter.viewLoaded()
     }
-    
-    
-    
-
-    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+ 
+    @objc override func handleRefresh(_ refreshControl: UIRefreshControl) {
         presenter.viewLoaded()
     }
     
