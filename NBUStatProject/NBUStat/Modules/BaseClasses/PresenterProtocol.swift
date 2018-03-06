@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol PresenterProtocol: class {
-    var delegate: PresenterViewDelegate? { get set }
+    weak var delegate: PresenterViewDelegate? { get set }
     func updateView()
     func viewLoaded()
     var cellTypes: [BaseTableCellProtocol.Type] { get }

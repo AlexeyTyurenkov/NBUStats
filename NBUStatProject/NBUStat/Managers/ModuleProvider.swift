@@ -14,7 +14,8 @@ class ModuleProvider
     private let dataProviders: [ModuleBuilderProtocol] = [NBUCurrencyModuleBuilder(),
                                  CommercialHTModuleBuilder(),
                                  InterbankHTModuleBuilder(),
-                                 BlackHTModuleBuilder()
+                                 BlackHTModuleBuilder(),
+                                 UXCurrentIndexModuleBuilder()
                                  ]
     
     var count: Int {
