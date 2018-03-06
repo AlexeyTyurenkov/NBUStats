@@ -59,7 +59,7 @@ class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegat
             self.favoritePresenter?.toggleMark(section: index.section, index: index.row)
             self.tableView.reloadData()
             }
-            action.backgroundColor = isFavorite ? UIColor(red: 213.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0) : UIColor(red: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
+            action.backgroundColor = isFavorite ? ThemeManager.shared.negativeColor : ThemeManager.shared.positiveColor
             more.append(action)
         }
         return more
@@ -74,7 +74,7 @@ class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegat
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let header = view as? UITableViewHeaderFooterView  else { return }
-        header.textLabel?.textColor = UIColor(red: 51.0/255.0, green: 51.0/255.0, blue: 51.0/255.0, alpha: 1.0)
+        header.textLabel?.textColor = ThemeManager.shared.neutralColor
     }
 
     func presenterDidLoad(_: PresenterProtocol) {

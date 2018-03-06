@@ -29,7 +29,7 @@ class CurrencyViewController: UIViewController {
         let toolBar = UIToolbar()
         toolBar.barStyle = .default
         toolBar.isTranslucent = true
-        toolBar.tintColor =  UIColor(red: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
+        toolBar.tintColor =  ThemeManager.shared.positiveColor
         toolBar.sizeToFit()
         let doneButton = UIBarButtonItem(title: NSLocalizedString("Готово", comment: ""), style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)

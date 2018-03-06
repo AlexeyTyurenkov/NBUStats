@@ -27,6 +27,6 @@ struct UXCurrencyIndexModel
         max = (dictionary["max"] as? String) ?? ""
         min = (dictionary["min"] as? String) ?? ""
         close = (dictionary["close"] as? String) ?? ""
-        change = (dictionary["change"] as? String) ?? ""
+        change = (dictionary["openchange"] as? String) ?? ""
     }
 }

@@ -54,14 +54,11 @@ extension NBURatesTableViewCell
         
         switch currencyRate.change() {
         case .goesdown:
-            //rgba(231, 76, 60,1.0)
-            differenceLabel.textColor = UIColor(red: 213.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0)
+            differenceLabel.textColor = ThemeManager.shared.negativeColor
         case .grow:
-            //rgba(26, 188, 156,1.0)
-            differenceLabel.textColor = UIColor(red: 26.0/255.0, green: 188.0/255.0, blue: 156.0/255.0, alpha: 1.0)
+            differenceLabel.textColor = ThemeManager.shared.positiveColor
         case .same:
-            //rgba(52, 73, 94,1.0)
-            differenceLabel.textColor = UIColor(red: 51.0/255.0, green: 51.0/255.0, blue: 51.0/255.0, alpha: 1.0)
+            differenceLabel.textColor = ThemeManager.shared.negativeColor
         default:
             differenceLabel.textColor = UIColor.clear
         }

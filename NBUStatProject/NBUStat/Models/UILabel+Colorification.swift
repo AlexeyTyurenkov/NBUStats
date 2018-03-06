@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-typealias ColorSet = (positive: UIColor, negative: UIColor, same: UIColor)
 
 
 extension UILabel{
