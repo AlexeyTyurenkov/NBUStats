@@ -18,6 +18,8 @@ class UXCurrentIndexModuleBuilder: ModuleBuilderProtocol {
             if let controller = navigationController.topViewController as? UXCurrentIndexViewController
             {
                 let presenter = UXCurrentIndexPresenter()
+                let router    = UXCurrentIndexRouter()
+                presenter.router = router
                 controller.presenter = presenter
                 controller.presenter.delegate = controller
             }

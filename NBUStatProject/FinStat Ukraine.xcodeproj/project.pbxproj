@@ -50,6 +50,8 @@
 		D961F92F204E605B00F46F8A /* UXCurrentIndexPresenter+DataProviderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F92E204E605B00F46F8A /* UXCurrentIndexPresenter+DataProviderInfo.swift */; };
 		D961F931204E73CA00F46F8A /* UXCurrentIndexInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F930204E73CA00F46F8A /* UXCurrentIndexInteractor.swift */; };
 		D961F933204E7A0B00F46F8A /* UXCurrencyIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F932204E7A0B00F46F8A /* UXCurrencyIndexModel.swift */; };
+		D961F935204F493400F46F8A /* UXCurrentIndexRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F934204F493400F46F8A /* UXCurrentIndexRouter.swift */; };
+		D961F93B204F4C2200F46F8A /* DataProviderPresentingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F93A204F4C2200F46F8A /* DataProviderPresentingProtocol.swift */; };
 		D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A04203B971C00027099 /* BaseTableViewController.swift */; };
 		D96B2A07203CA41800027099 /* PresenterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */; };
 		D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A08203CA55A00027099 /* PresenterProtocol.swift */; };
@@ -165,6 +167,8 @@
 		D961F92E204E605B00F46F8A /* UXCurrentIndexPresenter+DataProviderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXCurrentIndexPresenter+DataProviderInfo.swift"; sourceTree = "<group>"; };
 		D961F930204E73CA00F46F8A /* UXCurrentIndexInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXCurrentIndexInteractor.swift; sourceTree = "<group>"; };
 		D961F932204E7A0B00F46F8A /* UXCurrencyIndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXCurrencyIndexModel.swift; sourceTree = "<group>"; };
+		D961F934204F493400F46F8A /* UXCurrentIndexRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXCurrentIndexRouter.swift; sourceTree = "<group>"; };
+		D961F93A204F4C2200F46F8A /* DataProviderPresentingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderPresentingProtocol.swift; sourceTree = "<group>"; };
 		D96B2A04203B971C00027099 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewDelegate.swift; sourceTree = "<group>"; };
 		D96B2A08203CA55A00027099 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
@@ -287,6 +291,7 @@
 		C61F1F051F18B06700F0AF87 /* NBUStat */ = {
 			isa = PBXGroup;
 			children = (
+				D961F939204F4C0600F46F8A /* Common */,
 				D99C89C5203B850F002C55CB /* Modules */,
 				C61F1F441F18C27600F0AF87 /* Managers */,
 				C61F1F3C1F18B58E00F0AF87 /* ViewControllers */,
@@ -393,8 +398,17 @@
 				D961F92C204E5FF000F46F8A /* UXCurrentIndexPresenter.swift */,
 				D961F92E204E605B00F46F8A /* UXCurrentIndexPresenter+DataProviderInfo.swift */,
 				D961F930204E73CA00F46F8A /* UXCurrentIndexInteractor.swift */,
+				D961F934204F493400F46F8A /* UXCurrentIndexRouter.swift */,
 			);
 			path = UXCurrentIndex;
+			sourceTree = "<group>";
+		};
+		D961F939204F4C0600F46F8A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D961F93A204F4C2200F46F8A /* DataProviderPresentingProtocol.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		D9720A42203E246600F81CBB /* UI */ = {
@@ -722,6 +736,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D906290B2049E64B00118375 /* HryvniaTodayModuleBuilder.swift in Sources */,
+				D961F93B204F4C2200F46F8A /* DataProviderPresentingProtocol.swift in Sources */,
 				C61F1F3E1F18C14E00F0AF87 /* NBURatesTableViewController.swift in Sources */,
 				D96B2A13203CC55900027099 /* DetailControllerPresenterProtocol.swift in Sources */,
 				D90629192049FADE00118375 /* Sttring+Time.swift in Sources */,
@@ -784,6 +799,7 @@
 				D9062921204A06AA00118375 /* UILabel+Colorification.swift in Sources */,
 				D9720A37203E123C00F81CBB /* InterbankRatesManager.swift in Sources */,
 				D961F92B204DF04900F46F8A /* UXCurrentIndexViewController.swift in Sources */,
+				D961F935204F493400F46F8A /* UXCurrentIndexRouter.swift in Sources */,
 				C60A0FC5204D68120010FDB3 /* RefreshController.swift in Sources */,
 				D99C89D2203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift in Sources */,
 				D9720A5A2049289D00F81CBB /* HrTodayRate.swift in Sources */,

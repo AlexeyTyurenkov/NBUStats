@@ -13,9 +13,14 @@ protocol PresenterProtocol: class {
     weak var delegate: PresenterViewDelegate? { get set }
     func updateView()
     func viewLoaded()
-    var cellTypes: [BaseTableCellProtocol.Type] { get }
     var dataProviderInfo: DataProviderInfoProtocol { get }
 }
+
+protocol TablePresenterProtocol: PresenterProtocol
+{
+    var cellTypes: [BaseTableCellProtocol.Type] { get }
+}
+
 
 protocol DateDependedPresenterProtocol:PresenterProtocol
 {

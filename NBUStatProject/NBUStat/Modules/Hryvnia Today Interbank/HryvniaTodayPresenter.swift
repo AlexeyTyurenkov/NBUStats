@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class HryvniaTodayPresenter: NSObject, PresenterProtocol {
+class HryvniaTodayPresenter: NSObject, PresenterProtocol, TablePresenterProtocol {
     weak var delegate: PresenterViewDelegate?
     
     

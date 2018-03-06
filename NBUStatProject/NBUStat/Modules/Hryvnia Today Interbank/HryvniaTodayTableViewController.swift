@@ -10,7 +10,7 @@ import UIKit
 
 class HryvniaTodayTableViewController: BaseTableViewController, PresenterViewDelegate {
     
-    var presenter: PresenterProtocol!
+    var presenter: TablePresenterProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureRefreshControl()

@@ -9,8 +9,21 @@
 import UIKit
 
 class UXCurrentIndexViewController: UIViewController, PresenterViewDelegate {
-    func presenter(_: PresenterProtocol, updateAsProfessional: Bool) {
-        
+    
+    
+    func presenter(_ presenter: PresenterProtocol, updateAsProfessional: Bool) {
+        if let presenter = presenter as? UXCurrentIndexPresenter,
+            let model = presenter.currentModel
+        {
+            moment.text = model.moment
+            maxValue.text = model.max
+            currentIndex.text = model.close
+            openingIndex.text = model.open
+            minValue.text = model.min
+            change.text = model.change
+            view.sendSubview(toBack: activityView)
+            activityView.isHidden = true
+        }
     }
     
     func presenter(_: PresenterProtocol, getError: Error) {
@@ -31,7 +44,7 @@ class UXCurrentIndexViewController: UIViewController, PresenterViewDelegate {
     
 
     
-    var presenter: PresenterProtocol!
+    var presenter: UXCurrentIndexPresenterProtocol!
     @IBOutlet weak var activityView: UIView!
     weak var refreshController:RefreshController?
     
@@ -57,7 +70,10 @@ class UXCurrentIndexViewController: UIViewController, PresenterViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func providerButtonPressed(_ sender: UIBarButtonItem) {
+        presenter.showDataProviderInfo()
+    }
+    
     /*
     // MARK: - Navigation
 

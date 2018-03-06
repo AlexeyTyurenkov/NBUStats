@@ -18,7 +18,7 @@ protocol FavoritePresenter
 
 class NBURatesTableViewController: BaseTableViewController, PresenterViewDelegate {
     
-    var presenter: DateDependedPresenterProtocol!
+    var presenter: (DateDependedPresenterProtocol & TablePresenterProtocol)!
     var openDetail: ((String)->())?
     private var isProfessional: Bool = false
     

@@ -10,7 +10,7 @@ import UIKit
 
 class CurrencyViewController: UIViewController {
 
-    var presenter: DateDependedPresenterProtocol = NBUCurrencyRatesManager(date: Date())
+    var presenter: DateDependedPresenterProtocol & TablePresenterProtocol = NBUCurrencyRatesManager(date: Date())
 
     @IBOutlet weak var dateLabel: UILabel!
     

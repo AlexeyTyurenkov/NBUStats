@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Alamofire
 
-class GovermentBudgetPresenter: NSObject, DateDependedPresenterProtocol, MonthDateDependedProtocol {
+class GovermentBudgetPresenter: NSObject, DateDependedPresenterProtocol, MonthDateDependedProtocol, TablePresenterProtocol {
     weak var delegate: PresenterViewDelegate?
     
     

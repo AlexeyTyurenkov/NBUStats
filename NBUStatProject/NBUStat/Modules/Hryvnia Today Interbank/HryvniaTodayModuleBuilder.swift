@@ -11,7 +11,7 @@ import UIKit
 class HryvniaTodayModuleBuilder: ModuleBuilderProtocol
 {
     
-    var presenter: PresenterProtocol! { return nil }
+    var presenter: TablePresenterProtocol! { return nil }
     func viewController() -> UIViewController {
         let storyBoard = UIStoryboard(name: "Currencies", bundle: nil)
         let initialController = storyBoard.instantiateInitialViewController()
@@ -34,7 +34,7 @@ class HryvniaTodayModuleBuilder: ModuleBuilderProtocol
 
 class InterbankHTModuleBuilder: HryvniaTodayModuleBuilder
 {
-    override var presenter: PresenterProtocol! {
+    override var presenter: TablePresenterProtocol! {
         let presenter = HryvniaTodayPresenter()
         presenter.service = InterbankHTService()
         return presenter
@@ -48,7 +48,7 @@ class InterbankHTModuleBuilder: HryvniaTodayModuleBuilder
 
 class BlackHTModuleBuilder: HryvniaTodayModuleBuilder
 {
-    override var presenter: PresenterProtocol! {
+    override var presenter: TablePresenterProtocol! {
         let presenter = HryvniaTodayPresenter()
         presenter.service = BlackHTService()
         return presenter
@@ -62,7 +62,7 @@ class BlackHTModuleBuilder: HryvniaTodayModuleBuilder
 
 class CommercialHTModuleBuilder: HryvniaTodayModuleBuilder
 {
-    override var presenter: PresenterProtocol! {
+    override var presenter: TablePresenterProtocol! {
         let presenter = HryvniaTodayPresenter()
         presenter.service = CommercialHTService()
         return presenter

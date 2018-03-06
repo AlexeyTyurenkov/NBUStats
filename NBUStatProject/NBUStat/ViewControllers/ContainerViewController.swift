@@ -10,7 +10,7 @@ import UIKit
 
 class ContainerViewController: UIViewController {
 
-    var presenter: PresenterProtocol!
+    var presenter: TablePresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,11 +13,17 @@ enum IndexError:Error
     case general
 }
 
-class UXCurrentIndexPresenter: PresenterProtocol
+protocol UXCurrentIndexPresenterProtocol: PresenterProtocol {
+    func showDataProviderInfo()
+}
+
+
+class UXCurrentIndexPresenter: UXCurrentIndexPresenterProtocol
 {
     weak var delegate: PresenterViewDelegate?
+    var router: UXCurrentIndexRouter?
     var interactor = UXCurrentIndexInteractor()
-    var currentModel: UXCurrencyIndexModel = UXCurrencyIndexModel(dictionary: [:])
+    var currentModel: UXCurrencyIndexModel?
     func updateView() {
         
     }
@@ -43,5 +49,11 @@ class UXCurrentIndexPresenter: PresenterProtocol
         return self
     }
     
-    
+    func showDataProviderInfo() {
+        if let controller = delegate as? UXCurrentIndexViewController
+        {
+            router?.presentDataProviderInfo(from: controller, dataProviderInfo: dataProviderInfo)
+        }
+        
+    }
 }

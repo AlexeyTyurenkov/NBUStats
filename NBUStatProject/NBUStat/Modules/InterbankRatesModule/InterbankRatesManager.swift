@@ -12,7 +12,7 @@ import Foundation
 import UIKit
 import Alamofire
 
-class InterbankRatesManager: NSObject, DateDependedPresenterProtocol, DayDateDependedProtocol {
+class InterbankRatesManager: NSObject, DateDependedPresenterProtocol, DayDateDependedProtocol, TablePresenterProtocol {
     weak var delegate: PresenterViewDelegate?
     
 

@@ -131,7 +131,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xfa-X6-b6X"/>
                     </view>
-                    <navigationItem key="navigationItem" id="nqA-Ry-uFt"/>
+                    <navigationItem key="navigationItem" id="nqA-Ry-uFt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="5s1-RZ-Nlf">
+                            <connections>
+                                <action selector="providerButtonPressed:" destination="kLI-wh-4EY" id="ewh-D7-tSe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityView" destination="mcM-ZR-t8a" id="7TS-1B-Cmc"/>
                         <outlet property="change" destination="nA6-Vk-aJB" id="7n6-qd-5q5"/>
