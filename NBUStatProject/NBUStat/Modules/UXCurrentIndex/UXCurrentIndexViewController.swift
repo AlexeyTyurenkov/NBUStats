@@ -49,6 +49,7 @@ class UXCurrentIndexViewController: UIViewController, PresenterViewDelegate {
         refreshController = refresh
         activityView.addSubview(refresh)
         refreshController?.animation{ return !self.activityView.isHidden }
+        presenter.viewLoaded()
     }
 
     override func didReceiveMemoryWarning() {

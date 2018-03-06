@@ -17,7 +17,8 @@ class UXCurrentIndexModuleBuilder: ModuleBuilderProtocol {
         {
             if let controller = navigationController.topViewController as? UXCurrentIndexViewController
             {
-                controller.presenter = UXCurrentIndexPresenter()
+                let presenter = UXCurrentIndexPresenter()
+                controller.presenter = presenter
                 controller.presenter.delegate = controller
             }
         }
