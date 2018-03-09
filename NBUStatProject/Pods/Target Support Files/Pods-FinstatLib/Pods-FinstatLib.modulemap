@@ -1,0 +1,6 @@
+framework module Pods_FinstatLib {
+  umbrella header "Pods-FinstatLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
