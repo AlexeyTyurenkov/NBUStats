@@ -10,6 +10,7 @@
 		016DC792CE74AD25F8CCFB5E /* Pods_FinStat_Ukraine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8D0F0F1103B7DDB23BC7BB /* Pods_FinStat_Ukraine.framework */; };
 		C60A0FC4204D68120010FDB3 /* RefreshController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60A0FC2204D68110010FDB3 /* RefreshController.xib */; };
 		C60A0FC5204D68120010FDB3 /* RefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A0FC3204D68120010FDB3 /* RefreshController.swift */; };
+		C60A10302052A3320010FDB3 /* FinstatLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60A10312052A3320010FDB3 /* FinstatLib.framework */; };
 		C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F061F18B06700F0AF87 /* AppDelegate.swift */; };
 		C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C61F1F0D1F18B06700F0AF87 /* NBUStat.xcdatamodeld */; };
 		C61F1F111F18B06700F0AF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61F1F101F18B06700F0AF87 /* Assets.xcassets */; };
@@ -122,6 +123,8 @@
 		7D8D0F0F1103B7DDB23BC7BB /* Pods_FinStat_Ukraine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinStat_Ukraine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60A0FC2204D68110010FDB3 /* RefreshController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshController.xib; sourceTree = "<group>"; };
 		C60A0FC3204D68120010FDB3 /* RefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshController.swift; sourceTree = "<group>"; };
+		C60A102C205295FF0010FDB3 /* FinstatLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FinstatLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60A10312052A3320010FDB3 /* FinstatLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FinstatLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61F1F031F18B06700F0AF87 /* FinStat Ukraine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FinStat Ukraine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61F1F061F18B06700F0AF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C61F1F0E1F18B06700F0AF87 /* NBUStat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NBUStat.xcdatamodel; sourceTree = "<group>"; };
@@ -228,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60A10302052A3320010FDB3 /* FinstatLib.framework in Frameworks */,
 				016DC792CE74AD25F8CCFB5E /* Pods_FinStat_Ukraine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				7D8D0F0F1103B7DDB23BC7BB /* Pods_FinStat_Ukraine.framework */,
+				C60A10312052A3320010FDB3 /* FinstatLib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 		C61F1EFA1F18B06600F0AF87 = {
 			isa = PBXGroup;
 			children = (
+				C60A102C205295FF0010FDB3 /* FinstatLib.framework */,
 				C6F323CE1F2F900400363DC1 /* .travis.yml */,
 				C61F1F051F18B06700F0AF87 /* NBUStat */,
 				C61F1F1D1F18B06700F0AF87 /* NBUStatTests */,
