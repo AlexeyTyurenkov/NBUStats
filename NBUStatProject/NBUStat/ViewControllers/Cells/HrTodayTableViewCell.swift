@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FinstatLib
 
 class HrTodayTableViewCell: UITableViewCell, BaseTableCellProtocol {
     @IBOutlet weak var nameLabel: UILabel!

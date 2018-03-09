@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FinstatLib
 
 class GovermentBudgetTableViewCell: UITableViewCell, BaseTableCellProtocol {
     

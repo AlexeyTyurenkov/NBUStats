@@ -2,7 +2,10 @@
 platform :ios, '9.0'
 # ignore all warnings from all pods
 inhibit_all_warnings!
+
 target 'FinStat Ukraine' do
+    workspace 'FinStat Ukraine'
+    project 'FinStat Ukraine'
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'Alamofire', '~> 4.2'
@@ -10,7 +13,14 @@ target 'FinStat Ukraine' do
   pod 'NTMonthYearPicker'
   pod 'KJExpandableTableTree'
   # Pods for NBUStat
+end
 
+
+workspace 'FinStat Ukraine'
+project 'FinstatLib/FinstatLib'
+target 'FinstatLib' do
+    use_frameworks!
+    pod 'Alamofire', '~> 4.2'
 #target 'NBUStatTests' do
 #    inherit! :search_paths
     # Pods for testing

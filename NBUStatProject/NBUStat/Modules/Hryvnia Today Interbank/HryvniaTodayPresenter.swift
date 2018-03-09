@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FinstatLib
 
 class HryvniaTodayPresenter: NSObject, PresenterProtocol, TablePresenterProtocol {
     weak var delegate: PresenterViewDelegate?

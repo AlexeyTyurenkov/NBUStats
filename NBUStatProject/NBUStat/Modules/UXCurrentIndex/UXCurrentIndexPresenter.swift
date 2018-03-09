@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FinstatLib
 
 enum IndexError:Error
 {

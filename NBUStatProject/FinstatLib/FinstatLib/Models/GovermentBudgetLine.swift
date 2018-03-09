@@ -9,18 +9,18 @@
 import Foundation
 
 
-struct GovermentBudgetLine
+public struct GovermentBudgetLine
 {
-    var txt: String
-    var txten: String
-    var id_api: String
-    var leveli: Int
-    var parent: String
-    var mcr200p: String
-    var value: NSNumber
+    public var txt: String
+    public var txten: String
+    public var id_api: String
+    public var leveli: Int
+    public var parent: String
+    public var mcr200p: String
+    public var value: NSNumber
     private var formatter: NumberFormatter
     
-    init(dictionary: [String:AnyObject]) {
+    public init(dictionary: [String:AnyObject]) {
         txt = (dictionary["txt"] as? String) ?? ""
         txten = (dictionary["txten"] as? String) ?? ""
         id_api = (dictionary["id_api"] as? String) ?? ""

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol RatesServiceProtocol {
+public protocol RatesServiceProtocol {
     associatedtype Result
     func loadList(param: String, completion:  @escaping (([Result], Error?)->()))
 }

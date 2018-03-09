@@ -9,8 +9,8 @@
 import Foundation
 import Alamofire
 
-class HryvniaTodayService: RatesServiceProtocol {
-    func loadList(param: String, completion: @escaping (([Result], Error?) -> ()))
+public class HryvniaTodayService: RatesServiceProtocol {
+    public func loadList(param: String, completion: @escaping (([Result], Error?) -> ()))
     {
         Alamofire.request(String(format:endpoint,param),
                           method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { response in
@@ -37,18 +37,20 @@ class HryvniaTodayService: RatesServiceProtocol {
     var endpoint: String! {
         return nil
     }
-    typealias Result = HrTodayRate
+    public typealias Result = HrTodayRate
+    
+    public init () {}
 }
 
-class InterbankHTService: HryvniaTodayService {
+public class InterbankHTService: HryvniaTodayService {
     override var endpoint: String! { return "https://finstat.space/api/ht/interbank"}
 }
 
-class CommercialHTService: HryvniaTodayService {
+public class CommercialHTService: HryvniaTodayService {
     override var endpoint: String!{ return "https://finstat.space/api/ht/commercial"}
 }
 
-class BlackHTService: HryvniaTodayService {
+public class BlackHTService: HryvniaTodayService {
     override var endpoint: String! { return "https://finstat.space/api/ht/black"}
 }
 

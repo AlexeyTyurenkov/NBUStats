@@ -8,17 +8,17 @@
 
 import Foundation
 
-struct HrTodayRate
+public struct HrTodayRate
 {
-    var code: String
-    var buy: String
-    var sell: String
-    var buyChange: String
-    var sellChange: String
-    var name: String
-    var updated: String
+    public var code: String
+    public var buy: String
+    public var sell: String
+    public var buyChange: String
+    public var sellChange: String
+    public var name: String
+    public var updated: String
     
-    init?(dictionary:[String:Any]?)
+    public init?(dictionary:[String:Any]?)
     {
         /*
  {

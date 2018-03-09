@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FinstatLib
 
 class NBUCurrencyRatesManager: NSObject, DateDependedPresenterProtocol, FavoritePresenter,DayDateDependedProtocol, TablePresenterProtocol {
    

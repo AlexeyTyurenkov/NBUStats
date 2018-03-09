@@ -7,10 +7,8 @@
 //
 
 import Foundation
-
-import Foundation
 import UIKit
-import Alamofire
+import FinstatLib
 
 class InterbankRatesManager: NSObject, DateDependedPresenterProtocol, DayDateDependedProtocol, TablePresenterProtocol {
     weak var delegate: PresenterViewDelegate?

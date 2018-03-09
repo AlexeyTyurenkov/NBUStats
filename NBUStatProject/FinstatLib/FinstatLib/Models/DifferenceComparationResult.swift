@@ -7,7 +7,7 @@
 //
 
 import Foundation
-enum DifferenceComparisonResult
+public enum DifferenceComparisonResult
 {
     case same
     case grow

@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import FinstatLib
+
 class HryvniaTodayModuleBuilder: ModuleBuilderProtocol
 {
     

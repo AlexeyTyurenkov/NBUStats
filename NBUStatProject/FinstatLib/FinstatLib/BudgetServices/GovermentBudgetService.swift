@@ -9,8 +9,8 @@
 import Foundation
 import Alamofire
 
-class GovermentBudgetService: RatesServiceProtocol {
-    func loadList(param: String, completion: @escaping (([GovermentBudgetLine], Error?) -> ()))
+public class GovermentBudgetService: RatesServiceProtocol {
+    public func loadList(param: String, completion: @escaping (([GovermentBudgetLine], Error?) -> ()))
     {
         Alamofire.request(String(format:"https://bank.gov.ua/NBUStatService/v1/statdirectory/budget?period=m&date=%@&json",param),
                           method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { response in
@@ -33,7 +33,7 @@ class GovermentBudgetService: RatesServiceProtocol {
         }
     }
     
-    typealias Result = GovermentBudgetLine
-    
+    public typealias Result = GovermentBudgetLine
+    public init() {}
     
 }

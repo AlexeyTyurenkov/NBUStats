@@ -1,28 +1,28 @@
 //
-//  NBURatesService.swift
+//  InterbankRatesService.swift
 //  FinStat Ukraine
 //
-//  Created by Aleksey Tyurenkov on 2/20/18.
+//  Created by Aleksey Tyurenkov on 2/21/18.
 //  Copyright © 2018 Oleksii Tiurenkov. All rights reserved.
 //
-
 import Foundation
 import Alamofire
 
-class NBURatesService: RatesServiceProtocol {
-    func loadList(param: String, completion: @escaping (([CurrencyRate], Error?) -> ()))
+public class InterbankRatesService: RatesServiceProtocol {
+    public func loadList(param: String, completion: @escaping (([OpenRateInUaRate], Error?) -> ()))
     {
-        Alamofire.request(String(format:"https://www.bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=%@&json",param),
+        Alamofire.request(String(format:"http://openrates.in.ua/rates?date=%@   ",param),
                           method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { response in
                             switch response.result
                             {
                             case .success(let result):
-                                if let result = result as? [[String:AnyObject]]
+                                if let result = result as? [String:AnyObject]
                                 {
-                                    let rates = result.map{ CurrencyRate.init(dictionary: $0) }
+                                    let rates = result.enumerated().flatMap{ OpenRateInUaRate.init(name: $1.key, dictionary: ($1.value as? [String : Any])) }
                                     completion(rates,nil)
                                     
                                 }
+                                
                                 
                             case .failure(let error):
                                 completion([], error)
@@ -30,7 +30,8 @@ class NBURatesService: RatesServiceProtocol {
         }
     }
     
-    typealias Result = CurrencyRate
+    public typealias Result = OpenRateInUaRate
     
+    public init(){}
     
 }

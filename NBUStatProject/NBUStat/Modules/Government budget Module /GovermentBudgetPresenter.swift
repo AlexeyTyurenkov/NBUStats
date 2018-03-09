@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import Alamofire
+import FinstatLib
 
 class GovermentBudgetPresenter: NSObject, DateDependedPresenterProtocol, MonthDateDependedProtocol, TablePresenterProtocol {
     weak var delegate: PresenterViewDelegate?

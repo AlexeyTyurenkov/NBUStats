@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-
+import FinstatLib
 
 class NBURateTableViewController: UITableViewController {
 

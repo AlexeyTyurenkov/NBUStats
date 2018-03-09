@@ -15,19 +15,19 @@ import Foundation
 
 
 
-class CurrencyRate
+public class CurrencyRate
 {
-    var r030: String = ""
-    var name: String = ""
-    var newRate: NSNumber = 0.0
-    var cc: String = ""
-    var exchangedate: String = ""
-    var oldRate: NSNumber?
-    var yesterdayDate: String = ""
+    public var r030: String = ""
+    public var name: String = ""
+    public var newRate: NSNumber = 0.0
+    public var cc: String = ""
+    public var exchangedate: String = ""
+    public var oldRate: NSNumber?
+    public var yesterdayDate: String = ""
     
     private var formatter: NumberFormatter
     
-    init(dictionary: [String:AnyObject]) {
+    public init(dictionary: [String:AnyObject]) {
         r030 = String(format: "%i", (dictionary["r030"] as? Int) ?? 0)
         name = (dictionary["txt"] as? String) ?? ""
         formatter = NumberFormatter()
@@ -39,23 +39,23 @@ class CurrencyRate
         exchangedate = (dictionary["exchangedate"] as? String) ?? ""
     }
     
-    func contains(_ searchTerm: String) -> Bool
+    public func contains(_ searchTerm: String) -> Bool
     {
         let localizedTerm = searchTerm.trimmingCharacters(in: .whitespacesAndNewlines).localizedLowercase
         return (localizedTerm == "" || cc.lowercased().contains(localizedTerm) || name.lowercased().contains(localizedTerm) || r030.lowercased().contains(localizedTerm))
     }
     
-    var todayRate: String
+    public var todayRate: String
     {
         return formatted(number: newRate)
     }
     
-    var yesterdayRate: String
+    public var yesterdayRate: String
     {
         return formatted(number: oldRate)
     }
     
-    var difference: String
+    public var difference: String
     {
         guard let oldRate = oldRate else { return ""}
         let diff = abs(newRate.decimalValue - oldRate.decimalValue)
@@ -68,7 +68,7 @@ class CurrencyRate
         return formatter.string(from: number) ?? ""
     }
     
-    func change() -> DifferenceComparisonResult
+    public func change() -> DifferenceComparisonResult
     {
         guard let oldrate = oldRate else { return .unknown }
         let diff =  newRate.decimalValue - oldrate.decimalValue
@@ -83,7 +83,7 @@ class CurrencyRate
         return .same
     }
     
-    static func >(lhs:CurrencyRate, rhs: CurrencyRate)->Bool
+    public static func >(lhs:CurrencyRate, rhs: CurrencyRate)->Bool
     {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy"

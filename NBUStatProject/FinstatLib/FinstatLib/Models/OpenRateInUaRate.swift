@@ -13,11 +13,11 @@ import Foundation
 typealias InterbankRate = (buy: String, sell: String)
 
 
-struct OpenRateInUaRate
+public struct OpenRateInUaRate
 {
-    var code: String
-    var buy: String
-    var sell: String
+    public var code: String
+    public var buy: String
+    public var sell: String
     
     init?(name: String, dictionary:[String:Any]?)
     {

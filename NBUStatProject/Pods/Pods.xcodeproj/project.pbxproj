@@ -20,6 +20,7 @@
 		1105BF1DC477074C74D3EF5CD965C4B4 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5CA48612C01E77B459EC900C05BD57 /* PieChartView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		16D508338DAFC347256251CBA7041579 /* LineScatterCandleRadarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2938F8EB4803BA898F46D869F0CAE33 /* LineScatterCandleRadarChartDataSet.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1A71BDC0956FC96542ABD2ECC7B1F6D1 /* CandleStickChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B081BB7BFCCBB57F1ABCCAFFF097 /* CandleStickChartView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1CD36BA816B49E83957E6A1E93B35043 /* Pods-FinstatLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C77B68B8E0F0B9A2E4672C33BAD8EC /* Pods-FinstatLib-dummy.m */; };
 		216343F8BB0A6C931554E83C5563C3CB /* IBarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB4DEDAE24ED496EFE5C2CB8F19C5B6 /* IBarChartDataSet.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		22C9573D76CD278FB9107A6E853C7A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		2416A0633DD24758360190C8CE8AEB4E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3CFCD0FBBF40B7C3A2B95AF409C374 /* Validation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -37,14 +38,15 @@
 		3B17CC6F2E75D52C2706ED40C642C492 /* MoveViewJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE70B2DAEEE1C802C99A2CD96CA29F7 /* MoveViewJob.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3B41DC4752E6E186DB95BCAE77332670 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9C7EC5853AE33DDED7E62F3B57923 /* SessionManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3CA1ACAAF27D884073CD0EFFFE3CAB10 /* ILineChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9DB4E07E8E672723FC36E996B80E14 /* ILineChartDataSet.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3F947EDB01FD6309A87EB4F8D13FC912 /* Pods-FinStat Ukraine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C8FB4C61B56352C8B51A7CCA50451 /* Pods-FinStat Ukraine-dummy.m */; };
+		3F947EDB01FD6309A87EB4F8D13FC912 /* Pods-FinStat Ukraine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7BFC8723A60677F5025974BFD63BB5 /* Pods-FinStat Ukraine-dummy.m */; };
 		40045F9FE35EDD039E190A1E251A6F80 /* HorizontalBarHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A283EB78C924F55FD90318DB9E502A71 /* HorizontalBarHighlighter.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		40720E7A94CDE08405B97944C936907D /* IChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28E8A22AF1AF5F33BAF44410793D2DB /* IChartDataSet.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		40A765F9167E2F1597BB31C3DD1C6BF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		416174DFF80CC401BC13EA131C7BF6B2 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB4FC6AEA30AF5EB8357D8EF597462 /* MarkerView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		455D23DD4177D0A9D879E5E837774620 /* ChevronUpShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092C2E4CBCDF8D11094A98F8C7F03BC /* ChevronUpShapeRenderer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		45A3A8077A972DC8448ED362DE125B4C /* KJTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB385015F23F021D67FDDD41BF74F0 /* KJTree.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		46A85384792DD649E2C7E22BF2C9803E /* Pods-FinStat Ukraine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F9F74456535F377630250DE03836432 /* Pods-FinStat Ukraine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46A85384792DD649E2C7E22BF2C9803E /* Pods-FinStat Ukraine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 133407331C99F4DE282DDBBFCACAABAC /* Pods-FinStat Ukraine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A8219B28F82D0116B594F16B0A18BB /* Pods-FinstatLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D409B9280460F2D93A9D3A26928C3F7 /* Pods-FinstatLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47F4BCF57F9DABC6F2E8F9F413DEB682 /* LineChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A92858D57DA1AAB6AAB33B5E875CC /* LineChartData.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4891A1D1A640FA4E3CB7CC80EFBFD852 /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E81D5290A5903245A1C67FF33A2AAB2 /* Highlight.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		49FCB3F14022DB4AFF5AFF01D1ABB1FC /* BubbleChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5DAC6968AF11FD22916A520796361D /* BubbleChartDataProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -166,6 +168,7 @@
 		E77C9647790CA5B0445150DD63669B0D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B71B18ABA97EE1599D7561F5EFA064 /* Request.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E8FC6DC3A9D662B69BB31A9E7D14EABB /* BarLineScatterCandleBubbleChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06189755BDA2C47DB575466F1BD4972 /* BarLineScatterCandleBubbleChartData.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E9A491F64F98F486D53E9E6A902AAE42 /* LegendEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D24E06054ACED48F048FF9486D586C /* LegendEntry.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EB7E4FF33EA8E31DC1ADC79D873C68F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		ECB0D3B0F78CE43E9AF7B09549C165B4 /* IMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6D1D218F23B6E2BA9ECE68F5151E5 /* IMarker.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		ED18E6B7476375F293F438E2B648E541 /* AxisRendererBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E58256BFA9B34182704ACE1C8AC84 /* AxisRendererBase.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EF385F68A4175490446827DB4F879C29 /* BarChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAC96BDFDDA2DF1238056E058658F5 /* BarChartData.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -179,6 +182,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0EEC75F6C0DC95C3D1A0575B0CD07B42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66B239826EF1D39D2D6C594AC2DBFF77;
+			remoteInfo = Alamofire;
+		};
 		2BE5F933A6FF34B6CD7084320596421B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -212,26 +222,28 @@
 /* Begin PBXFileReference section */
 		00AED5108BAFF610E8E26D63BAA75F2E /* Legend.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Legend.swift; path = Source/Charts/Components/Legend.swift; sourceTree = "<group>"; };
 		0290AB5166511D52F5BC85721076C925 /* ChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/ChartDataSet.swift; sourceTree = "<group>"; };
-		03693FD43B711D4F1DAADD179936F694 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Charts.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		057FFDF5526D3AABE068E158F542385C /* Pods-FinStat Ukraine-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinStat Ukraine-acknowledgements.plist"; sourceTree = "<group>"; };
 		0601C3D33914BADD7CAE3997A4174893 /* IBubbleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBubbleChartDataSet.swift; path = Source/Charts/Data/Interfaces/IBubbleChartDataSet.swift; sourceTree = "<group>"; };
 		0663CAFD4F738F2B82853F0E5B565D5D /* CandleChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/CandleChartDataEntry.swift; sourceTree = "<group>"; };
+		06F1A4467A1E8A82B9A28327A39190EF /* Pods-FinStat Ukraine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinStat Ukraine.release.xcconfig"; sourceTree = "<group>"; };
 		07375EFE9670717FAE1AC476EF152F03 /* ChartBaseDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartBaseDataSet.swift; path = Source/Charts/Data/Implementations/ChartBaseDataSet.swift; sourceTree = "<group>"; };
 		099B402E8173D3BADD6F1A2FA558B786 /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Source/Charts/Animation/Animator.swift; sourceTree = "<group>"; };
+		09AD5A2A00339720E0E06AE21EB2DC2E /* Pods-FinstatLib-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinstatLib-resources.sh"; sourceTree = "<group>"; };
 		0A3A92858D57DA1AAB6AAB33B5E875CC /* LineChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartData.swift; path = Source/Charts/Data/Implementations/Standard/LineChartData.swift; sourceTree = "<group>"; };
 		0AE453D474D41F9A0B5F771D05EA07D7 /* ChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/ChartDataEntry.swift; sourceTree = "<group>"; };
 		0AE70B2DAEEE1C802C99A2CD96CA29F7 /* MoveViewJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoveViewJob.swift; path = Source/Charts/Jobs/MoveViewJob.swift; sourceTree = "<group>"; };
 		0BD9C7EC5853AE33DDED7E62F3B57923 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		0C9293A73A88FBCB68E77C7A264D163A /* Pods-FinstatLib-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FinstatLib-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0D124603DD1B54C048D158C4C37B6E2F /* LineChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartRenderer.swift; path = Source/Charts/Renderers/LineChartRenderer.swift; sourceTree = "<group>"; };
 		1031228BD4B8F877167E04CBC4395786 /* NTMonthYearPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NTMonthYearPicker.h; path = NTMonthYearPicker/NTMonthYearPicker.h; sourceTree = "<group>"; };
+		1178C81EEE7228C882F20B7A773EB6E8 /* Pods-FinStat Ukraine-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinStat Ukraine-acknowledgements.plist"; sourceTree = "<group>"; };
 		119438171B3C4BF6F89C633125B2E3B0 /* LineRadarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineRadarChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/LineRadarChartDataSet.swift; sourceTree = "<group>"; };
+		133407331C99F4DE282DDBBFCACAABAC /* Pods-FinStat Ukraine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FinStat Ukraine-umbrella.h"; sourceTree = "<group>"; };
 		166F716BD4884BF069F7CD7D9B0543F2 /* IPieChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IPieChartDataSet.swift; path = Source/Charts/Data/Interfaces/IPieChartDataSet.swift; sourceTree = "<group>"; };
 		16D63944D9C1419857AEF541443A484F /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		17A6D1D218F23B6E2BA9ECE68F5151E5 /* IMarker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMarker.swift; path = Source/Charts/Components/IMarker.swift; sourceTree = "<group>"; };
 		186A31395A3542E620A85A798098251C /* PieRadarHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieRadarHighlighter.swift; path = Source/Charts/Highlight/PieRadarHighlighter.swift; sourceTree = "<group>"; };
 		1CD599C614D010B1B77BE77C247A25CF /* TransformerHorizontalBarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformerHorizontalBarChart.swift; path = Source/Charts/Utils/TransformerHorizontalBarChart.swift; sourceTree = "<group>"; };
 		1D5141D8ED64AEA19802655E90DB4413 /* ChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataProvider.swift; path = Source/Charts/Interfaces/ChartDataProvider.swift; sourceTree = "<group>"; };
-		1DA917BE89C4C3B0EF8B3C3CE40A653A /* Pods-FinStat Ukraine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FinStat Ukraine.modulemap"; sourceTree = "<group>"; };
 		1F3CFCD0FBBF40B7C3A2B95AF409C374 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		1F4FBDBC27960871EFC42B23B4CD2844 /* LineChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/LineChartDataSet.swift; sourceTree = "<group>"; };
 		2092C2E4CBCDF8D11094A98F8C7F03BC /* ChevronUpShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChevronUpShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/ChevronUpShapeRenderer.swift; sourceTree = "<group>"; };
@@ -240,9 +252,10 @@
 		23275C2B3B271EB5D504D090B3155037 /* XShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/XShapeRenderer.swift; sourceTree = "<group>"; };
 		2365C83324377A75C7CACB6493FAFC1C /* NTMonthYearPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NTMonthYearPicker.modulemap; sourceTree = "<group>"; };
 		24A1CE8D3668F64E5A89382A4470A95E /* CombinedChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinedChartView.swift; path = Source/Charts/Charts/CombinedChartView.swift; sourceTree = "<group>"; };
+		253A5E27249B7E2ABD9B3409313587DC /* Pods-FinStat Ukraine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FinStat Ukraine.modulemap"; sourceTree = "<group>"; };
 		2555F8E0061842F1702044B27488DFC4 /* BubbleChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartRenderer.swift; path = Source/Charts/Renderers/BubbleChartRenderer.swift; sourceTree = "<group>"; };
+		2870BF72585047C7BBDED67EDF08F638 /* Pods-FinStat Ukraine-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinStat Ukraine-frameworks.sh"; sourceTree = "<group>"; };
 		2AB7488051BFC34A942E4EA60094B80D /* ChartHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartHighlighter.swift; path = Source/Charts/Highlight/ChartHighlighter.swift; sourceTree = "<group>"; };
-		2AC07F7DD2EA21F31B6A4BCB675028FF /* Pods-FinStat Ukraine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinStat Ukraine.release.xcconfig"; sourceTree = "<group>"; };
 		2C76B11B211D6465B866AE542423307B /* Charts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Charts-umbrella.h"; sourceTree = "<group>"; };
 		2D4E58256BFA9B34182704ACE1C8AC84 /* AxisRendererBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AxisRendererBase.swift; path = Source/Charts/Renderers/AxisRendererBase.swift; sourceTree = "<group>"; };
 		2DEDDB12C3FF8EBF8C056338D00BD6AA /* ILineScatterCandleRadarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ILineScatterCandleRadarChartDataSet.swift; path = Source/Charts/Data/Interfaces/ILineScatterCandleRadarChartDataSet.swift; sourceTree = "<group>"; };
@@ -250,15 +263,12 @@
 		2E77404DEA6032C7AC78197CC3E3066C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E81D5290A5903245A1C67FF33A2AAB2 /* Highlight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Highlight.swift; path = Source/Charts/Highlight/Highlight.swift; sourceTree = "<group>"; };
 		2F03C044937A7E4B1FFA6B7A88C23955 /* DefaultFillFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultFillFormatter.swift; path = Source/Charts/Formatters/DefaultFillFormatter.swift; sourceTree = "<group>"; };
-		30048780618FEAFC161FAB11A643F204 /* Pods-FinStat Ukraine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinStat Ukraine.debug.xcconfig"; sourceTree = "<group>"; };
-		313BBF01F7DC11A1ACC3E93647C5C2FC /* Pods-FinStat Ukraine-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinStat Ukraine-resources.sh"; sourceTree = "<group>"; };
 		336B93EEBF848B2D94A6DEC5AB723FA9 /* AxisBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AxisBase.swift; path = Source/Charts/Components/AxisBase.swift; sourceTree = "<group>"; };
 		33ADEB7DBFCE4856AE787F473ED23C71 /* CombinedChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinedChartDataProvider.swift; path = Source/Charts/Interfaces/CombinedChartDataProvider.swift; sourceTree = "<group>"; };
 		35DC8F9681714D23898F1CEF40CC06D9 /* CircleShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/CircleShapeRenderer.swift; sourceTree = "<group>"; };
 		394D8E21E2F5254E525855FCA46374E6 /* ChartUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartUtils.swift; path = Source/Charts/Utils/ChartUtils.swift; sourceTree = "<group>"; };
 		398D20C698705FC746D0A56F49E959D6 /* ChartDataRendererBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataRendererBase.swift; path = Source/Charts/Renderers/ChartDataRendererBase.swift; sourceTree = "<group>"; };
 		398D21EDBCC7FB4FD424977E6CAE0098 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		39DEACB0EF4B40CC56650F0FBDDFD89B /* Pods-FinStat Ukraine.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinStat Ukraine.qa.xcconfig"; sourceTree = "<group>"; };
 		3A07FE1CF5A1B8E077EF4D81A2CA84A0 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		3A1E3763E52E6B24B1BBC53C27CCF9BA /* BubbleChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartData.swift; path = Source/Charts/Data/Implementations/Standard/BubbleChartData.swift; sourceTree = "<group>"; };
 		3D77EB611F2097D60DD265AAF0DAB7A6 /* KJExpandableTableTree-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KJExpandableTableTree-umbrella.h"; sourceTree = "<group>"; };
@@ -273,10 +283,10 @@
 		43DFD5A77DAB5E9C758AE35BBAEFBEA1 /* CrossShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/CrossShapeRenderer.swift; sourceTree = "<group>"; };
 		450566DB4338FB9DE0049A2A5277B139 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		45AC4392A1872CF3E7319F125B614957 /* AnimatedZoomViewJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedZoomViewJob.swift; path = Source/Charts/Jobs/AnimatedZoomViewJob.swift; sourceTree = "<group>"; };
+		47F14F1AE7F146B9ED3E8BCC972764FA /* NTMonthYearPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NTMonthYearPicker.framework; path = NTMonthYearPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		498A9ADE6099689D2F00A8334A555AF0 /* ChartLimitLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartLimitLine.swift; path = Source/Charts/Components/ChartLimitLine.swift; sourceTree = "<group>"; };
-		4A03A8E8F6547D4AE7295BB21CF51616 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BCB4FC6AEA30AF5EB8357D8EF597462 /* MarkerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarkerView.swift; path = Source/Charts/Components/MarkerView.swift; sourceTree = "<group>"; };
-		4C9C8FB4C61B56352C8B51A7CCA50451 /* Pods-FinStat Ukraine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FinStat Ukraine-dummy.m"; sourceTree = "<group>"; };
+		4D7BFC8723A60677F5025974BFD63BB5 /* Pods-FinStat Ukraine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FinStat Ukraine-dummy.m"; sourceTree = "<group>"; };
 		4DB772DB0EDA7C772C0417A5E9F4BFC4 /* LineChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartView.swift; path = Source/Charts/Charts/LineChartView.swift; sourceTree = "<group>"; };
 		4EFBE8E9B76098E1D1844A9282D83C42 /* BubbleChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartView.swift; path = Source/Charts/Charts/BubbleChartView.swift; sourceTree = "<group>"; };
 		4F7317ADC941A9086D3366B31891063C /* Charts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Charts-prefix.pch"; sourceTree = "<group>"; };
@@ -292,19 +302,23 @@
 		5BB894FFD209C72BDB5F7C54A1BEC23F /* ScatterChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScatterChartView.swift; path = Source/Charts/Charts/ScatterChartView.swift; sourceTree = "<group>"; };
 		5BDAC8A04E0F3936C99BDDD8F2A58A72 /* DefaultAxisValueFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAxisValueFormatter.swift; path = Source/Charts/Formatters/DefaultAxisValueFormatter.swift; sourceTree = "<group>"; };
 		5CF611CFA6D55A7D4895C11FF51F702A /* YAxis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAxis.swift; path = Source/Charts/Components/YAxis.swift; sourceTree = "<group>"; };
+		5D409B9280460F2D93A9D3A26928C3F7 /* Pods-FinstatLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FinstatLib-umbrella.h"; sourceTree = "<group>"; };
 		5F416675CB588E770AE7A2D53EF20709 /* BarChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartDataProvider.swift; path = Source/Charts/Interfaces/BarChartDataProvider.swift; sourceTree = "<group>"; };
+		5FFE2600B6F172211C099CE54CABEF8F /* Pods-FinstatLib-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinstatLib-acknowledgements.plist"; sourceTree = "<group>"; };
 		60A9A397C718983E975E9B0B6BA3493D /* ChartAnimationEasing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartAnimationEasing.swift; path = Source/Charts/Animation/ChartAnimationEasing.swift; sourceTree = "<group>"; };
 		610CC75D4199970BC002C3266B2AFF47 /* ChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartData.swift; path = Source/Charts/Data/Implementations/Standard/ChartData.swift; sourceTree = "<group>"; };
 		61C1B5360BD76D11FFFE836AB9991AE3 /* YAxisRendererRadarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YAxisRendererRadarChart.swift; path = Source/Charts/Renderers/YAxisRendererRadarChart.swift; sourceTree = "<group>"; };
 		64CF2181BA24231E65A99B4A9709567D /* KJExpandableTableTree.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KJExpandableTableTree.xcconfig; sourceTree = "<group>"; };
+		660374D299810314244C5B7F5D1F2A78 /* Pods-FinstatLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinstatLib.debug.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		662AE592CB571F067618CD8DBD3EC830 /* DataApproximator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataApproximator.swift; path = Source/Charts/Filters/DataApproximator.swift; sourceTree = "<group>"; };
-		66ECBDE7D12F4CB9132ED8E37D929CF7 /* Pods-FinStat Ukraine-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FinStat Ukraine-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67B7D464D6CBF35A978DBE15AD0A2181 /* Pods-FinStat Ukraine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinStat Ukraine.debug.xcconfig"; sourceTree = "<group>"; };
 		6AF6B081BB7BFCCBB57F1ABCCAFFF097 /* CandleStickChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleStickChartView.swift; path = Source/Charts/Charts/CandleStickChartView.swift; sourceTree = "<group>"; };
 		6C025399212CEF8783F31825AB5C304B /* ChevronDownShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChevronDownShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/ChevronDownShapeRenderer.swift; sourceTree = "<group>"; };
 		6C75C68886FA2C4308785FB7E9E3325A /* HorizontalBarChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalBarChartView.swift; path = Source/Charts/Charts/HorizontalBarChartView.swift; sourceTree = "<group>"; };
 		6DBB5E009B790179DA443DAFBD23799B /* ChartViewBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartViewBase.swift; path = Source/Charts/Charts/ChartViewBase.swift; sourceTree = "<group>"; };
 		6DFB6FA5C1C1DBC00BC46C59B91D2366 /* BarLineScatterCandleBubbleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarLineScatterCandleBubbleChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/BarLineScatterCandleBubbleChartDataSet.swift; sourceTree = "<group>"; };
+		74831F75CA8DD499B4DCFE1068E24F60 /* Pods_FinstatLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FinstatLib.framework; path = "Pods-FinstatLib.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C7834E9D63E5F8287AC5ECF7A40FC1 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		7533CE2E594562F31C82C3E8A8EDC359 /* RadarChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/RadarChartDataEntry.swift; sourceTree = "<group>"; };
 		77523162B9C05B9A9325E5DAE619E2FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -313,8 +327,6 @@
 		7E1D70B25BDC567E7BD3D4A81099C3FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDB4CB6B28001C47D09D877584FCA4C /* ICandleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICandleChartDataSet.swift; path = Source/Charts/Data/Interfaces/ICandleChartDataSet.swift; sourceTree = "<group>"; };
 		7F1D3C8740C28543678482327A08D22E /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		7F9F74456535F377630250DE03836432 /* Pods-FinStat Ukraine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FinStat Ukraine-umbrella.h"; sourceTree = "<group>"; };
-		8089207D73780B1CA6DAE3406245F423 /* NTMonthYearPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NTMonthYearPicker.framework; path = NTMonthYearPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		808D185EC0FD406D66383D50942DE220 /* ChartColorTemplates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartColorTemplates.swift; path = Source/Charts/Utils/ChartColorTemplates.swift; sourceTree = "<group>"; };
 		80B27AD733DB2920AAD9D61028207761 /* ComponentBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComponentBase.swift; path = Source/Charts/Components/ComponentBase.swift; sourceTree = "<group>"; };
 		8151FB2B3B2A9CB6AC8D99770C28A0A0 /* TriangleShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriangleShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/TriangleShapeRenderer.swift; sourceTree = "<group>"; };
@@ -322,24 +334,24 @@
 		838CB8A455A0E14DC02FAB7E659A9874 /* Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fill.swift; path = Source/Charts/Utils/Fill.swift; sourceTree = "<group>"; };
 		866BD26EA7D17A17BC4E7E5071CF775D /* NTMonthYearPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NTMonthYearPicker-dummy.m"; sourceTree = "<group>"; };
 		869AA673FBD40F14BBC330F2555DB415 /* CandleChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleChartDataProvider.swift; path = Source/Charts/Interfaces/CandleChartDataProvider.swift; sourceTree = "<group>"; };
-		8713F2D628AA17768CE496EE630C40B0 /* KJExpandableTableTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KJExpandableTableTree.framework; path = KJExpandableTableTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A63493000EBCA1F848EDBECA4F359AA /* IHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IHighlighter.swift; path = Source/Charts/Highlight/IHighlighter.swift; sourceTree = "<group>"; };
 		8B793120017868F033C76FF3DD2498EB /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		8B8B3ECFEE0477E84D4F531010742119 /* ILineRadarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ILineRadarChartDataSet.swift; path = Source/Charts/Data/Interfaces/ILineRadarChartDataSet.swift; sourceTree = "<group>"; };
 		8CEAC96BDFDDA2DF1238056E058658F5 /* BarChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartData.swift; path = Source/Charts/Data/Implementations/Standard/BarChartData.swift; sourceTree = "<group>"; };
 		8EB2C7ACA232309BED1CDA3AE2C6FD20 /* ViewPortJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewPortJob.swift; path = Source/Charts/Jobs/ViewPortJob.swift; sourceTree = "<group>"; };
 		8F5CA48612C01E77B459EC900C05BD57 /* PieChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartView.swift; path = Source/Charts/Charts/PieChartView.swift; sourceTree = "<group>"; };
+		8F6FEC06598E75DE1F1F5AC553A695CA /* Pods-FinstatLib.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinstatLib.qa.xcconfig"; sourceTree = "<group>"; };
 		8F97206CB7608FEEC27F53946E75DC99 /* Charts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Charts-dummy.m"; sourceTree = "<group>"; };
-		8F9DA903E3C0433C7E35074539DC0B56 /* Pods-FinStat Ukraine-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinStat Ukraine-frameworks.sh"; sourceTree = "<group>"; };
 		90EC91BF9830D6D7D29DB778F031BC5D /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		9167E637DEE06400FA4F8A7FC39BB0C2 /* BarLineChartViewBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarLineChartViewBase.swift; path = Source/Charts/Charts/BarLineChartViewBase.swift; sourceTree = "<group>"; };
 		91BB823FA205306286E8BF9FA56BD2C9 /* AnimatedMoveViewJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedMoveViewJob.swift; path = Source/Charts/Jobs/AnimatedMoveViewJob.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		940E93403BE297FB329972A41ABD2BE6 /* IFillFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IFillFormatter.swift; path = Source/Charts/Formatters/IFillFormatter.swift; sourceTree = "<group>"; };
 		9486EC824DB81EB8924D1A51741CACB7 /* KJExpandableTableTree-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KJExpandableTableTree-dummy.m"; sourceTree = "<group>"; };
+		95C302CB2EAC2826BC0FDF7A3B76D36B /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Charts.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		974ED3560090F01AD7E9589F79C25201 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9928361353D1574B769597120CFD2AD6 /* Platform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.swift; path = Source/Charts/Utils/Platform.swift; sourceTree = "<group>"; };
 		9A3972727E93BAB6B3839DC8CA0CEBF7 /* NTMonthYearPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NTMonthYearPicker-prefix.pch"; sourceTree = "<group>"; };
-		9AF981B6364E6C887704776828651FDA /* Pods_FinStat_Ukraine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FinStat_Ukraine.framework; path = "Pods-FinStat Ukraine.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6E7FD34C22C77BE209AC70D4C16466 /* NTMonthYearPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NTMonthYearPicker.m; path = NTMonthYearPicker/NTMonthYearPicker.m; sourceTree = "<group>"; };
 		9C930CCB7DAC07C9A6FAF02077C167FF /* RadarChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarChartData.swift; path = Source/Charts/Data/Implementations/Standard/RadarChartData.swift; sourceTree = "<group>"; };
 		9DFE9662F071FF4EDE7C04819147C60A /* IValueFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IValueFormatter.swift; path = Source/Charts/Formatters/IValueFormatter.swift; sourceTree = "<group>"; };
@@ -350,15 +362,18 @@
 		A28E8A22AF1AF5F33BAF44410793D2DB /* IChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IChartDataSet.swift; path = Source/Charts/Data/Interfaces/IChartDataSet.swift; sourceTree = "<group>"; };
 		A2DD66BFB47ABD83FAC4BA8034FD9175 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		A37A6FF643C0626B8EA2CDA1D308FB53 /* RadarChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarChartView.swift; path = Source/Charts/Charts/RadarChartView.swift; sourceTree = "<group>"; };
+		A5213EE342ABED45D24A0E049954C3BD /* Pods-FinStat Ukraine-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinStat Ukraine-resources.sh"; sourceTree = "<group>"; };
 		A5D2F8BFB570FBF81E321972BAEEFBD8 /* PieChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/PieChartDataEntry.swift; sourceTree = "<group>"; };
 		A616E34DF436840B4110288EE01A72A3 /* SquareShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SquareShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/SquareShapeRenderer.swift; sourceTree = "<group>"; };
 		A98241EA9A707D6D24F013115E49580D /* HorizontalBarChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalBarChartRenderer.swift; path = Source/Charts/Renderers/HorizontalBarChartRenderer.swift; sourceTree = "<group>"; };
 		A9B71B18ABA97EE1599D7561F5EFA064 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		AB1D436E953D3B6747000464B3C0DA86 /* BubbleChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/BubbleChartDataEntry.swift; sourceTree = "<group>"; };
+		ABBDA6F1CED1525AEF9311271C47C39A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2D8C500877D2562D0D67ADEB5B25A7 /* ChartDataEntryBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataEntryBase.swift; path = Source/Charts/Data/Implementations/Standard/ChartDataEntryBase.swift; sourceTree = "<group>"; };
 		ACB0CDC8206323A9C7F849101306DA98 /* LineRadarRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineRadarRenderer.swift; path = Source/Charts/Renderers/LineRadarRenderer.swift; sourceTree = "<group>"; };
 		AE3FF241A701B7F1F6989AFE31E9A966 /* DefaultValueFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValueFormatter.swift; path = Source/Charts/Formatters/DefaultValueFormatter.swift; sourceTree = "<group>"; };
 		AEDD89BF340684D7268806974F885DAF /* PieChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/PieChartDataSet.swift; sourceTree = "<group>"; };
+		AFB413BB1AA7865CE7B639D66AED33FF /* Pods-FinStat Ukraine.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinStat Ukraine.qa.xcconfig"; sourceTree = "<group>"; };
 		AFC1BD7B5900901EB2DD9EAD98A83C6B /* BarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/BarChartDataSet.swift; sourceTree = "<group>"; };
 		AFF5241434314619AECA825055701A07 /* IScatterChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IScatterChartDataSet.swift; path = Source/Charts/Data/Interfaces/IScatterChartDataSet.swift; sourceTree = "<group>"; };
 		B06189755BDA2C47DB575466F1BD4972 /* BarLineScatterCandleBubbleChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarLineScatterCandleBubbleChartData.swift; path = Source/Charts/Data/Implementations/Standard/BarLineScatterCandleBubbleChartData.swift; sourceTree = "<group>"; };
@@ -369,6 +384,7 @@
 		BC24C77AEE1EE52EA6C12822A6EBC94A /* CombinedChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinedChartData.swift; path = Source/Charts/Data/Implementations/Standard/CombinedChartData.swift; sourceTree = "<group>"; };
 		BC59975BB9F6B6F43EBA2D0BD8650ABE /* BarChartDataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartDataEntry.swift; path = Source/Charts/Data/Implementations/Standard/BarChartDataEntry.swift; sourceTree = "<group>"; };
 		BD4DF8917CEAC98D55B3C54C69EB2AFA /* BarHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarHighlighter.swift; path = Source/Charts/Highlight/BarHighlighter.swift; sourceTree = "<group>"; };
+		C1BE0858052E5666E3C80CBEF72DCA52 /* Pods_FinStat_Ukraine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FinStat_Ukraine.framework; path = "Pods-FinStat Ukraine.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C544D5B74E9868E505A4EE2B82D3E900 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		C84442C346A30E3EF11967788766ADA2 /* BubbleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/BubbleChartDataSet.swift; sourceTree = "<group>"; };
 		C8C3E2DB7D13CEC28B217ACF55CD898C /* ScatterChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScatterChartDataProvider.swift; path = Source/Charts/Interfaces/ScatterChartDataProvider.swift; sourceTree = "<group>"; };
@@ -376,21 +392,24 @@
 		CC5DAC6968AF11FD22916A520796361D /* BubbleChartDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartDataProvider.swift; path = Source/Charts/Interfaces/BubbleChartDataProvider.swift; sourceTree = "<group>"; };
 		CC9BEC89E8745727B7225A5CF00D4299 /* RadarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/RadarChartDataSet.swift; sourceTree = "<group>"; };
 		CCB63018ECFD2A0B4CE8AF192C14DABF /* LegendRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegendRenderer.swift; path = Source/Charts/Renderers/LegendRenderer.swift; sourceTree = "<group>"; };
+		CEB312C3154077F253A3CE2E3A791793 /* Pods-FinstatLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FinstatLib.modulemap"; sourceTree = "<group>"; };
 		CEF5717053434C6B2180BA4E6E3C99E2 /* RadarHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarHighlighter.swift; path = Source/Charts/Highlight/RadarHighlighter.swift; sourceTree = "<group>"; };
-		CEF7186AF4813395DF7DF7255E4D1C62 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D899AD2141E71D12F47CB44CFA97B3 /* CandleChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleChartData.swift; path = Source/Charts/Data/Implementations/Standard/CandleChartData.swift; sourceTree = "<group>"; };
 		D6179C32368321648F51214BFBAD4479 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		D63023754D8F57006A51460F2616B866 /* ViewPortHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewPortHandler.swift; path = Source/Charts/Utils/ViewPortHandler.swift; sourceTree = "<group>"; };
+		D85678D258D2E57B9C2DF0554DF674D7 /* KJExpandableTableTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KJExpandableTableTree.framework; path = KJExpandableTableTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7A4CBB38ECD1540515EE6083024472 /* CandleChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CandleChartDataSet.swift; path = Source/Charts/Data/Implementations/Standard/CandleChartDataSet.swift; sourceTree = "<group>"; };
 		DA9DB4E07E8E672723FC36E996B80E14 /* ILineChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ILineChartDataSet.swift; path = Source/Charts/Data/Interfaces/ILineChartDataSet.swift; sourceTree = "<group>"; };
 		DBC6521B1101F7F11368F3E329F7EEBF /* NTMonthYearPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NTMonthYearPicker-umbrella.h"; sourceTree = "<group>"; };
 		DD03E37E422A4FBA11B2E37C929DBC68 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		DD32DEB8CE9831D20EE8E7632B11FAFF /* AnimatedViewPortJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedViewPortJob.swift; path = Source/Charts/Jobs/AnimatedViewPortJob.swift; sourceTree = "<group>"; };
 		DE46990E73C9DDCE584B4E2650837F87 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		DFC35E03C51F1CDFE13FC517ECF3A826 /* Pods-FinStat Ukraine-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FinStat Ukraine-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DFF18E6BF1706EEA09E42ABE539B73AC /* IShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IShapeRenderer.swift; path = Source/Charts/Renderers/Scatter/IShapeRenderer.swift; sourceTree = "<group>"; };
 		E08AC9166946B6546648AB51A71F0774 /* BarChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartRenderer.swift; path = Source/Charts/Renderers/BarChartRenderer.swift; sourceTree = "<group>"; };
 		E2326D36B9094F0B9BFE5A0F91660743 /* Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Range.swift; path = Source/Charts/Highlight/Range.swift; sourceTree = "<group>"; };
 		E4A8A333CF255F2BAF0C3074F2CF6CD5 /* PieHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieHighlighter.swift; path = Source/Charts/Highlight/PieHighlighter.swift; sourceTree = "<group>"; };
+		E4C77B68B8E0F0B9A2E4672C33BAD8EC /* Pods-FinstatLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FinstatLib-dummy.m"; sourceTree = "<group>"; };
 		E5B8C57BC313729EB466DD436902C489 /* ScatterChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScatterChartData.swift; path = Source/Charts/Data/Implementations/Standard/ScatterChartData.swift; sourceTree = "<group>"; };
 		E67AECFE41758C80A9EAC6FDE52B080D /* XAxisRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XAxisRenderer.swift; path = Source/Charts/Renderers/XAxisRenderer.swift; sourceTree = "<group>"; };
 		E813239E1E1435590587A8C685840524 /* LineScatterCandleRadarRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineScatterCandleRadarRenderer.swift; path = Source/Charts/Renderers/LineScatterCandleRadarRenderer.swift; sourceTree = "<group>"; };
@@ -405,7 +424,9 @@
 		FAEB385015F23F021D67FDDD41BF74F0 /* KJTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KJTree.swift; path = KJExpandableTableTree/Classes/KJTree.swift; sourceTree = "<group>"; };
 		FB70958C017A1EF72938075ED3F1132E /* MarkerImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarkerImage.swift; path = Source/Charts/Components/MarkerImage.swift; sourceTree = "<group>"; };
 		FBC5808CFE9D10FD479D5767BE9E2F9C /* IAxisValueFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IAxisValueFormatter.swift; path = Source/Charts/Formatters/IAxisValueFormatter.swift; sourceTree = "<group>"; };
+		FE3182EF3042984C755B05CC856BCBE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE648264894682AC8A19CA17018463F1 /* IRadarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IRadarChartDataSet.swift; path = Source/Charts/Data/Interfaces/IRadarChartDataSet.swift; sourceTree = "<group>"; };
+		FFEBB9AFCFCAD66537B9BA06C3C6E563 /* Pods-FinstatLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinstatLib.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +462,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBC1E97EB0BB523312435B5293911095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7E4FF33EA8E31DC1ADC79D873C68F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2FCFA4996C389F8E8DB5DC5C0BA6FF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,6 +481,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DA4199F6DACFD3371790B836722BEF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABBDA6F1CED1525AEF9311271C47C39A /* Alamofire.framework */,
+				95C302CB2EAC2826BC0FDF7A3B76D36B /* Charts.framework */,
+				D85678D258D2E57B9C2DF0554DF674D7 /* KJExpandableTableTree.framework */,
+				47F14F1AE7F146B9ED3E8BCC972764FA /* NTMonthYearPicker.framework */,
+				C1BE0858052E5666E3C80CBEF72DCA52 /* Pods_FinStat_Ukraine.framework */,
+				74831F75CA8DD499B4DCFE1068E24F60 /* Pods_FinstatLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		194A5C3E51E8272E8B703F833FA54550 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -474,18 +516,6 @@
 			);
 			name = KJExpandableTableTree;
 			path = KJExpandableTableTree;
-			sourceTree = "<group>";
-		};
-		4E23552FDA3C2C66C5034E03E56AE3E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CEF7186AF4813395DF7DF7255E4D1C62 /* Alamofire.framework */,
-				03693FD43B711D4F1DAADD179936F694 /* Charts.framework */,
-				8713F2D628AA17768CE496EE630C40B0 /* KJExpandableTableTree.framework */,
-				8089207D73780B1CA6DAE3406245F423 /* NTMonthYearPicker.framework */,
-				9AF981B6364E6C887704776828651FDA /* Pods_FinStat_Ukraine.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4EC449EEC251ECC689D131A877525F00 /* Pods */ = {
@@ -640,14 +670,6 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		64233083308B6A3F5995B983CBBF6479 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B3A7D7E0AB71215EE8E86813DEF7EA5D /* Pods-FinStat Ukraine */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		71B6C3E963F0B2759483AC1A5565ED7C /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,9 +702,18 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				4EC449EEC251ECC689D131A877525F00 /* Pods */,
-				4E23552FDA3C2C66C5034E03E56AE3E1 /* Products */,
-				64233083308B6A3F5995B983CBBF6479 /* Targets Support Files */,
+				0DA4199F6DACFD3371790B836722BEF4 /* Products */,
+				91F63545FBC9C1AEC3349132AC1E0092 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		91F63545FBC9C1AEC3349132AC1E0092 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F58F913AC6DC4EC5E829D536B77AA9DF /* Pods-FinStat Ukraine */,
+				C7A41241A7C242613651E161F7C00FF0 /* Pods-FinstatLib */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		95BABB4FD63EDF1D06DD8F11F51DA556 /* NTMonthYearPicker */ = {
@@ -704,25 +735,6 @@
 			);
 			name = Charts;
 			path = Charts;
-			sourceTree = "<group>";
-		};
-		B3A7D7E0AB71215EE8E86813DEF7EA5D /* Pods-FinStat Ukraine */ = {
-			isa = PBXGroup;
-			children = (
-				4A03A8E8F6547D4AE7295BB21CF51616 /* Info.plist */,
-				1DA917BE89C4C3B0EF8B3C3CE40A653A /* Pods-FinStat Ukraine.modulemap */,
-				66ECBDE7D12F4CB9132ED8E37D929CF7 /* Pods-FinStat Ukraine-acknowledgements.markdown */,
-				057FFDF5526D3AABE068E158F542385C /* Pods-FinStat Ukraine-acknowledgements.plist */,
-				4C9C8FB4C61B56352C8B51A7CCA50451 /* Pods-FinStat Ukraine-dummy.m */,
-				8F9DA903E3C0433C7E35074539DC0B56 /* Pods-FinStat Ukraine-frameworks.sh */,
-				313BBF01F7DC11A1ACC3E93647C5C2FC /* Pods-FinStat Ukraine-resources.sh */,
-				7F9F74456535F377630250DE03836432 /* Pods-FinStat Ukraine-umbrella.h */,
-				30048780618FEAFC161FAB11A643F204 /* Pods-FinStat Ukraine.debug.xcconfig */,
-				39DEACB0EF4B40CC56650F0FBDDFD89B /* Pods-FinStat Ukraine.qa.xcconfig */,
-				2AC07F7DD2EA21F31B6A4BCB675028FF /* Pods-FinStat Ukraine.release.xcconfig */,
-			);
-			name = "Pods-FinStat Ukraine";
-			path = "Target Support Files/Pods-FinStat Ukraine";
 			sourceTree = "<group>";
 		};
 		B50C2D25CC722042454A1F2C318DCA07 /* Support Files */ = {
@@ -761,6 +773,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C7A41241A7C242613651E161F7C00FF0 /* Pods-FinstatLib */ = {
+			isa = PBXGroup;
+			children = (
+				FE3182EF3042984C755B05CC856BCBE6 /* Info.plist */,
+				CEB312C3154077F253A3CE2E3A791793 /* Pods-FinstatLib.modulemap */,
+				0C9293A73A88FBCB68E77C7A264D163A /* Pods-FinstatLib-acknowledgements.markdown */,
+				5FFE2600B6F172211C099CE54CABEF8F /* Pods-FinstatLib-acknowledgements.plist */,
+				E4C77B68B8E0F0B9A2E4672C33BAD8EC /* Pods-FinstatLib-dummy.m */,
+				09AD5A2A00339720E0E06AE21EB2DC2E /* Pods-FinstatLib-resources.sh */,
+				5D409B9280460F2D93A9D3A26928C3F7 /* Pods-FinstatLib-umbrella.h */,
+				660374D299810314244C5B7F5D1F2A78 /* Pods-FinstatLib.debug.xcconfig */,
+				8F6FEC06598E75DE1F1F5AC553A695CA /* Pods-FinstatLib.qa.xcconfig */,
+				FFEBB9AFCFCAD66537B9BA06C3C6E563 /* Pods-FinstatLib.release.xcconfig */,
+			);
+			name = "Pods-FinstatLib";
+			path = "Target Support Files/Pods-FinstatLib";
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -783,9 +813,36 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
+		F58F913AC6DC4EC5E829D536B77AA9DF /* Pods-FinStat Ukraine */ = {
+			isa = PBXGroup;
+			children = (
+				974ED3560090F01AD7E9589F79C25201 /* Info.plist */,
+				253A5E27249B7E2ABD9B3409313587DC /* Pods-FinStat Ukraine.modulemap */,
+				DFC35E03C51F1CDFE13FC517ECF3A826 /* Pods-FinStat Ukraine-acknowledgements.markdown */,
+				1178C81EEE7228C882F20B7A773EB6E8 /* Pods-FinStat Ukraine-acknowledgements.plist */,
+				4D7BFC8723A60677F5025974BFD63BB5 /* Pods-FinStat Ukraine-dummy.m */,
+				2870BF72585047C7BBDED67EDF08F638 /* Pods-FinStat Ukraine-frameworks.sh */,
+				A5213EE342ABED45D24A0E049954C3BD /* Pods-FinStat Ukraine-resources.sh */,
+				133407331C99F4DE282DDBBFCACAABAC /* Pods-FinStat Ukraine-umbrella.h */,
+				67B7D464D6CBF35A978DBE15AD0A2181 /* Pods-FinStat Ukraine.debug.xcconfig */,
+				AFB413BB1AA7865CE7B639D66AED33FF /* Pods-FinStat Ukraine.qa.xcconfig */,
+				06F1A4467A1E8A82B9A28327A39190EF /* Pods-FinStat Ukraine.release.xcconfig */,
+			);
+			name = "Pods-FinStat Ukraine";
+			path = "Target Support Files/Pods-FinStat Ukraine";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0CB80839BECC40F00D56ED27D90E0304 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A8219B28F82D0116B594F16B0A18BB /* Pods-FinstatLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		160C49BF1DAEF88513638E544BCDA80A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -844,7 +901,25 @@
 			);
 			name = KJExpandableTableTree;
 			productName = KJExpandableTableTree;
-			productReference = 8713F2D628AA17768CE496EE630C40B0 /* KJExpandableTableTree.framework */;
+			productReference = D85678D258D2E57B9C2DF0554DF674D7 /* KJExpandableTableTree.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5156EECCEC12D25484F4A01BFF6AAD91 /* Pods-FinstatLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F914A686EA8052CC3188C6E12314DA42 /* Build configuration list for PBXNativeTarget "Pods-FinstatLib" */;
+			buildPhases = (
+				B3DE84A4A78C4A1C9330B53E3B3A4191 /* Sources */,
+				DBC1E97EB0BB523312435B5293911095 /* Frameworks */,
+				0CB80839BECC40F00D56ED27D90E0304 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45E31C9E3F31C985397A584AE62D9FE1 /* PBXTargetDependency */,
+			);
+			name = "Pods-FinstatLib";
+			productName = "Pods-FinstatLib";
+			productReference = 74831F75CA8DD499B4DCFE1068E24F60 /* Pods_FinstatLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		66B239826EF1D39D2D6C594AC2DBFF77 /* Alamofire */ = {
@@ -861,7 +936,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = CEF7186AF4813395DF7DF7255E4D1C62 /* Alamofire.framework */;
+			productReference = ABBDA6F1CED1525AEF9311271C47C39A /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		75726BEECDA0004AEC6C5F265D5D2E32 /* Pods-FinStat Ukraine */ = {
@@ -882,7 +957,7 @@
 			);
 			name = "Pods-FinStat Ukraine";
 			productName = "Pods-FinStat Ukraine";
-			productReference = 9AF981B6364E6C887704776828651FDA /* Pods_FinStat_Ukraine.framework */;
+			productReference = C1BE0858052E5666E3C80CBEF72DCA52 /* Pods_FinStat_Ukraine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		973639ADF462BCF71186C7945BD5BE1D /* Charts */ = {
@@ -899,7 +974,7 @@
 			);
 			name = Charts;
 			productName = Charts;
-			productReference = 03693FD43B711D4F1DAADD179936F694 /* Charts.framework */;
+			productReference = 95C302CB2EAC2826BC0FDF7A3B76D36B /* Charts.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EB1E4A1F553A533642DFDFBB0665EF07 /* NTMonthYearPicker */ = {
@@ -916,7 +991,7 @@
 			);
 			name = NTMonthYearPicker;
 			productName = NTMonthYearPicker;
-			productReference = 8089207D73780B1CA6DAE3406245F423 /* NTMonthYearPicker.framework */;
+			productReference = 47F14F1AE7F146B9ED3E8BCC972764FA /* NTMonthYearPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -936,7 +1011,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4E23552FDA3C2C66C5034E03E56AE3E1 /* Products */;
+			productRefGroup = 0DA4199F6DACFD3371790B836722BEF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -945,6 +1020,7 @@
 				05B7A8D6A4523158B810C1AAA35BE92B /* KJExpandableTableTree */,
 				EB1E4A1F553A533642DFDFBB0665EF07 /* NTMonthYearPicker */,
 				75726BEECDA0004AEC6C5F265D5D2E32 /* Pods-FinStat Ukraine */,
+				5156EECCEC12D25484F4A01BFF6AAD91 /* Pods-FinstatLib */,
 			);
 		};
 /* End PBXProject section */
@@ -1126,6 +1202,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B3DE84A4A78C4A1C9330B53E3B3A4191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD36BA816B49E83957E6A1E93B35043 /* Pods-FinstatLib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C837B33E4B951139D20DC3BFE2329B5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1157,6 +1241,12 @@
 			name = Charts;
 			target = 973639ADF462BCF71186C7945BD5BE1D /* Charts */;
 			targetProxy = 2BE5F933A6FF34B6CD7084320596421B /* PBXContainerItemProxy */;
+		};
+		45E31C9E3F31C985397A584AE62D9FE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 66B239826EF1D39D2D6C594AC2DBFF77 /* Alamofire */;
+			targetProxy = 0EEC75F6C0DC95C3D1A0575B0CD07B42 /* PBXContainerItemProxy */;
 		};
 		4D8DC42F75B690020DAC03186AFF981A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1198,6 +1288,74 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = QA;
+		};
+		161F0D1508EC303E53192BE24A9CCF4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 660374D299810314244C5B7F5D1F2A78 /* Pods-FinstatLib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FinstatLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FinstatLib/Pods-FinstatLib.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FinstatLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B04EE02001CBC7FAE1B5369DCBD2AC8 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F6FEC06598E75DE1F1F5AC553A695CA /* Pods-FinstatLib.qa.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FinstatLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FinstatLib/Pods-FinstatLib.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FinstatLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1302,7 +1460,7 @@
 		};
 		4CDE20B8DBB0844CBB6F4EDB922C9AB4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AC07F7DD2EA21F31B6A4BCB675028FF /* Pods-FinStat Ukraine.release.xcconfig */;
+			baseConfigurationReference = 06F1A4467A1E8A82B9A28327A39190EF /* Pods-FinStat Ukraine.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1518,7 +1676,7 @@
 		};
 		76AB777BF10121C6D38629C84363070A /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39DEACB0EF4B40CC56650F0FBDDFD89B /* Pods-FinStat Ukraine.qa.xcconfig */;
+			baseConfigurationReference = AFB413BB1AA7865CE7B639D66AED33FF /* Pods-FinStat Ukraine.qa.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1552,7 +1710,7 @@
 		};
 		84454BFD75BDF8A0293DA928FEF226EF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30048780618FEAFC161FAB11A643F204 /* Pods-FinStat Ukraine.debug.xcconfig */;
+			baseConfigurationReference = 67B7D464D6CBF35A978DBE15AD0A2181 /* Pods-FinStat Ukraine.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1767,6 +1925,40 @@
 			};
 			name = Debug;
 		};
+		F097860808643E573F2C33E537E32D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFEBB9AFCFCAD66537B9BA06C3C6E563 /* Pods-FinstatLib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FinstatLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FinstatLib/Pods-FinstatLib.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FinstatLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		FFB8587C97E10D6FBAD1D2F5165C9A5A /* QA */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1880,6 +2072,16 @@
 				84454BFD75BDF8A0293DA928FEF226EF /* Debug */,
 				76AB777BF10121C6D38629C84363070A /* QA */,
 				4CDE20B8DBB0844CBB6F4EDB922C9AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F914A686EA8052CC3188C6E12314DA42 /* Build configuration list for PBXNativeTarget "Pods-FinstatLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				161F0D1508EC303E53192BE24A9CCF4D /* Debug */,
+				1B04EE02001CBC7FAE1B5369DCBD2AC8 /* QA */,
+				F097860808643E573F2C33E537E32D41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
