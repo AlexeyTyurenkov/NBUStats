@@ -59,7 +59,7 @@ extension NBURatesTableViewCell
         case .grow:
             differenceLabel.textColor = ThemeManager.shared.positiveColor
         case .same:
-            differenceLabel.textColor = ThemeManager.shared.negativeColor
+            differenceLabel.textColor = ThemeManager.shared.neutralColor
         default:
             differenceLabel.textColor = UIColor.clear
         }
