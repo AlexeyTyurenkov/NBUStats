@@ -15,7 +15,8 @@ class ModuleProvider
                                  CommercialHTModuleBuilder(),
                                  InterbankHTModuleBuilder(),
                                  BlackHTModuleBuilder(),
-                                 UXCurrentIndexModuleBuilder()
+                                 UXCurrentIndexModuleBuilder(),
+                                 PFTSCurrentIndexModuleBuilder()
                                  ]
     
     var count: Int {

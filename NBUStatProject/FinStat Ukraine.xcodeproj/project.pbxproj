@@ -43,10 +43,15 @@
 		D961F92B204DF04900F46F8A /* UXCurrentIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F92A204DF04900F46F8A /* UXCurrentIndexViewController.swift */; };
 		D961F92D204E5FF000F46F8A /* UXCurrentIndexPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F92C204E5FF000F46F8A /* UXCurrentIndexPresenter.swift */; };
 		D961F92F204E605B00F46F8A /* UXCurrentIndexPresenter+DataProviderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F92E204E605B00F46F8A /* UXCurrentIndexPresenter+DataProviderInfo.swift */; };
-		D961F931204E73CA00F46F8A /* UXCurrentIndexInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F930204E73CA00F46F8A /* UXCurrentIndexInteractor.swift */; };
 		D961F935204F493400F46F8A /* UXCurrentIndexRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F934204F493400F46F8A /* UXCurrentIndexRouter.swift */; };
 		D961F93B204F4C2200F46F8A /* DataProviderPresentingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F93A204F4C2200F46F8A /* DataProviderPresentingProtocol.swift */; };
 		D961F93D204F4F3000F46F8A /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961F93C204F4F3000F46F8A /* ThemeManager.swift */; };
+		D968A7182054855200518434 /* PFTSCurrentIndexModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7132054855200518434 /* PFTSCurrentIndexModuleBuilder.swift */; };
+		D968A7192054855200518434 /* PFTSCurrentIndexPresenter+DataProviderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7142054855200518434 /* PFTSCurrentIndexPresenter+DataProviderInfo.swift */; };
+		D968A71A2054855200518434 /* PFTSCurrentIndexPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7152054855200518434 /* PFTSCurrentIndexPresenter.swift */; };
+		D968A71B2054855200518434 /* PFTSCurrentIndexRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7162054855200518434 /* PFTSCurrentIndexRouter.swift */; };
+		D968A71C2054855200518434 /* PFTSCurrentIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7172054855200518434 /* PFTSCurrentIndexViewController.swift */; };
+		D968A71E2054873300518434 /* PFTSCurrentIndex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D968A71D2054873200518434 /* PFTSCurrentIndex.storyboard */; };
 		D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A04203B971C00027099 /* BaseTableViewController.swift */; };
 		D96B2A07203CA41800027099 /* PresenterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */; };
 		D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A08203CA55A00027099 /* PresenterProtocol.swift */; };
@@ -148,10 +153,15 @@
 		D961F92A204DF04900F46F8A /* UXCurrentIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXCurrentIndexViewController.swift; sourceTree = "<group>"; };
 		D961F92C204E5FF000F46F8A /* UXCurrentIndexPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXCurrentIndexPresenter.swift; sourceTree = "<group>"; };
 		D961F92E204E605B00F46F8A /* UXCurrentIndexPresenter+DataProviderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXCurrentIndexPresenter+DataProviderInfo.swift"; sourceTree = "<group>"; };
-		D961F930204E73CA00F46F8A /* UXCurrentIndexInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXCurrentIndexInteractor.swift; sourceTree = "<group>"; };
 		D961F934204F493400F46F8A /* UXCurrentIndexRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXCurrentIndexRouter.swift; sourceTree = "<group>"; };
 		D961F93A204F4C2200F46F8A /* DataProviderPresentingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderPresentingProtocol.swift; sourceTree = "<group>"; };
 		D961F93C204F4F3000F46F8A /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		D968A7132054855200518434 /* PFTSCurrentIndexModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFTSCurrentIndexModuleBuilder.swift; sourceTree = "<group>"; };
+		D968A7142054855200518434 /* PFTSCurrentIndexPresenter+DataProviderInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PFTSCurrentIndexPresenter+DataProviderInfo.swift"; sourceTree = "<group>"; };
+		D968A7152054855200518434 /* PFTSCurrentIndexPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFTSCurrentIndexPresenter.swift; sourceTree = "<group>"; };
+		D968A7162054855200518434 /* PFTSCurrentIndexRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFTSCurrentIndexRouter.swift; sourceTree = "<group>"; };
+		D968A7172054855200518434 /* PFTSCurrentIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFTSCurrentIndexViewController.swift; sourceTree = "<group>"; };
+		D968A71D2054873200518434 /* PFTSCurrentIndex.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PFTSCurrentIndex.storyboard; sourceTree = "<group>"; };
 		D96B2A04203B971C00027099 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewDelegate.swift; sourceTree = "<group>"; };
 		D96B2A08203CA55A00027099 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
@@ -365,7 +375,6 @@
 				D961F92A204DF04900F46F8A /* UXCurrentIndexViewController.swift */,
 				D961F92C204E5FF000F46F8A /* UXCurrentIndexPresenter.swift */,
 				D961F92E204E605B00F46F8A /* UXCurrentIndexPresenter+DataProviderInfo.swift */,
-				D961F930204E73CA00F46F8A /* UXCurrentIndexInteractor.swift */,
 				D961F934204F493400F46F8A /* UXCurrentIndexRouter.swift */,
 			);
 			path = UXCurrentIndex;
@@ -379,6 +388,18 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		D968A7122054855200518434 /* PFTSCurrentIndex */ = {
+			isa = PBXGroup;
+			children = (
+				D968A7132054855200518434 /* PFTSCurrentIndexModuleBuilder.swift */,
+				D968A7142054855200518434 /* PFTSCurrentIndexPresenter+DataProviderInfo.swift */,
+				D968A7152054855200518434 /* PFTSCurrentIndexPresenter.swift */,
+				D968A7162054855200518434 /* PFTSCurrentIndexRouter.swift */,
+				D968A7172054855200518434 /* PFTSCurrentIndexViewController.swift */,
+			);
+			path = PFTSCurrentIndex;
+			sourceTree = "<group>";
+		};
 		D9720A42203E246600F81CBB /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +410,7 @@
 				D90629102049EBEB00118375 /* Currencies.storyboard */,
 				D9062922204B425500118375 /* DataProviderCredits.storyboard */,
 				D961F928204DEF8800F46F8A /* UXCurrentIndex.storyboard */,
+				D968A71D2054873200518434 /* PFTSCurrentIndex.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -418,6 +440,7 @@
 		D99C89C5203B850F002C55CB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D968A7122054855200518434 /* PFTSCurrentIndex */,
 				D961F925204DEE9200F46F8A /* UXCurrentIndex */,
 				D9720A582048B02100F81CBB /* Hryvnia Today Interbank */,
 				D9720A432044AED100F81CBB /* Government budget Module  */,
@@ -598,6 +621,7 @@
 				D9720A41203E222D00F81CBB /* InterbankRatesTableViewCell.xib in Resources */,
 				C61F1F111F18B06700F0AF87 /* Assets.xcassets in Resources */,
 				D9062923204B425600118375 /* DataProviderCredits.storyboard in Resources */,
+				D968A71E2054873300518434 /* PFTSCurrentIndex.storyboard in Resources */,
 				D90629112049EBEB00118375 /* Currencies.storyboard in Resources */,
 				D96F175D203A183F00869372 /* MainMasterDetail.storyboard in Resources */,
 				D9720A35203E0CA000F81CBB /* CurrencyRates.storyboard in Resources */,
@@ -717,12 +741,15 @@
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
 				D961F93D204F4F3000F46F8A /* ThemeManager.swift in Sources */,
 				D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */,
+				D968A71A2054855200518434 /* PFTSCurrentIndexPresenter.swift in Sources */,
 				D9720A492044BB7C00F81CBB /* GovermentBudgetPresenter.swift in Sources */,
 				D9720A5D20492C3000F81CBB /* HrTodayTableViewCell.swift in Sources */,
 				C61F1F481F18DE9A00F0AF87 /* CurrencyViewController.swift in Sources */,
+				D968A71B2054855200518434 /* PFTSCurrentIndexRouter.swift in Sources */,
 				D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */,
 				C66903831F1CED620063BA91 /* NBURateTableViewController.swift in Sources */,
 				D961F927204DEEE200F46F8A /* UXCurrentIndexModuleBuilder.swift in Sources */,
+				D968A7192054855200518434 /* PFTSCurrentIndexPresenter+DataProviderInfo.swift in Sources */,
 				C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */,
 				D9720A4B2044BBC300F81CBB /* MonthDateDependedProtocol.swift in Sources */,
 				C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */,
@@ -740,18 +767,19 @@
 				D9720A452044B13200F81CBB /* DayDateDependedProtocol.swift in Sources */,
 				D9EC9CAA203A2F1B00BC8954 /* DefaultConfiguration.swift in Sources */,
 				D9720A40203E222D00F81CBB /* InterbankRatesTableViewCell.swift in Sources */,
+				D968A7182054855200518434 /* PFTSCurrentIndexModuleBuilder.swift in Sources */,
 				D9720A572047E08F00F81CBB /* YearDependentProtocol.swift in Sources */,
 				D96B2A0F203CB39500027099 /* BaseTableCellProtocol.swift in Sources */,
 				D906290F2049E91F00118375 /* HryvniaTodayPresenter.swift in Sources */,
 				D96F175F203A23E200869372 /* ModuleProvider.swift in Sources */,
 				D906292B204B524D00118375 /* HryvniaTodayPresenter+DataProviderInfo.swift in Sources */,
 				D9EC9CA6203A2AE100BC8954 /* MainScreenCellProtocol.swift in Sources */,
-				D961F931204E73CA00F46F8A /* UXCurrentIndexInteractor.swift in Sources */,
 				D9720A37203E123C00F81CBB /* InterbankRatesManager.swift in Sources */,
 				D961F92B204DF04900F46F8A /* UXCurrentIndexViewController.swift in Sources */,
 				C60A105F2052C4EC0010FDB3 /* UILabel+Colorification.swift in Sources */,
 				D961F935204F493400F46F8A /* UXCurrentIndexRouter.swift in Sources */,
 				C60A0FC5204D68120010FDB3 /* RefreshController.swift in Sources */,
+				D968A71C2054855200518434 /* PFTSCurrentIndexViewController.swift in Sources */,
 				D99C89D2203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

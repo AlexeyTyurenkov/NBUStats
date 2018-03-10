@@ -9,16 +9,16 @@
 import Foundation
 import UIKit
 
-class UXCurrentIndexModuleBuilder: ModuleBuilderProtocol {
+class PFTSCurrentIndexModuleBuilder: ModuleBuilderProtocol {
     func viewController() -> UIViewController {
-        let storyBoard = UIStoryboard(name: "UXCurrentIndex", bundle: nil)
+        let storyBoard = UIStoryboard(name: "PFTSCurrentIndex", bundle: nil)
         let initialController = storyBoard.instantiateInitialViewController()
         if let navigationController =  initialController as? UINavigationController
         {
-            if let controller = navigationController.topViewController as? UXCurrentIndexViewController
+            if let controller = navigationController.topViewController as? PFTSCurrentIndexViewController
             {
-                let presenter = UXCurrentIndexPresenter()
-                let router    = UXCurrentIndexRouter()
+                let presenter = PFTSCurrentIndexPresenter()
+                let router    = PFTSIndexRouter()
                 presenter.router = router
                 controller.presenter = presenter
                 controller.presenter.delegate = controller
@@ -29,6 +29,6 @@ class UXCurrentIndexModuleBuilder: ModuleBuilderProtocol {
     
     var moduleName: String
     {
-        return NSLocalizedString("Біржевий індекс UX\n(\"За даними Українскої біржи\")", comment: "")
+        return NSLocalizedString("Біржевий індекс ПФТС\n(\"За даними ПАТ ПФТС\")", comment: "")
     }
 }

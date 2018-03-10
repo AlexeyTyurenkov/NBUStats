@@ -25,6 +25,9 @@
 		C60A10752052C7ED0010FDB3 /* HryvniaTodayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A10742052C7ED0010FDB3 /* HryvniaTodayService.swift */; };
 		C60A10782052C8AA0010FDB3 /* GovermentBudgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A10772052C8AA0010FDB3 /* GovermentBudgetService.swift */; };
 		C60A107B2052C8E30010FDB3 /* InterbankRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A107A2052C8E30010FDB3 /* InterbankRatesService.swift */; };
+		D968A70C2054825B00518434 /* UXCurrentIndexInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A70B2054825B00518434 /* UXCurrentIndexInteractor.swift */; };
+		D968A70E205482B200518434 /* PFTSIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A70D205482B200518434 /* PFTSIndexModel.swift */; };
+		D968A7112054849C00518434 /* PFTSIndexInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7102054849C00518434 /* PFTSIndexInteractor.swift */; };
 		F5648308AF6BD1D6789FA2E4 /* Pods_FinstatLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CAD8F1B0227988336DDFA0 /* Pods_FinstatLib.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,9 @@
 		C60A10742052C7ED0010FDB3 /* HryvniaTodayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HryvniaTodayService.swift; sourceTree = "<group>"; };
 		C60A10772052C8AA0010FDB3 /* GovermentBudgetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GovermentBudgetService.swift; sourceTree = "<group>"; };
 		C60A107A2052C8E30010FDB3 /* InterbankRatesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterbankRatesService.swift; sourceTree = "<group>"; };
+		D968A70B2054825B00518434 /* UXCurrentIndexInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXCurrentIndexInteractor.swift; sourceTree = "<group>"; };
+		D968A70D205482B200518434 /* PFTSIndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFTSIndexModel.swift; sourceTree = "<group>"; };
+		D968A7102054849C00518434 /* PFTSIndexInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFTSIndexInteractor.swift; sourceTree = "<group>"; };
 		E8CAD8F1B0227988336DDFA0 /* Pods_FinstatLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinstatLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +127,8 @@
 		C60A101420528C6E0010FDB3 /* FinstatLib */ = {
 			isa = PBXGroup;
 			children = (
+				D968A70F2054847C00518434 /* PFTSService */,
+				D968A708205480DB00518434 /* UkrainianEXchange */,
 				C60A10792052C8C10010FDB3 /* ThirdPartyUnknown */,
 				C60A10762052C88B0010FDB3 /* BudgetServices */,
 				C60A10732052C7D30010FDB3 /* HTServices */,
@@ -181,6 +189,7 @@
 				C60A104E2052C3F70010FDB3 /* UXCurrencyIndexModel.swift */,
 				C60A106E2052C60B0010FDB3 /* DifferenceComparationResult.swift */,
 				C60A10702052C62F0010FDB3 /* Sttring+Time.swift */,
+				D968A70D205482B200518434 /* PFTSIndexModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +216,22 @@
 				C60A107A2052C8E30010FDB3 /* InterbankRatesService.swift */,
 			);
 			path = ThirdPartyUnknown;
+			sourceTree = "<group>";
+		};
+		D968A708205480DB00518434 /* UkrainianEXchange */ = {
+			isa = PBXGroup;
+			children = (
+				D968A70B2054825B00518434 /* UXCurrentIndexInteractor.swift */,
+			);
+			path = UkrainianEXchange;
+			sourceTree = "<group>";
+		};
+		D968A70F2054847C00518434 /* PFTSService */ = {
+			isa = PBXGroup;
+			children = (
+				D968A7102054849C00518434 /* PFTSIndexInteractor.swift */,
+			);
+			path = PFTSService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,11 +389,14 @@
 				C60A107B2052C8E30010FDB3 /* InterbankRatesService.swift in Sources */,
 				C60A10532052C4240010FDB3 /* OpenRateInUaRates.swift in Sources */,
 				C60A10392052BD8F0010FDB3 /* NBURatesService.swift in Sources */,
+				D968A70E205482B200518434 /* PFTSIndexModel.swift in Sources */,
 				C60A10712052C6300010FDB3 /* Sttring+Time.swift in Sources */,
 				C60A106F2052C60B0010FDB3 /* DifferenceComparationResult.swift in Sources */,
 				C60A10582052C4240010FDB3 /* CurrencyName.swift in Sources */,
 				C60A105C2052C4240010FDB3 /* UXCurrencyIndexModel.swift in Sources */,
+				D968A7112054849C00518434 /* PFTSIndexInteractor.swift in Sources */,
 				C60A10502052C4240010FDB3 /* CurrencyRate.swift in Sources */,
+				D968A70C2054825B00518434 /* UXCurrentIndexInteractor.swift in Sources */,
 				C60A10412052C3C10010FDB3 /* RatesServiceProtocol.swift in Sources */,
 				C60A10782052C8AA0010FDB3 /* GovermentBudgetService.swift in Sources */,
 				C60A10752052C7ED0010FDB3 /* HryvniaTodayService.swift in Sources */,

@@ -10,9 +10,9 @@ import Foundation
 import Alamofire
 import FinstatLib
 
-class UXCurrentIndexInteractor
+public class UXCurrentIndexInteractor
 {
-    func load(completion: @escaping (([UXCurrencyIndexModel], Error?) -> ()))
+    public func load(completion: @escaping (([UXCurrencyIndexModel], Error?) -> ()))
     {
         Alamofire.request(String(format:"https://finstat.space/api/ux/index"),
                           method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { response in
@@ -32,4 +32,6 @@ class UXCurrentIndexInteractor
                             }
         }
     }
+    
+    public init() {}
 }
