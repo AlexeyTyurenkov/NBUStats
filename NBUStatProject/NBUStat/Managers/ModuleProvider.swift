@@ -15,6 +15,7 @@ class ModuleProvider
                                  CommercialHTModuleBuilder(),
                                  InterbankHTModuleBuilder(),
                                  BlackHTModuleBuilder(),
+                                 PrivateModuleBuilder(),
                                  UXCurrentIndexModuleBuilder(),
                                  PFTSCurrentIndexModuleBuilder()
                                  ]

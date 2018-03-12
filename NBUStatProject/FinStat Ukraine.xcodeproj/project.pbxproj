@@ -52,6 +52,12 @@
 		D968A71B2054855200518434 /* PFTSCurrentIndexRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7162054855200518434 /* PFTSCurrentIndexRouter.swift */; };
 		D968A71C2054855200518434 /* PFTSCurrentIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7172054855200518434 /* PFTSCurrentIndexViewController.swift */; };
 		D968A71E2054873300518434 /* PFTSCurrentIndex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D968A71D2054873200518434 /* PFTSCurrentIndex.storyboard */; };
+		D968A7222055BC6100518434 /* PrivatCurrencyRates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D968A7212055BC6100518434 /* PrivatCurrencyRates.storyboard */; };
+		D968A7252055C2DB00518434 /* PrivateModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7242055C2DB00518434 /* PrivateModuleBuilder.swift */; };
+		D968A7272055C3BA00518434 /* PrivateCurrencyRatesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7262055C3BA00518434 /* PrivateCurrencyRatesPresenter.swift */; };
+		D968A7292055C44F00518434 /* PrivateCurrencyRatesPresenter+DataProviderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A7282055C44F00518434 /* PrivateCurrencyRatesPresenter+DataProviderInfo.swift */; };
+		D968A72B2055C9DF00518434 /* PrivateCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A72A2055C9DF00518434 /* PrivateCurrencyViewController.swift */; };
+		D968A72D2055CD6600518434 /* PrivateCurrencyRatesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968A72C2055CD6600518434 /* PrivateCurrencyRatesRouter.swift */; };
 		D96B2A05203B971C00027099 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A04203B971C00027099 /* BaseTableViewController.swift */; };
 		D96B2A07203CA41800027099 /* PresenterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */; };
 		D96B2A09203CA55A00027099 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B2A08203CA55A00027099 /* PresenterProtocol.swift */; };
@@ -162,6 +168,12 @@
 		D968A7162054855200518434 /* PFTSCurrentIndexRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFTSCurrentIndexRouter.swift; sourceTree = "<group>"; };
 		D968A7172054855200518434 /* PFTSCurrentIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFTSCurrentIndexViewController.swift; sourceTree = "<group>"; };
 		D968A71D2054873200518434 /* PFTSCurrentIndex.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PFTSCurrentIndex.storyboard; sourceTree = "<group>"; };
+		D968A7212055BC6100518434 /* PrivatCurrencyRates.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrivatCurrencyRates.storyboard; sourceTree = "<group>"; };
+		D968A7242055C2DB00518434 /* PrivateModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateModuleBuilder.swift; sourceTree = "<group>"; };
+		D968A7262055C3BA00518434 /* PrivateCurrencyRatesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateCurrencyRatesPresenter.swift; sourceTree = "<group>"; };
+		D968A7282055C44F00518434 /* PrivateCurrencyRatesPresenter+DataProviderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrivateCurrencyRatesPresenter+DataProviderInfo.swift"; sourceTree = "<group>"; };
+		D968A72A2055C9DF00518434 /* PrivateCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateCurrencyViewController.swift; sourceTree = "<group>"; };
+		D968A72C2055CD6600518434 /* PrivateCurrencyRatesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateCurrencyRatesRouter.swift; sourceTree = "<group>"; };
 		D96B2A04203B971C00027099 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		D96B2A06203CA41800027099 /* PresenterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewDelegate.swift; sourceTree = "<group>"; };
 		D96B2A08203CA55A00027099 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
@@ -400,6 +412,18 @@
 			path = PFTSCurrentIndex;
 			sourceTree = "<group>";
 		};
+		D968A7232055C1B600518434 /* PrivatModule */ = {
+			isa = PBXGroup;
+			children = (
+				D968A7242055C2DB00518434 /* PrivateModuleBuilder.swift */,
+				D968A7262055C3BA00518434 /* PrivateCurrencyRatesPresenter.swift */,
+				D968A7282055C44F00518434 /* PrivateCurrencyRatesPresenter+DataProviderInfo.swift */,
+				D968A72A2055C9DF00518434 /* PrivateCurrencyViewController.swift */,
+				D968A72C2055CD6600518434 /* PrivateCurrencyRatesRouter.swift */,
+			);
+			path = PrivatModule;
+			sourceTree = "<group>";
+		};
 		D9720A42203E246600F81CBB /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +435,7 @@
 				D9062922204B425500118375 /* DataProviderCredits.storyboard */,
 				D961F928204DEF8800F46F8A /* UXCurrentIndex.storyboard */,
 				D968A71D2054873200518434 /* PFTSCurrentIndex.storyboard */,
+				D968A7212055BC6100518434 /* PrivatCurrencyRates.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -440,6 +465,7 @@
 		D99C89C5203B850F002C55CB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D968A7232055C1B600518434 /* PrivatModule */,
 				D968A7122054855200518434 /* PFTSCurrentIndex */,
 				D961F925204DEE9200F46F8A /* UXCurrentIndex */,
 				D9720A582048B02100F81CBB /* Hryvnia Today Interbank */,
@@ -609,6 +635,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96F1767203A261900869372 /* ProviderTableViewCell.xib in Resources */,
+				D968A7222055BC6100518434 /* PrivatCurrencyRates.storyboard in Resources */,
 				D96B2A0D203CB36500027099 /* NBURatesTableViewCell.xib in Resources */,
 				C60A0FC4204D68120010FDB3 /* RefreshController.xib in Resources */,
 				C6F323CF1F2F900400363DC1 /* .travis.yml in Resources */,
@@ -740,6 +767,7 @@
 				D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */,
 				C61F1F0F1F18B06700F0AF87 /* NBUStat.xcdatamodeld in Sources */,
 				D961F93D204F4F3000F46F8A /* ThemeManager.swift in Sources */,
+				D968A72D2055CD6600518434 /* PrivateCurrencyRatesRouter.swift in Sources */,
 				D96F1763203A25AB00869372 /* ProvidersListTableViewController.swift in Sources */,
 				D968A71A2054855200518434 /* PFTSCurrentIndexPresenter.swift in Sources */,
 				D9720A492044BB7C00F81CBB /* GovermentBudgetPresenter.swift in Sources */,
@@ -750,6 +778,7 @@
 				C66903831F1CED620063BA91 /* NBURateTableViewController.swift in Sources */,
 				D961F927204DEEE200F46F8A /* UXCurrentIndexModuleBuilder.swift in Sources */,
 				D968A7192054855200518434 /* PFTSCurrentIndexPresenter+DataProviderInfo.swift in Sources */,
+				D968A7272055C3BA00518434 /* PrivateCurrencyRatesPresenter.swift in Sources */,
 				C66903871F1D05590063BA91 /* HistoricalCurrencyRateTableViewCell.swift in Sources */,
 				D9720A4B2044BBC300F81CBB /* MonthDateDependedProtocol.swift in Sources */,
 				C66903851F1CF3070063BA91 /* CurrencyNavigatoinController.swift in Sources */,
@@ -759,6 +788,7 @@
 				D90629152049EE2200118375 /* HryvniaTodayTableViewController.swift in Sources */,
 				C61F1F071F18B06700F0AF87 /* AppDelegate.swift in Sources */,
 				D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */,
+				D968A7292055C44F00518434 /* PrivateCurrencyRatesPresenter+DataProviderInfo.swift in Sources */,
 				C61F1F461F18C29500F0AF87 /* NBUCurrencyRatesManager.swift in Sources */,
 				D9720A522047D7C000F81CBB /* GovermentBudgetTableViewCell.swift in Sources */,
 				D961F92D204E5FF000F46F8A /* UXCurrentIndexPresenter.swift in Sources */,
@@ -767,6 +797,7 @@
 				D9720A452044B13200F81CBB /* DayDateDependedProtocol.swift in Sources */,
 				D9EC9CAA203A2F1B00BC8954 /* DefaultConfiguration.swift in Sources */,
 				D9720A40203E222D00F81CBB /* InterbankRatesTableViewCell.swift in Sources */,
+				D968A7252055C2DB00518434 /* PrivateModuleBuilder.swift in Sources */,
 				D968A7182054855200518434 /* PFTSCurrentIndexModuleBuilder.swift in Sources */,
 				D9720A572047E08F00F81CBB /* YearDependentProtocol.swift in Sources */,
 				D96B2A0F203CB39500027099 /* BaseTableCellProtocol.swift in Sources */,
@@ -781,6 +812,7 @@
 				C60A0FC5204D68120010FDB3 /* RefreshController.swift in Sources */,
 				D968A71C2054855200518434 /* PFTSCurrentIndexViewController.swift in Sources */,
 				D99C89D2203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift in Sources */,
+				D968A72B2055C9DF00518434 /* PrivateCurrencyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
