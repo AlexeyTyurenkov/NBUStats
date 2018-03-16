@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PFTSCurrentIndexViewController: UIViewController, PresenterViewDelegate {
+class PFTSCurrentIndexViewController: BaseViewController, PresenterViewDelegate {
     
     
     func presenter(_ presenter: PresenterProtocol, updateAsProfessional: Bool) {

@@ -19,7 +19,7 @@ class HryvniaTodayModuleBuilder: ModuleBuilderProtocol
         let initialController = storyBoard.instantiateInitialViewController()
         if let navigationController =  initialController as? UINavigationController
         {
-            if let controller = navigationController.topViewController as? ContainerViewController
+            if let controller = navigationController.topViewController as? TableContainerViewController
             {
                 controller.navigationItem.title = self.moduleName
                 controller.presenter = presenter

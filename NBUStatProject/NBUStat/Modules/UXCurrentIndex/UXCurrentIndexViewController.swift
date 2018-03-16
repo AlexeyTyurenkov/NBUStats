@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UXCurrentIndexViewController: UIViewController, PresenterViewDelegate {
+class UXCurrentIndexViewController: BaseViewController, PresenterViewDelegate {
     
     
     func presenter(_ presenter: PresenterProtocol, updateAsProfessional: Bool) {
@@ -73,15 +73,6 @@ class UXCurrentIndexViewController: UIViewController, PresenterViewDelegate {
     @IBAction func providerButtonPressed(_ sender: UIBarButtonItem) {
         presenter.showDataProviderInfo()
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

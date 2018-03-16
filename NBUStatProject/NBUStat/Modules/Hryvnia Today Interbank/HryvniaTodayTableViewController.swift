@@ -60,4 +60,6 @@ class HryvniaTodayTableViewController: BaseTableViewController, PresenterViewDel
         }
     }
 
+    
+    
 }

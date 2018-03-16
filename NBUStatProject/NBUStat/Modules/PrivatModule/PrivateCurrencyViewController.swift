@@ -14,7 +14,7 @@ protocol PrivateCurrencyRatesViewInput: class
 }
 
 
-class PrivateCurrencyViewController: UIViewController,PrivateCurrencyRatesViewInput, PresenterViewDelegate {
+class PrivateCurrencyViewController: BaseViewController,PrivateCurrencyRatesViewInput, PresenterViewDelegate {
     
     func presenter(_: PresenterProtocol, updateAsProfessional: Bool) {
         activityView.isHidden = true

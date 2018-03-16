@@ -33,7 +33,7 @@ class PrivateCurrencyRatesPresenter: PresenterProtocol,PrivateCurrencyRatesViewO
     }
    
     func showDataProviderInfo() {
-        if let controller = delegate as? PFTSCurrentIndexViewController
+        if let controller = delegate as? PrivateCurrencyViewController 
         {
             router?.presentDataProviderInfo(from: controller, dataProviderInfo: dataProviderInfo)
         }
