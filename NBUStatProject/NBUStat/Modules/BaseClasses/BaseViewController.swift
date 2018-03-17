@@ -26,13 +26,23 @@ class BaseViewController: UIViewController {
         {
             configure(htController: viewController)
         }
+        else  if let viewController = segue.destination as? PrivateInternalTableViewController
+        {
+            configure(privateController: viewController)
+        }
         else if let viewController = segue.destination as? DataProviderInfoViewController
         {
             viewController.info = dataProviderInfo()
         }
+        
     }
 
     func configure(htController: HryvniaTodayTableViewController)
+    {
+        
+    }
+    
+    func configure(privateController: PrivateInternalTableViewController)
     {
         
     }

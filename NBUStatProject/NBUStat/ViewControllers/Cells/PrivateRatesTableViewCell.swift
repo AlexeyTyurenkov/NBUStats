@@ -9,7 +9,7 @@
 import UIKit
 import FinstatLib
 
-class PrivateRatesTableViewCell: UITableViewCell,BaseTableCellProtocol {
+class PrivateRatesTableViewCell: UITableViewCell, BaseTableCellProtocol {
 
     static func CellIdentifier() -> String {
         return "PrivateRatesTableViewCell"
@@ -19,15 +19,20 @@ class PrivateRatesTableViewCell: UITableViewCell,BaseTableCellProtocol {
         return UINib(nibName: "PrivateRatesTableViewCell", bundle: nil)
     }
     
+    @IBOutlet weak var currency: UILabel!
+    @IBOutlet weak var base: UILabel!
+    @IBOutlet weak var updated: UILabel!
+    @IBOutlet weak var buy: UILabel!
+    @IBOutlet weak var sale: UILabel!
     
-    func configure(line: PriveteRate)
+    
+    func configure(line: PrivateRate)
     {
-//        nameLabel.text = line.name
-//        buyLabel.text = line.buy.number()
-//        cellLabel.text = line.sell.number()
-//        changeBuyLabel.set(value:line.buyChange.number(5), colorSet: ThemeManager.shared.defaultColorSet)
-//        changeSellLAbel.set(value:line.sellChange.number(5), colorSet: ThemeManager.shared.defaultColorSet)
-//        update.text = line.updated
+        currency.text = line.currency
+        base.text = line.base
+        buy.text = line.buy.number()
+        sale.text = line.sale.number()
+        updated.text = line.updated
     }
 
 }

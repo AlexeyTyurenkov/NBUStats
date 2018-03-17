@@ -21,8 +21,8 @@ public struct PrivateRate
     public init(dictionary: [String:Any])
     {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd.MMM.yyyy"
-        updated = dateFormatter.string(from: Date())
+        dateFormatter.dateFormat = "yyyy-MM-dd H:mm:ss"
+        updated = dateFormatter.string(from: Date()).UTCToLocal()
         base = (dictionary["base_ccy"] as? String) ?? ""
         currency = (dictionary["ccy"] as? String) ?? ""
         buy = (dictionary["buy"] as? String) ?? ""

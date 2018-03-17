@@ -21,7 +21,7 @@ class PrivateCurrencyRatesPresenter: NSObject, PrivateCurrencyRatesViewOutput, T
     var router: PrivateCurrencyRatesRouter!
     var interactors: [PrivateRatesInteractor] = [PrivateRatesInteractor(), PrivateCashRatesInteractor()]
     private(set) var rates: [PrivateRate] = []
-    let cellTypes: [BaseTableCellProtocol.Type] = [HrTodayTableViewCell.self]
+    let cellTypes: [BaseTableCellProtocol.Type] = [PrivateRatesTableViewCell.self]
     
     func updateView() {
         

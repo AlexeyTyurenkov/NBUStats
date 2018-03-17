@@ -16,13 +16,15 @@ protocol PrivateCurrencyRatesViewInput: class
 
 class PrivateCurrencyViewController: BaseViewController,PrivateCurrencyRatesViewInput, PresenterViewDelegate {
     
-    func presenter(_: PresenterProtocol, updateAsProfessional: Bool) {
+    private var privateController: PrivateInternalTableViewController?
+    
+    func presenter(_ presenter: PresenterProtocol, updateAsProfessional: Bool) {
+        if let privateController = privateController
+        {
+            configure(privateController: privateController)
+        }
        view.sendSubview(toBack: activityView)
         activityView.isHidden = true
-        if let presenter = presenter as? PrivateCurrencyRatesPresenter
-        {
-            
-        }
     }
     
     func presenter(_: PresenterProtocol, getError: Error) {
@@ -71,5 +73,10 @@ class PrivateCurrencyViewController: BaseViewController,PrivateCurrencyRatesView
         presenter.load(index: sender.selectedSegmentIndex)
     }
     
+    override func configure(privateController: PrivateInternalTableViewController) {
+        self.privateController = privateController
+        self.privateController?.configure(with: presenter)
+        self.privateController?.tableView.reloadData()
+    }
 
 }

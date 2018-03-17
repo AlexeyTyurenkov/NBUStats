@@ -10,48 +10,61 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="HiraginoKakuGothic.ttc">
-            <string>HiraginoSans-W3</string>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Thin</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="176" id="KGk-i7-Jjw" customClass="PrivateRatesTableViewCell" customModule="FinStat_Ukraine" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="KGk-i7-Jjw" customClass="PrivateRatesTableViewCell" customModule="FinStat_Ukraine">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="175.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="173.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hj-5v-vU4">
-                        <rect key="frame" x="133.5" y="18" width="53" height="29"/>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hj-5v-vU4">
+                        <rect key="frame" x="136.5" y="18" width="47" height="24"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9V-2p-th5">
-                        <rect key="frame" x="137.5" y="64" width="45" height="17"/>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9V-2p-th5">
+                        <rect key="frame" x="140.5" y="59" width="40" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8n-17-TdM">
-                        <rect key="frame" x="139" y="128" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="143.5" y="129" width="34" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whu-Gd-hbf">
-                        <rect key="frame" x="16" y="87" width="45" height="17"/>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whu-Gd-hbf">
+                        <rect key="frame" x="16" y="85" width="40" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ4-m9-NCV">
-                        <rect key="frame" x="259" y="120" width="45" height="17"/>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ4-m9-NCV">
+                        <rect key="frame" x="264" y="85" width="40" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Купівля" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUa-eN-34k">
+                        <rect key="frame" x="16" y="64" width="48" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmV-ab-UC7">
+                        <rect key="frame" x="252.5" y="64" width="51.5" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -60,17 +73,34 @@
                     <constraint firstAttribute="trailing" secondItem="bQ4-m9-NCV" secondAttribute="trailing" constant="16" id="Cha-SM-Uwc"/>
                     <constraint firstItem="8hj-5v-vU4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="DaC-F8-0v0"/>
                     <constraint firstAttribute="bottom" secondItem="g8n-17-TdM" secondAttribute="bottom" constant="26.5" id="F0d-hW-XFw"/>
-                    <constraint firstItem="g8n-17-TdM" firstAttribute="top" secondItem="Whu-Gd-hbf" secondAttribute="bottom" constant="8" id="IMC-ev-p7V"/>
                     <constraint firstItem="G9V-2p-th5" firstAttribute="centerX" secondItem="8hj-5v-vU4" secondAttribute="centerX" id="UQw-bh-CcL"/>
                     <constraint firstItem="8hj-5v-vU4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ymi-Bc-51Q"/>
                     <constraint firstItem="g8n-17-TdM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Z8Z-av-2hc"/>
                     <constraint firstItem="Whu-Gd-hbf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Zs4-gB-6be"/>
+                    <constraint firstItem="Whu-Gd-hbf" firstAttribute="top" secondItem="nUa-eN-34k" secondAttribute="bottom" constant="4" id="dQL-PF-amD"/>
                     <constraint firstItem="bQ4-m9-NCV" firstAttribute="top" secondItem="Whu-Gd-hbf" secondAttribute="top" id="s5B-4d-AUe"/>
+                    <constraint firstItem="nUa-eN-34k" firstAttribute="leading" secondItem="Whu-Gd-hbf" secondAttribute="leading" id="sy0-dR-Nkl"/>
+                    <constraint firstItem="g8n-17-TdM" firstAttribute="top" secondItem="Whu-Gd-hbf" secondAttribute="bottom" constant="24" id="tUo-yn-9gv"/>
+                    <constraint firstItem="gmV-ab-UC7" firstAttribute="trailing" secondItem="bQ4-m9-NCV" secondAttribute="trailing" id="uIF-DZ-RPy"/>
+                    <constraint firstItem="g8n-17-TdM" firstAttribute="top" secondItem="Whu-Gd-hbf" secondAttribute="bottom" constant="33" id="xQ3-vr-oQC"/>
                     <constraint firstItem="G9V-2p-th5" firstAttribute="top" secondItem="8hj-5v-vU4" secondAttribute="bottom" constant="17" id="xya-Ad-od9"/>
+                    <constraint firstItem="bQ4-m9-NCV" firstAttribute="top" secondItem="gmV-ab-UC7" secondAttribute="bottom" constant="4" id="zGz-af-Bz4"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="xQ3-vr-oQC"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="34" y="120"/>
+            <connections>
+                <outlet property="base" destination="G9V-2p-th5" id="Igg-qA-cUO"/>
+                <outlet property="buy" destination="Whu-Gd-hbf" id="iPe-GT-QcF"/>
+                <outlet property="currency" destination="8hj-5v-vU4" id="voU-rd-Tw9"/>
+                <outlet property="sale" destination="bQ4-m9-NCV" id="Pl0-l6-S3v"/>
+                <outlet property="updated" destination="g8n-17-TdM" id="4WI-V1-UqC"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="119"/>
         </tableViewCell>
     </objects>
 </document>
