@@ -17,7 +17,12 @@ protocol PrivateCurrencyRatesViewInput: class
 class PrivateCurrencyViewController: BaseViewController,PrivateCurrencyRatesViewInput, PresenterViewDelegate {
     
     func presenter(_: PresenterProtocol, updateAsProfessional: Bool) {
+       view.sendSubview(toBack: activityView)
         activityView.isHidden = true
+        if let presenter = presenter as? PrivateCurrencyRatesPresenter
+        {
+            
+        }
     }
     
     func presenter(_: PresenterProtocol, getError: Error) {
@@ -29,7 +34,8 @@ class PrivateCurrencyViewController: BaseViewController,PrivateCurrencyRatesView
     }
     
     func presenterWillLoad(_: PresenterProtocol) {
-        
+        activityView.isHidden = false
+        refreshController?.animation{ return !self.activityView.isHidden }
     }
     
     func presenterDidLoad(_: PresenterProtocol) {
@@ -45,11 +51,9 @@ class PrivateCurrencyViewController: BaseViewController,PrivateCurrencyRatesView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityView.isHidden = false
         let refresh = RefreshController.defaultRefresh(frame: activityView.bounds)
         refreshController = refresh
         activityView.addSubview(refresh)
-        refreshController?.animation{ return !self.activityView.isHidden }
         presenter.viewLoaded()
     }
 
@@ -61,6 +65,10 @@ class PrivateCurrencyViewController: BaseViewController,PrivateCurrencyRatesView
     @IBAction func dataproviderTapped(_ sender: Any) {
         presenter.showDataProviderInfo()
 
+    }
+    
+    @IBAction func indexChanged(_ sender: UISegmentedControl) {
+        presenter.load(index: sender.selectedSegmentIndex)
     }
     
 

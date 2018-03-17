@@ -25,6 +25,9 @@
                                     <segment title="Безготівка"/>
                                 </segments>
                                 <color key="tintColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="indexChanged:" destination="dxb-Tq-ogF" eventType="valueChanged" id="R5f-3s-ihf"/>
+                                </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0S-ji-J0s">
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FinstatLib
 
 class PrivateModuleBuilder: ModuleBuilderProtocol
 {
@@ -32,4 +33,8 @@ class PrivateModuleBuilder: ModuleBuilderProtocol
     {
         return NSLocalizedString("Курси валют Приват Банку", comment: "")
     }
+    
+    
+    
+    
 }
