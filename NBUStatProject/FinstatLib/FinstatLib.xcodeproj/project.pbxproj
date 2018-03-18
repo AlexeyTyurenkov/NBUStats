@@ -272,6 +272,7 @@
 				C60A100F20528C6C0010FDB3 /* Headers */,
 				C60A101020528C6C0010FDB3 /* Resources */,
 				51621E31EF99BB7BE127EE2A /* [CP] Copy Pods Resources */,
+				D973D8D0205E527B00063D39 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -388,6 +389,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-FinstatLib/Pods-FinstatLib-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D973D8D0205E527B00063D39 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -555,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A0C5A4E59FFA815A393FC0B /* Pods-FinstatLib.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -578,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A878A265BD164855ED2E7172 /* Pods-FinstatLib.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -691,6 +707,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE5AD7BF8DFD78D52109B64D /* Pods-FinstatLib.qa.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

@@ -89,6 +89,7 @@
 		D9720A572047E08F00F81CBB /* YearDependentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A562047E08F00F81CBB /* YearDependentProtocol.swift */; };
 		D9720A5D20492C3000F81CBB /* HrTodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A5B20492C3000F81CBB /* HrTodayTableViewCell.swift */; };
 		D9720A5E20492C3000F81CBB /* HrTodayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9720A5C20492C3000F81CBB /* HrTodayTableViewCell.xib */; };
+		D973D8CF205DCEA900063D39 /* FinstatLib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C60A102C205295FF0010FDB3 /* FinstatLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
 		D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */; };
 		D99C89D2203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89D1203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift */; };
@@ -115,6 +116,19 @@
 			remoteInfo = NBUStat;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D973D8CE205DCE9800063D39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D973D8CF205DCEA900063D39 /* FinstatLib.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C52D5A5C0AE05480F805285 /* Pods-FinStat Ukraine.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinStat Ukraine.qa.xcconfig"; path = "Pods/Target Support Files/Pods-FinStat Ukraine/Pods-FinStat Ukraine.qa.xcconfig"; sourceTree = "<group>"; };
@@ -542,6 +556,7 @@
 				818D64EC22A715D0A0FA8AB0 /* [CP] Embed Pods Frameworks */,
 				F6715DFED5ADAD276DA76EC3 /* [CP] Copy Pods Resources */,
 				D982393B1F2E756B002FF8E8 /* Change build number */,
+				D973D8CE205DCE9800063D39 /* CopyFiles */,
 			);
 			buildRules = (
 			);
