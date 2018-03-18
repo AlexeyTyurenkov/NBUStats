@@ -90,6 +90,11 @@
 		D9720A5D20492C3000F81CBB /* HrTodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9720A5B20492C3000F81CBB /* HrTodayTableViewCell.swift */; };
 		D9720A5E20492C3000F81CBB /* HrTodayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9720A5C20492C3000F81CBB /* HrTodayTableViewCell.xib */; };
 		D973D8CF205DCEA900063D39 /* FinstatLib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C60A102C205295FF0010FDB3 /* FinstatLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D973D8D7205E830800063D39 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D973D8D6205E830800063D39 /* NotificationCenter.framework */; };
+		D973D8DA205E830800063D39 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973D8D9205E830800063D39 /* TodayViewController.swift */; };
+		D973D8DD205E830800063D39 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D973D8DB205E830800063D39 /* MainInterface.storyboard */; };
+		D973D8E2205E830800063D39 /* FinstatNBURateToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D973D8D5205E830800063D39 /* FinstatNBURateToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D973D8E7205E833700063D39 /* FinstatLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D973D8E8205E833700063D39 /* FinstatLib.framework */; };
 		D99948011F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */; };
 		D99C89C9203B850F002C55CB /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */; };
 		D99C89D2203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C89D1203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift */; };
@@ -115,6 +120,13 @@
 			remoteGlobalIDString = C61F1F021F18B06700F0AF87;
 			remoteInfo = NBUStat;
 		};
+		D973D8DF205E830800063D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C61F1EFB1F18B06600F0AF87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D973D8D4205E830800063D39;
+			remoteInfo = FinstatNBURateToday;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -126,6 +138,17 @@
 			files = (
 				D973D8CF205DCEA900063D39 /* FinstatLib.framework in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D973D8E1205E830800063D39 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D973D8E2205E830800063D39 /* FinstatNBURateToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -224,6 +247,12 @@
 		D9720A562047E08F00F81CBB /* YearDependentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearDependentProtocol.swift; sourceTree = "<group>"; };
 		D9720A5B20492C3000F81CBB /* HrTodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrTodayTableViewCell.swift; sourceTree = "<group>"; };
 		D9720A5C20492C3000F81CBB /* HrTodayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HrTodayTableViewCell.xib; sourceTree = "<group>"; };
+		D973D8D5205E830800063D39 /* FinstatNBURateToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinstatNBURateToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D973D8D6205E830800063D39 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D973D8D9205E830800063D39 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		D973D8DC205E830800063D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D973D8DE205E830800063D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D973D8E8205E833700063D39 /* FinstatLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FinstatLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99948001F1D2D4B003AB9A2 /* CurrencyDetailContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainerViewController.swift; sourceTree = "<group>"; };
 		D99C89C7203B850F002C55CB /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		D99C89D1203B8D59002C55CB /* NBUCurrencyModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBUCurrencyModuleBuilder.swift; sourceTree = "<group>"; };
@@ -264,6 +293,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D973D8D2205E830800063D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D973D8E7205E833700063D39 /* FinstatLib.framework in Frameworks */,
+				D973D8D7205E830800063D39 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -280,8 +318,10 @@
 		152541B1A000A878C70BEEAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D973D8E8205E833700063D39 /* FinstatLib.framework */,
 				7D8D0F0F1103B7DDB23BC7BB /* Pods_FinStat_Ukraine.framework */,
 				C60A10312052A3320010FDB3 /* FinstatLib.framework */,
+				D973D8D6205E830800063D39 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -304,6 +344,7 @@
 				C61F1F051F18B06700F0AF87 /* NBUStat */,
 				C61F1F1D1F18B06700F0AF87 /* NBUStatTests */,
 				C61F1F281F18B06700F0AF87 /* NBUStatUITests */,
+				D973D8D8205E830800063D39 /* FinstatNBURateToday */,
 				C61F1F041F18B06700F0AF87 /* Products */,
 				0335893071F5DF28278F31E4 /* Pods */,
 				152541B1A000A878C70BEEAD /* Frameworks */,
@@ -316,6 +357,7 @@
 				C61F1F031F18B06700F0AF87 /* FinStat Ukraine.app */,
 				C61F1F1A1F18B06700F0AF87 /* FinStat UkraineTests.xctest */,
 				C61F1F251F18B06700F0AF87 /* FinStat UkraineUITests.xctest */,
+				D973D8D5205E830800063D39 /* FinstatNBURateToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -487,6 +529,16 @@
 			path = "Hryvnia Today Interbank";
 			sourceTree = "<group>";
 		};
+		D973D8D8205E830800063D39 /* FinstatNBURateToday */ = {
+			isa = PBXGroup;
+			children = (
+				D973D8D9205E830800063D39 /* TodayViewController.swift */,
+				D973D8DB205E830800063D39 /* MainInterface.storyboard */,
+				D973D8DE205E830800063D39 /* Info.plist */,
+			);
+			path = FinstatNBURateToday;
+			sourceTree = "<group>";
+		};
 		D99C89C5203B850F002C55CB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -557,10 +609,12 @@
 				F6715DFED5ADAD276DA76EC3 /* [CP] Copy Pods Resources */,
 				D982393B1F2E756B002FF8E8 /* Change build number */,
 				D973D8CE205DCE9800063D39 /* CopyFiles */,
+				D973D8E1205E830800063D39 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D973D8E0205E830800063D39 /* PBXTargetDependency */,
 			);
 			name = "FinStat Ukraine";
 			productName = NBUStat;
@@ -603,13 +657,30 @@
 			productReference = C61F1F251F18B06700F0AF87 /* FinStat UkraineUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D973D8D4205E830800063D39 /* FinstatNBURateToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D973D8E6205E830800063D39 /* Build configuration list for PBXNativeTarget "FinstatNBURateToday" */;
+			buildPhases = (
+				D973D8D1205E830800063D39 /* Sources */,
+				D973D8D2205E830800063D39 /* Frameworks */,
+				D973D8D3205E830800063D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinstatNBURateToday;
+			productName = FinstatNBURateToday;
+			productReference = D973D8D5205E830800063D39 /* FinstatNBURateToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C61F1EFB1F18B06600F0AF87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Oleksii Tiurenkov";
 				TargetAttributes = {
@@ -632,6 +703,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = C61F1F021F18B06700F0AF87;
 					};
+					D973D8D4205E830800063D39 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = FEM5E9C5MW;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = C61F1EFE1F18B06600F0AF87 /* Build configuration list for PBXProject "FinStat Ukraine" */;
@@ -652,6 +728,7 @@
 				C61F1F021F18B06700F0AF87 /* FinStat Ukraine */,
 				C61F1F191F18B06700F0AF87 /* FinStat UkraineTests */,
 				C61F1F241F18B06700F0AF87 /* FinStat UkraineUITests */,
+				D973D8D4205E830800063D39 /* FinstatNBURateToday */,
 			);
 		};
 /* End PBXProject section */
@@ -694,6 +771,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D973D8D3205E830800063D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D973D8DD205E830800063D39 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,6 +949,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D973D8D1205E830800063D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D973D8DA205E830800063D39 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -876,6 +969,11 @@
 			isa = PBXTargetDependency;
 			target = C61F1F021F18B06700F0AF87 /* FinStat Ukraine */;
 			targetProxy = C61F1F261F18B06700F0AF87 /* PBXContainerItemProxy */;
+		};
+		D973D8E0205E830800063D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D973D8D4205E830800063D39 /* FinstatNBURateToday */;
+			targetProxy = D973D8DF205E830800063D39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -898,6 +996,14 @@
 				D9EC9CAF203AB04400BC8954 /* ru */,
 			);
 			name = MainMasterDetail.storyboard;
+			sourceTree = "<group>";
+		};
+		D973D8DB205E830800063D39 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D973D8DC205E830800063D39 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		D9EC9CB3203AB05600BC8954 /* Localizable.strings */ = {
@@ -1026,8 +1132,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 562E03CF43D0C2182F1EE3FD /* Pods-FinStat Ukraine.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = FEM5E9C5MW;
 				INFOPLIST_FILE = NBUStat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1045,8 +1153,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36C7338217F534486D332FF6 /* Pods-FinStat Ukraine.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = FEM5E9C5MW;
 				INFOPLIST_FILE = NBUStat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1122,6 +1232,66 @@
 			};
 			name = Release;
 		};
+		D973D8E3205E830800063D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEM5E9C5MW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FinstatNBURateToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.otiurenkov.FinStatUkraine.FinstatNBURateToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D973D8E4205E830800063D39 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEM5E9C5MW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FinstatNBURateToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.otiurenkov.FinStatUkraine.FinstatNBURateToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = QA;
+		};
+		D973D8E5205E830800063D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FEM5E9C5MW;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FinstatNBURateToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.otiurenkov.FinStatUkraine.FinstatNBURateToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D982393C1F2E777F002FF8E8 /* QA */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1184,8 +1354,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0C52D5A5C0AE05480F805285 /* Pods-FinStat Ukraine.qa.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = FEM5E9C5MW;
 				INFOPLIST_FILE = "NBUStat/Info-QA.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1270,6 +1442,16 @@
 				C61F1F351F18B06700F0AF87 /* Debug */,
 				D982393F1F2E777F002FF8E8 /* QA */,
 				C61F1F361F18B06700F0AF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D973D8E6205E830800063D39 /* Build configuration list for PBXNativeTarget "FinstatNBURateToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D973D8E3205E830800063D39 /* Debug */,
+				D973D8E4205E830800063D39 /* QA */,
+				D973D8E5205E830800063D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
